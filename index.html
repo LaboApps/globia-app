@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Globia</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
+  <title>Globia — Redirection</title>
+  <meta http-equiv="refresh" content="0;url=/fr/">
   <script>
     (function () {
-      var LANGS = ['en', 'fr', 'de', 'es', 'ar'];
-      var stored = localStorage.getItem('globia-lang');
-      if (stored && LANGS.indexOf(stored) !== -1) {
-        window.location.replace('/' + stored + '/');
-        return;
+      var lang = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
+      if (lang.startsWith('fr')) {
+        window.location.replace('/fr/');
+      } else {
+        window.location.replace('/fr/');
       }
-      var nav = (navigator.language || navigator.userLanguage || 'en').substring(0, 2).toLowerCase();
-      var target = LANGS.indexOf(nav) !== -1 ? nav : 'en';
-      localStorage.setItem('globia-lang', target);
-      window.location.replace('/' + target + '/');
-    })();
+    }());
   </script>
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=/en/">
-  </noscript>
 </head>
 <body>
-  <p>Redirecting… <a href="/en/">Click here if not redirected.</a></p>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/fr/">
+  </noscript>
+  <p>Redirection vers <a href="/fr/">globia.app/fr/</a>…</p>
 </body>
 </html>

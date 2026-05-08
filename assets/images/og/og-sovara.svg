@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0D1117"/>
+  <rect x="0" y="580" width="1200" height="2" fill="#3FB950" opacity="0.4"/>
+  <text x="600" y="220" font-family="Georgia, serif" font-size="110" font-weight="700" text-anchor="middle" fill="#3FB950">SOV</text>
+  <text x="600" y="330" font-family="Georgia, serif" font-size="110" font-weight="700" text-anchor="middle" fill="#39C5CF">ARA</text>
+  <text x="600" y="420" font-family="monospace" font-size="22" text-anchor="middle" fill="#8B949E">Alerte micro · caméra avant ou arrière · Android 12+</text>
+  <text x="600" y="470" font-family="monospace" font-size="18" text-anchor="middle" fill="#6E7681">Une app de Globia · globia.app</text>
+</svg>

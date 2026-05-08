@@ -15,7 +15,19 @@
       "Bash(Format-Table -AutoSize)",
       "Bash(dir \"C:/projets/Globia\")",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(mkdir -p assets/fonts/cairo)",
+      "Bash(mkdir -p assets/images/screens/sovara/fr assets/images/screens/sovara/en assets/images/screens/sovara/de assets/images/screens/sovara/es assets/images/screens/sovara/ar)",
+      "Bash(mkdir -p assets/images/logos assets/images/og)",
+      "Bash(mkdir -p .well-known)",
+      "Bash(cp assets/images/press/globia-logo-dark.svg assets/images/logos/globia-logo-dark.svg)",
+      "Bash(cp assets/images/press/globia-logo-light.svg assets/images/logos/globia-logo-light.svg)",
+      "Bash(cp assets/images/press/sovara-icon-dark.svg assets/images/logos/sovara-icon-dark.svg)",
+      "Bash(cp assets/images/press/sovara-icon-light.svg assets/images/logos/sovara-icon-light.svg)",
+      "Bash(rm -rf en/ fr/ de/ es/ ar/)",
+      "Bash(cat)",
+      "Bash(bash /tmp/gen_placeholder.sh)"
     ]
   }
 }
