@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\press\" -Force)",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\en\\\\press\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\fr\\\\press\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\de\\\\press\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\es\\\\press\" -Force)",
+      "Bash(New-Item -ItemType Directory -Path \"C:\\\\projets\\\\Globia\\\\ar\\\\press\" -Force)",
+      "Bash(Write-Output \"Directories created\")",
+      "PowerShell(New-Item *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\projets\\\\Globia\" -Recurse -Depth 3)",
+      "Bash(Select-Object FullName, Length, LastWriteTime)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(dir \"C:/projets/Globia\")",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

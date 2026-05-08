@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sovara — كيف يعمل · مراقبة الميكروفون والكاميرا لأندرويد</title>
+  <meta name="description" content="خطوة بخطوة: كيف يكتشف Sovara ويحدد ويُنبهك عند وصول أي تطبيق إلى ميكروفونك أو كاميرتك. محلي 100%، بدون متعقبين.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="LocalFirst Apps">
+
+  <link rel="alternate" hreflang="en" href="https://globia.app/en/sovara/">
+  <link rel="alternate" hreflang="fr" href="https://globia.app/fr/sovara/">
+  <link rel="alternate" hreflang="de" href="https://globia.app/de/sovara/">
+  <link rel="alternate" hreflang="es" href="https://globia.app/es/sovara/">
+  <link rel="alternate" hreflang="ar" href="https://globia.app/ar/sovara/">
+  <link rel="alternate" hreflang="x-default" href="https://globia.app/en/sovara/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globia.app/ar/sovara/">
+  <meta property="og:title" content="Sovara — كيف يعمل · مراقبة الميكروفون والكاميرا لأندرويد">
+  <meta property="og:description" content="خطوة بخطوة: كيف يكتشف Sovara ويحدد ويُنبهك عند وصول أي تطبيق إلى ميكروفونك أو كاميرتك. محلي 100%، بدون متعقبين.">
+  <meta property="og:image" content="https://globia.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="ar_SA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sovara — كيف يعمل · مراقبة الميكروفون والكاميرا لأندرويد">
+  <meta name="twitter:description" content="خطوة بخطوة: كيف يكتشف Sovara ويُنبهك. محلي 100%، بدون متعقبين.">
+  <meta name="twitter:image" content="https://globia.app/assets/images/og-image.svg">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sovara",
+    "operatingSystem": "Android 12+",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "مراقبة فورية لوصول التطبيقات إلى الميكروفون والكاميرا على أندرويد. محلي 100%، بدون متعقبين.",
+    "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "LocalFirst Apps", "url": "https://globia.app" },
+    "privacyPolicyUrl": "https://laboapps.github.io/sovara-privacy-policy/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى الرئيسي</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="logo" href="/ar/" aria-label="Globia — الصفحة الرئيسية">Globia</a>
+      <div class="header-controls">
+        <label class="sr-only" for="lang-header">اللغة</label>
+        <select id="lang-header" class="lang-select" aria-label="اللغة">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="ar" selected>AR</option>
+        </select>
+        <button id="theme-toggle" class="theme-toggle" aria-label="التبديل إلى الوضع الفاتح">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" style="padding-top:60px;">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="مسار التنقل">
+        <a class="back-link" href="/ar/">العودة إلى Globia →</a>
+      </nav>
+    </div>
+
+    <section class="sovara-hero" aria-labelledby="sovara-heading">
+      <div class="container">
+        <div class="sovara-hero-content">
+          <p class="eyebrow">Sovara · حارس الخصوصية لأندرويد</p>
+          <h1 id="sovara-heading">كيف يعمل Sovara.</h1>
+          <p class="hero-sub">كشف في الوقت الفعلي. تحديد فوري. تنبيهات تعمل حتى مع إطفاء الشاشة.</p>
+          <div class="hero-ctas">
+            <button class="btn-primary" disabled aria-disabled="true" aria-label="Sovara غير متاح بعد على Google Play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.43c.27.15.58.17.87.07l12.56-7.26-2.67-2.67-10.76 9.86zM.1 1.27A1 1 0 0 0 0 1.7v20.6a1 1 0 0 0 .1.43l.06.06L11.57 11.3v-.27L.16 1.21.1 1.27zM20.75 9.79l-2.82-1.63-3.12 3.12 3.12 3.12 2.84-1.64a2.12 2.12 0 0 0 0-3zM3.18.57l10.76 9.86 2.67-2.67L4.05.5A1 1 0 0 0 3.18.57z"/></svg>
+              قريباً على Google Play · مايو–يونيو 2026
+            </button>
+          </div>
+        </div>
+        <div class="demo-visual">
+          <img src="/assets/images/placeholders/sovara-demo-wide.svg" alt="معاينة واجهة Sovara — قريباً" width="1280" height="720">
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="how-it-works" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="steps-heading">ماذا يحدث عندما يصل تطبيق ما إلى ميكروفونك؟</h2>
+          <p>أربع لحظات. من الوصول إلى التنبيه.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">01</div>
+            <span class="step-label">الكشف</span>
+            <h3>تطبيق ما يُشغّل ميكروفونك.</h3>
+            <p>خرائط. واتساب. لعبة. حتى تطبيق لم تفتحه. أندرويد يُظهر نقطة صغيرة. هذا كل شيء.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">02</div>
+            <span class="step-label">Sovara يراه</span>
+            <h3>Sovara يرصده فوراً.</h3>
+            <p>Sovara يستعلم النظام باستمرار للتحقق من حالة الميكروفون. لحظة بدء الوصول، يعرف Sovara. زمن الاستجابة: أقل من ثانية.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">03</div>
+            <span class="step-label">التحديد</span>
+            <h3>Sovara يُسمّي المتسبب.</h3>
+            <p>يُحدَّد كلٌّ من التطبيق الواصل والتطبيق في المقدمة. معظم المنافسين يُظهرون فقط ما على الشاشة. Sovara يكشف من طلب الوصول فعلاً.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">04</div>
+            <span class="step-label">التنبيه</span>
+            <h3>تتلقى إشعاراً — بالطريقة التي تختارها.</h3>
+            <p>صوت (8 خيارات + مخصص). اهتزاز (5 أنماط). إشعار فوري. وميض LED. اختر ما يناسب اللحظة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" aria-labelledby="screenshots-heading" style="padding: var(--section-gap) 0;">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="screenshots-heading">كيف يبدو Sovara.</h2>
+        </div>
+        <div class="screenshots-grid">
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-alert.svg" alt="شاشة التنبيه المباشر في Sovara — قريباً" width="320" height="640">
+            <p class="screenshot-item-label">تنبيه مباشر</p>
+            <p class="screenshot-item-caption">تنبيه فوري باسم التطبيق ونوع المستشعر والطابع الزمني.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-history.svg" alt="شاشة السجل في Sovara — قريباً" width="320" height="640">
+            <p class="screenshot-item-label">عرض السجل</p>
+            <p class="screenshot-item-caption">سجل زمني لجميع عمليات الوصول إلى الميكروفون والكاميرا. مدة غير محدودة.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-details.svg" alt="شاشة تفاصيل التطبيق في Sovara — قريباً" width="320" height="640">
+            <p class="screenshot-item-label">تفاصيل التطبيق</p>
+            <p class="screenshot-item-caption">تفاصيل الحدث كاملة: اسم التطبيق، الحزمة، المستشعر، المدة، التطبيق الأمامي.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-whitelist.svg" alt="شاشة القائمة البيضاء في Sovara — قريباً" width="320" height="640">
+            <p class="screenshot-item-label">القائمة البيضاء</p>
+            <p class="screenshot-item-caption">ضع علامة على التطبيقات الموثوقة. لا مزيد من التنبيهات من تطبيق الاتصال.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison" id="technical" aria-labelledby="technical-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="technical-heading">كيف يبقى Sovara محلياً 100%.</h2>
+          <p>ثلاث حقائق تقنية يمكنك التحقق منها.</p>
+        </div>
+        <div class="truth-grid">
+          <div class="truth-card">
+            <h3>لا صلاحية INTERNET</h3>
+            <p>لا يُعلن ملف تعريف Sovara عن أي صلاحية INTERNET. أندرويد يُطبّق ذلك. التطبيق لا يستطيع فعلياً إجراء أي طلب شبكي — ولا حتى لخادم Sovara لأنه لا وجود لأي خادم.</p>
+          </div>
+          <div class="truth-card">
+            <h3>لا التقاط صوت في الكود</h3>
+            <p>نستخدم RECORD_AUDIO للاستعلام عن حالة الميكروفون، لكن الـ APK لا يحتوي على أي استدعاء لـ MediaRecorder.start() أو AudioRecord.read() أو أي طريقة التقاط صوت. يمكن لأي أحد فك التجميع والتحقق.</p>
+          </div>
+          <div class="truth-card">
+            <h3>لا حزم SDK من طرف ثالث</h3>
+            <p>لا Firebase، لا Crashlytics، لا Analytics، لا SDK إعلانات. إعداد البناء مفتوح: يمكنك مراجعة شجرة التبعيات بنفسك.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="who" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="audience-heading">لمن يهتم حقاً.</h2>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+            <h3>المهتمون بالخصوصية</h3>
+            <p>تقرأ الصلاحيات قبل التثبيت. تتساءل ماذا تفعل العمليات في الخلفية.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+            <h3>الصحفيون والمهنيون</h3>
+            <p>تُجري محادثات سرية وتحتاج إلى التأكد من أنه لا يستمع أحد آخر.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <h3>الآباء والأمهات</h3>
+            <p>تريد معرفة ما تفعله تطبيقات أطفالك في الخلفية فعلاً.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <h3>المستخدمون المتقدمون</h3>
+            <p>تريد سجلاً قابلاً للتصدير، وقائمة بيضاء، وتحكماً كاملاً — ليس مجرد نقطة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 LocalFirst Apps. Globia علامة تجارية لـ LocalFirst Apps.</p>
+      <nav class="footer-nav" aria-label="روابط التذييل">
+        <a href="https://laboapps.github.io/sovara-privacy-policy/" rel="noopener noreferrer">سياسة الخصوصية</a>
+        <a href="mailto:press@globia.app">التواصل</a>
+        <a href="https://github.com/laboapps" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <div class="footer-lang">
+        <label class="sr-only" for="lang-footer">اللغة</label>
+        <select id="lang-footer" class="lang-select" aria-label="اللغة">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="ar" selected>AR</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

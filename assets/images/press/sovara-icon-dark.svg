@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Sovara icon — dark version">
+  <rect width="120" height="120" rx="24" fill="#0a0e14"/>
+  <path d="M60 16 L88 28 L88 56 C88 73 75 86 60 92 C45 86 32 73 32 56 L32 28 Z" fill="none" stroke="#39c5cf" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="56" r="8" fill="#39c5cf" opacity="0.9"/>
+  <circle cx="60" cy="56" r="14" fill="none" stroke="#39c5cf" stroke-width="2" opacity="0.45"/>
+  <text x="60" y="109" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#8b949e" letter-spacing="1">SOVARA</text>
+</svg>

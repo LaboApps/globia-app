@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sovara — Comment ça marche · Surveillance micro &amp; caméra Android</title>
+  <meta name="description" content="Étape par étape : comment Sovara détecte, identifie et vous alerte quand une app accède à votre micro ou caméra. 100% local, 0 traceur.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="LocalFirst Apps">
+
+  <link rel="alternate" hreflang="en" href="https://globia.app/en/sovara/">
+  <link rel="alternate" hreflang="fr" href="https://globia.app/fr/sovara/">
+  <link rel="alternate" hreflang="de" href="https://globia.app/de/sovara/">
+  <link rel="alternate" hreflang="es" href="https://globia.app/es/sovara/">
+  <link rel="alternate" hreflang="ar" href="https://globia.app/ar/sovara/">
+  <link rel="alternate" hreflang="x-default" href="https://globia.app/en/sovara/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globia.app/fr/sovara/">
+  <meta property="og:title" content="Sovara — Comment ça marche · Surveillance micro &amp; caméra Android">
+  <meta property="og:description" content="Étape par étape : comment Sovara détecte, identifie et vous alerte quand une app accède à votre micro ou caméra. 100% local, 0 traceur.">
+  <meta property="og:image" content="https://globia.app/assets/images/og-image.svg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sovara — Comment ça marche · Surveillance micro &amp; caméra Android">
+  <meta name="twitter:description" content="Étape par étape : comment Sovara détecte, identifie et vous alerte quand une app accède à votre micro ou caméra.">
+  <meta name="twitter:image" content="https://globia.app/assets/images/og-image.svg">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Sovara",
+    "operatingSystem": "Android 12+",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Surveillance en temps réel des accès micro et caméra sur Android. 100% local, 0 traceur.",
+    "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "LocalFirst Apps", "url": "https://globia.app" },
+    "privacyPolicyUrl": "https://laboapps.github.io/sovara-privacy-policy/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="logo" href="/fr/" aria-label="Globia — accueil">Globia</a>
+      <div class="header-controls">
+        <label class="sr-only" for="lang-header">Langue</label>
+        <select id="lang-header" class="lang-select" aria-label="Langue">
+          <option value="en">EN</option>
+          <option value="fr" selected>FR</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="ar">AR</option>
+        </select>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Passer en mode clair">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" style="padding-top:60px;">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d'Ariane">
+        <a class="back-link" href="/fr/">← Retour à Globia</a>
+      </nav>
+    </div>
+
+    <section class="sovara-hero" aria-labelledby="sovara-heading">
+      <div class="container">
+        <div class="sovara-hero-content">
+          <p class="eyebrow">Sovara · Gardien de la vie privée Android</p>
+          <h1 id="sovara-heading">Comment fonctionne Sovara.</h1>
+          <p class="hero-sub">Détection en temps réel. Identification instantanée. Alertes même écran éteint.</p>
+          <div class="hero-ctas">
+            <button class="btn-primary" disabled aria-disabled="true" aria-label="Sovara n'est pas encore disponible sur Google Play">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.43c.27.15.58.17.87.07l12.56-7.26-2.67-2.67-10.76 9.86zM.1 1.27A1 1 0 0 0 0 1.7v20.6a1 1 0 0 0 .1.43l.06.06L11.57 11.3v-.27L.16 1.21.1 1.27zM20.75 9.79l-2.82-1.63-3.12 3.12 3.12 3.12 2.84-1.64a2.12 2.12 0 0 0 0-3zM3.18.57l10.76 9.86 2.67-2.67L4.05.5A1 1 0 0 0 3.18.57z"/></svg>
+              Bientôt sur Google Play · mai–juin 2026
+            </button>
+          </div>
+        </div>
+        <div class="demo-visual">
+          <img src="/assets/images/placeholders/sovara-demo-wide.svg" alt="Aperçu de l'interface Sovara — bientôt disponible" width="1280" height="720">
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="how-it-works" aria-labelledby="steps-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="steps-heading">Que se passe-t-il quand une app accède à votre micro ?</h2>
+          <p>Quatre moments. De l'accès à l'alerte.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">01</div>
+            <span class="step-label">Détection</span>
+            <h3>Une app active votre microphone.</h3>
+            <p>Maps. WhatsApp. Un jeu. Même une app que vous n'avez pas ouverte. Android affiche un petit point. C'est tout.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">02</div>
+            <span class="step-label">Sovara le voit</span>
+            <h3>Sovara le détecte instantanément.</h3>
+            <p>Sovara interroge le système en permanence pour surveiller l'état du micro. Dès que l'accès commence, Sovara le sait. Latence : moins d'une seconde.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">03</div>
+            <span class="step-label">Identification</span>
+            <h3>Sovara identifie le coupable.</h3>
+            <p>L'app appelante ET l'app au premier plan sont identifiées. La plupart des concurrents ne montrent que ce qui est à l'écran. Sovara révèle qui a réellement demandé l'accès.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">04</div>
+            <span class="step-label">Alerte</span>
+            <h3>Vous êtes alerté — à votre façon.</h3>
+            <p>Son (8 options + personnalisé). Vibration (5 schémas). Notification push. Flash LED. Choisissez ce qui convient au moment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screenshots" aria-labelledby="screenshots-heading" style="padding: var(--section-gap) 0;">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="screenshots-heading">À quoi ressemble Sovara.</h2>
+        </div>
+        <div class="screenshots-grid">
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-alert.svg" alt="Écran d'alerte Sovara — bientôt disponible" width="320" height="640">
+            <p class="screenshot-item-label">Alerte en direct</p>
+            <p class="screenshot-item-caption">Alerte instantanée avec nom de l'app, type de capteur et horodatage.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-history.svg" alt="Historique Sovara — bientôt disponible" width="320" height="640">
+            <p class="screenshot-item-label">Historique</p>
+            <p class="screenshot-item-caption">Journal chronologique de tous les accès micro et caméra. Durée illimitée.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-details.svg" alt="Détails d'une app — bientôt disponible" width="320" height="640">
+            <p class="screenshot-item-label">Détails de l'app</p>
+            <p class="screenshot-item-caption">Détails complets : nom, package, capteur, durée, app au premier plan.</p>
+          </div>
+          <div class="screenshot-item">
+            <img src="/assets/images/placeholders/sovara-screen-whitelist.svg" alt="Liste blanche Sovara — bientôt disponible" width="320" height="640">
+            <p class="screenshot-item-label">Liste blanche</p>
+            <p class="screenshot-item-caption">Marquez les apps de confiance. Plus d'alertes pour votre appli téléphone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison" id="technical" aria-labelledby="technical-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="technical-heading">Comment Sovara reste 100% local.</h2>
+          <p>Trois faits techniques vérifiables.</p>
+        </div>
+        <div class="truth-grid">
+          <div class="truth-card">
+            <h3>Pas de permission INTERNET</h3>
+            <p>Le manifeste de Sovara ne déclare aucune permission INTERNET. Android l'impose. L'app ne peut physiquement pas faire de requête réseau — même pas vers un serveur Sovara (qui n'existe pas).</p>
+          </div>
+          <div class="truth-card">
+            <h3>Aucune capture audio dans le code</h3>
+            <p>Nous utilisons RECORD_AUDIO pour interroger l'état du micro, mais l'APK ne contient aucun appel à MediaRecorder.start(), AudioRecord.read() ou toute méthode de capture audio. Décompilable et vérifiable par tous.</p>
+          </div>
+          <div class="truth-card">
+            <h3>Aucun SDK tiers</h3>
+            <p>Zéro Firebase, Crashlytics, Analytics, SDK publicitaire. La configuration de build est ouverte : vous pouvez auditer l'arbre de dépendances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="who" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="audience-heading">Pour ceux qui prennent ça au sérieux.</h2>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3>Utilisateurs soucieux de leur vie privée</h3>
+            <p>Vous lisez les permissions avant d'installer. Vous vous demandez ce que font les processus en arrière-plan.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Journalistes &amp; professionnels</h3>
+            <p>Vous gérez des conversations confidentielles et devez savoir que personne d'autre n'écoute.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3>Parents</h3>
+            <p>Vous voulez savoir ce que font vraiment les apps de vos enfants en arrière-plan.</p>
+          </div>
+          <div class="audience-card">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3>Power users</h3>
+            <p>Vous voulez un historique exportable, une liste blanche et un contrôle total — pas juste un point.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 LocalFirst Apps. Globia est une marque de LocalFirst Apps.</p>
+      <nav class="footer-nav" aria-label="Navigation du pied de page">
+        <a href="https://laboapps.github.io/sovara-privacy-policy/" rel="noopener noreferrer">Politique de confidentialité</a>
+        <a href="mailto:press@globia.app">Contact</a>
+        <a href="https://github.com/laboapps" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <div class="footer-lang">
+        <label class="sr-only" for="lang-footer">Langue</label>
+        <select id="lang-footer" class="lang-select" aria-label="Langue">
+          <option value="en">EN</option>
+          <option value="fr" selected>FR</option>
+          <option value="de">DE</option>
+          <option value="es">ES</option>
+          <option value="ar">AR</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

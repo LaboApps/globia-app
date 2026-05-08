@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="640" viewBox="0 0 320 640" role="img" aria-label="Sovara whitelist screen placeholder">
+  <rect width="320" height="640" rx="32" fill="#161b22"/>
+  <rect x="1" y="1" width="318" height="638" rx="31" fill="none" stroke="#30363d" stroke-width="2"/>
+  <rect x="120" y="12" width="80" height="8" rx="4" fill="#30363d"/>
+  <!-- Header -->
+  <rect x="16" y="52" width="288" height="44" rx="10" fill="#0a0e14"/>
+  <rect x="24" y="64" width="130" height="14" rx="4" fill="#e6edf3"/>
+  <rect x="24" y="82" width="90" height="8" rx="3" fill="#8b949e"/>
+  <!-- Search bar -->
+  <rect x="16" y="108" width="288" height="38" rx="8" fill="#0a0e14" stroke="#30363d" stroke-width="1"/>
+  <circle cx="40" cy="127" r="8" fill="none" stroke="#8b949e" stroke-width="1.5"/>
+  <line x1="46" y1="133" x2="50" y2="137" stroke="#8b949e" stroke-width="1.5"/>
+  <rect x="58" y="122" width="120" height="10" rx="3" fill="#30363d"/>
+  <!-- Info banner -->
+  <rect x="16" y="158" width="288" height="38" rx="8" fill="#39c5cf" opacity="0.08" stroke="#39c5cf" stroke-width="1"/>
+  <rect x="28" y="170" width="220" height="8" rx="3" fill="#39c5cf" opacity="0.6"/>
+  <rect x="28" y="182" width="160" height="8" rx="3" fill="#39c5cf" opacity="0.4"/>
+  <!-- Trusted app rows -->
+  <rect x="16" y="210" width="288" height="52" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1" opacity="0.6"/>
+  <rect x="30" y="226" width="36" height="36" rx="8" fill="#3fb950" opacity="0.1"/>
+  <rect x="38" y="233" width="22" height="22" rx="4" fill="#3fb950" opacity="0.4"/>
+  <rect x="78" y="222" width="120" height="12" rx="4" fill="#e6edf3"/>
+  <rect x="78" y="240" width="80" height="8" rx="3" fill="#8b949e"/>
+  <rect x="260" y="228" width="32" height="18" rx="9" fill="#3fb950"/>
+  <circle cx="284" cy="237" r="7" fill="#fff"/>
+  <rect x="16" y="270" width="288" height="52" rx="8" fill="#0a0e14" stroke="#3fb950" stroke-width="1" opacity="0.6"/>
+  <rect x="30" y="286" width="36" height="36" rx="8" fill="#3fb950" opacity="0.1"/>
+  <rect x="38" y="293" width="22" height="22" rx="4" fill="#3fb950" opacity="0.4"/>
+  <rect x="78" y="282" width="100" height="12" rx="4" fill="#e6edf3"/>
+  <rect x="78" y="300" width="70" height="8" rx="3" fill="#8b949e"/>
+  <rect x="260" y="288" width="32" height="18" rx="9" fill="#3fb950"/>
+  <circle cx="284" cy="297" r="7" fill="#fff"/>
+  <!-- Non-trusted rows -->
+  <rect x="16" y="338" width="288" height="52" rx="8" fill="#0a0e14" stroke="#30363d" stroke-width="1"/>
+  <rect x="30" y="354" width="36" height="36" rx="8" fill="#30363d"/>
+  <rect x="38" y="362" width="22" height="20" rx="4" fill="#8b949e" opacity="0.3"/>
+  <rect x="78" y="350" width="140" height="12" rx="4" fill="#e6edf3"/>
+  <rect x="78" y="368" width="100" height="8" rx="3" fill="#8b949e"/>
+  <rect x="268" y="356" width="28" height="16" rx="8" fill="#30363d" stroke="#8b949e" stroke-width="1"/>
+  <circle cx="273" cy="364" r="6" fill="#8b949e"/>
+  <rect x="16" y="398" width="288" height="52" rx="8" fill="#0a0e14" stroke="#30363d" stroke-width="1"/>
+  <rect x="30" y="414" width="36" height="36" rx="8" fill="#30363d"/>
+  <rect x="38" y="422" width="22" height="20" rx="4" fill="#8b949e" opacity="0.3"/>
+  <rect x="78" y="410" width="110" height="12" rx="4" fill="#e6edf3"/>
+  <rect x="78" y="428" width="90" height="8" rx="3" fill="#8b949e"/>
+  <rect x="268" y="416" width="28" height="16" rx="8" fill="#30363d" stroke="#8b949e" stroke-width="1"/>
+  <circle cx="273" cy="424" r="6" fill="#8b949e"/>
+  <rect x="16" y="458" width="288" height="52" rx="8" fill="#0a0e14" stroke="#30363d" stroke-width="1"/>
+  <rect x="30" y="474" width="36" height="36" rx="8" fill="#30363d"/>
+  <rect x="38" y="482" width="22" height="20" rx="4" fill="#8b949e" opacity="0.3"/>
+  <rect x="78" y="470" width="130" height="12" rx="4" fill="#e6edf3"/>
+  <rect x="78" y="488" width="85" height="8" rx="3" fill="#8b949e"/>
+  <rect x="268" y="476" width="28" height="16" rx="8" fill="#30363d" stroke="#8b949e" stroke-width="1"/>
+  <circle cx="273" cy="484" r="6" fill="#8b949e"/>
+  <!-- Label -->
+  <text x="160" y="548" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#8b949e">Whitelist preview</text>
+  <rect x="120" y="620" width="80" height="4" rx="2" fill="#30363d"/>
+</svg>

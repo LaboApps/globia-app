@@ -1,0 +1,987 @@
+{
+  "en": {
+    "meta": {
+      "title": "Globia — Sovara, real-time mic & camera guard for Android",
+      "description": "Real-time alerts when apps access your microphone or camera on Android 12+. 100% local, 0 trackers. By LocalFirst Apps."
+    },
+    "header": {
+      "logo": "Globia",
+      "skip_to_content": "Skip to main content",
+      "toggle_theme": "Toggle light/dark mode",
+      "lang_label": "Language"
+    },
+    "hero": {
+      "eyebrow": "By LocalFirst Apps · 100% local · 0 trackers",
+      "headline": "Know which app is using your microphone.",
+      "headline_sub": "And your camera.",
+      "subheadline": "Real-time alerts. Local-only. Coming May–June 2026.",
+      "cta_primary": "Coming on Google Play · May–June 2026",
+      "cta_secondary": "How it works ↓",
+      "screenshot_alt": "Sovara app screenshot — coming soon",
+      "screenshot_caption": "Sovara screenshot — to come"
+    },
+    "problem": {
+      "title": "You don't know what your phone is listening to.",
+      "points": [
+        {
+          "icon": "mic",
+          "text": "Apps access your mic without telling you."
+        },
+        {
+          "icon": "dot",
+          "text": "Android shows a tiny dot. That's it."
+        },
+        {
+          "icon": "nohistory",
+          "text": "No history. No alerts. No control."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Sovara tells you.",
+      "features": [
+        {
+          "icon": "bell",
+          "title": "Real-time alerts",
+          "body": "Sound, vibration, push notification, or LED flash — your choice. 8 alert sounds and 5 vibration patterns."
+        },
+        {
+          "icon": "eye",
+          "title": "Knows which app",
+          "body": "Identifies the calling app and the foreground app at the time of access. Not just a dot."
+        },
+        {
+          "icon": "moon",
+          "title": "Works in standby",
+          "body": "Detection continues when the screen is off. Your phone is guarded 24/7, not only when you're looking."
+        },
+        {
+          "icon": "export",
+          "title": "Exportable history",
+          "body": "Full access log, unlimited duration, exportable to CSV or JSON. Filter by sensor, period, or duration."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "How Sovara compares.",
+      "subtitle": "Factual comparison based on published specifications and independent audits.",
+      "col_feature": "Feature",
+      "col_sovara": "Sovara",
+      "col_android": "Android 12+ native",
+      "col_accessdots": "Access Dots",
+      "col_privacyindicator": "Privacy Indicator",
+      "rows": [
+        { "feature": "Real-time visual indicator", "sovara": "yes", "android": "yes", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Sound alert", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Vibration alert", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Push notification", "sovara": "yes", "android": "no", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Identifies calling app", "sovara": "yes", "android": "no", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Works when phone is asleep", "sovara": "yes", "android": "yes", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Exportable history (CSV/JSON)", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Trusted apps whitelist", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Works without CAMERA permission", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "partial" },
+        { "feature": "0 third-party trackers (verified)", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "yes" },
+        { "feature": "Works on Android < 12", "sovara": "no", "android": "no", "accessdots": "yes", "privacyindicator": "yes" }
+      ],
+      "note": "Sources: εxodus Privacy report for Access Dots (July 2024). Native Android documentation (developer.android.com)."
+    },
+    "privacy": {
+      "title": "We don't collect anything. Period.",
+      "points": [
+        "No internet connection used by the app",
+        "No account, no email, no login required",
+        "No third-party SDKs (no Firebase, no Crashlytics, no Analytics, no ads)",
+        "APK contains no audio capture methods — verifiable independently",
+        "Privacy policy available in 5 languages"
+      ],
+      "policy_link": "Read our full privacy policy →",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "about": {
+      "title": "Built by LocalFirst Apps.",
+      "body": "LocalFirst Apps is an independent studio with one belief: your data belongs on your device. Sovara is our first product. More will follow, all built on the same principle — powerful tools that work entirely offline, with no strings attached."
+    },
+    "press": {
+      "title": "Press & contact",
+      "body": "For press inquiries, reviews, or access to the closed test, reach us at:",
+      "email": "press@globia.app",
+      "kit": "Press kit available on request — full media kit (logos, screenshots, fact sheet) coming with public launch.",
+      "policy_link": "Privacy policy",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "footer": {
+      "copyright": "© 2026 LocalFirst Apps. Globia is a brand of LocalFirst Apps.",
+      "links": [
+        { "label": "Privacy policy", "url": "https://laboapps.github.io/sovara-privacy-policy/" },
+        { "label": "Contact", "url": "mailto:press@globia.app" },
+        { "label": "GitHub", "url": "https://github.com/laboapps" }
+      ]
+    },
+    "sovara_page": {
+      "meta": {
+        "title": "Sovara — How it works · Android mic & camera guard",
+        "description": "Step-by-step: how Sovara detects, identifies, and alerts you when any app accesses your microphone or camera. 100% local, 0 trackers."
+      },
+      "back_link": "← Back to Globia",
+      "hero": {
+        "eyebrow": "Sovara · Android privacy guard",
+        "title": "How Sovara works.",
+        "subtitle": "Real-time detection. Instant identification. Alerts that work even when your screen is off.",
+        "cta_primary": "Coming on Google Play · May–June 2026",
+        "demo_label": "Sovara live demo — coming",
+        "demo_alt": "Sovara interface preview — coming soon"
+      },
+      "steps": {
+        "title": "What happens when an app accesses your microphone?",
+        "subtitle": "Four moments. From access to alert.",
+        "step1": { "label": "Detection", "title": "An app turns on your microphone.", "body": "Maps. WhatsApp. A game. Even an app you didn't open. Android shows a tiny dot in the corner. That's all you get." },
+        "step2": { "label": "Sovara sees it", "title": "Sovara sees it instantly.", "body": "Sovara queries the system every moment to check microphone state. The moment access starts, it knows. Latency: under 1 second." },
+        "step3": { "label": "Identification", "title": "Sovara names the culprit.", "body": "Both the calling app AND the foreground app are identified. Most competitors only show what's on screen. Sovara shows who actually requested microphone access." },
+        "step4": { "label": "Alert", "title": "You get notified — your way.", "body": "Sound (8 options + custom). Vibration (5 patterns). Push notification. LED flash. Choose what fits your moment." }
+      },
+      "screenshots": {
+        "title": "What Sovara looks like.",
+        "shot1_label": "Live alert", "shot1_caption": "Instant alert with app name, sensor type, and timestamp.",
+        "shot2_label": "History view", "shot2_caption": "Chronological log of all microphone and camera accesses. Unlimited duration.",
+        "shot3_label": "App details", "shot3_caption": "Full event details: app name, package, sensor, duration, foreground app.",
+        "shot4_label": "Whitelist", "shot4_caption": "Mark apps as trusted. No more alerts from your own calls app."
+      },
+      "technical": {
+        "title": "How it stays 100% local.",
+        "subtitle": "Three technical facts you can verify.",
+        "truth1": { "title": "No internet permission", "body": "Sovara's manifest declares no INTERNET permission. Android enforces this. The app physically cannot make a network request — not even to a Sovara server (because there is no Sovara server)." },
+        "truth2": { "title": "No audio capture in code", "body": "We use RECORD_AUDIO to query microphone state, but the APK contains zero calls to MediaRecorder.start(), AudioRecord.read(), or any audio capture method. Anyone can decompile and verify." },
+        "truth3": { "title": "No third-party SDK", "body": "Zero Firebase, zero Crashlytics, zero Analytics, zero ad SDK. Build configuration is open: you can audit the dependency tree." }
+      },
+      "audience": {
+        "title": "Built for people who actually care.",
+        "card1": { "title": "Privacy-aware users", "body": "You read app permissions before installing. You wonder what background processes are doing." },
+        "card2": { "title": "Journalists & professionals", "body": "You handle confidential conversations and need to know nothing else is listening." },
+        "card3": { "title": "Parents", "body": "You want to know what your kids' apps are actually doing in the background." },
+        "card4": { "title": "Power users", "body": "You want exportable history, whitelisting, and full control — not just a dot." }
+      }
+    },
+    "press_page": {
+      "meta": {
+        "title": "Press kit — Sovara by LocalFirst Apps",
+        "description": "Logos, screenshots, pitches, fact sheet and press contact for Sovara — the Android mic & camera privacy guard by LocalFirst Apps."
+      },
+      "back_link": "← Back to Globia",
+      "hero": {
+        "eyebrow": "Press kit",
+        "h1": "Press kit — Sovara by LocalFirst Apps",
+        "subtitle": "Everything a tech journalist needs to write about Sovara in one page.",
+        "cta_zip": "Download full press kit (.zip)",
+        "updated": "Last updated: May 2026"
+      },
+      "pitch": {
+        "title": "Quick pitch",
+        "subtitle": "Three ready-to-use versions. Click Copy to paste directly into your article.",
+        "oneliner_label": "One-liner (≈10 words)",
+        "oneliner": "Sovara is an Android privacy guard that alerts you in real time when an app accesses your microphone or camera.",
+        "short_label": "Short paragraph (≈50 words)",
+        "short": "Sovara is an Android application by indie studio LocalFirst Apps that monitors microphone and camera access in real time. Unlike the native Android indicator, Sovara identifies the calling app, alerts via sound, vibration and notification, keeps an exportable history, and operates 100% locally with zero third-party trackers.",
+        "full_label": "Full paragraph (≈130 words)",
+        "full_p1": "Android's microphone and camera indicator — the green dot in the corner — tells you something is happening, but not who or why. Sovara fills that gap. Developed by indie studio LocalFirst Apps, Sovara runs silently in the background and fires a multimodal alert — sound, vibration, push notification, or LED flash — the instant any app accesses your microphone or camera. It names the app. It logs the event. It lets you whitelist trusted apps so you only hear about the ones that matter.",
+        "full_p2": "Unlike competing apps, Sovara requests no INTERNET permission, includes no third-party SDKs, and collects zero data. The claim is verifiable: decompile the APK. Sovara is available on Android 12+ at a one-time price of $4.99 USD, with no subscription. Public launch: May–June 2026.",
+        "copy_label": "Copy"
+      },
+      "contact": {
+        "title": "Press contact",
+        "email": "press@globia.app",
+        "response": "Response within 24 hours on business days.",
+        "languages": "Languages: English, French.",
+        "available": "Available for interviews, technical Q&A, and app review codes (limited quantity).",
+        "review_note": "Review codes available for journalists — please email with your media outlet and intended angle."
+      }
+    }
+  },
+  "fr": {
+    "meta": {
+      "title": "Globia — Sovara, surveillance micro & caméra Android en temps réel",
+      "description": "Alertes en temps réel quand une app accède à votre micro ou caméra sur Android 12+. 100% local, 0 traceur. Par LocalFirst Apps."
+    },
+    "header": {
+      "logo": "Globia",
+      "skip_to_content": "Aller au contenu principal",
+      "toggle_theme": "Basculer mode clair/sombre",
+      "lang_label": "Langue"
+    },
+    "hero": {
+      "eyebrow": "Par LocalFirst Apps · 100% local · 0 traceur",
+      "headline": "Sachez quelle app utilise votre microphone.",
+      "headline_sub": "Et votre caméra.",
+      "subheadline": "Alertes en temps réel. Local uniquement. Disponible mai–juin 2026.",
+      "cta_primary": "Bientôt sur Google Play · mai–juin 2026",
+      "cta_secondary": "Comment ça marche ↓",
+      "screenshot_alt": "Capture d'écran de l'app Sovara — bientôt disponible",
+      "screenshot_caption": "Capture Sovara — à venir"
+    },
+    "problem": {
+      "title": "Vous ne savez pas ce que votre téléphone écoute.",
+      "points": [
+        {
+          "icon": "mic",
+          "text": "Des apps accèdent à votre micro sans vous le dire."
+        },
+        {
+          "icon": "dot",
+          "text": "Android affiche un petit point. C'est tout."
+        },
+        {
+          "icon": "nohistory",
+          "text": "Pas d'historique. Pas d'alerte. Pas de contrôle."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Sovara vous le dit.",
+      "features": [
+        {
+          "icon": "bell",
+          "title": "Alertes en temps réel",
+          "body": "Son, vibration, notification, flash LED — à votre choix. 8 sons d'alerte et 5 schémas de vibration."
+        },
+        {
+          "icon": "eye",
+          "title": "Identifie l'application",
+          "body": "Identifie l'app appelante et l'app au premier plan au moment de l'accès. Pas juste un point."
+        },
+        {
+          "icon": "moon",
+          "title": "Fonctionne en veille",
+          "body": "La détection continue même écran éteint. Votre téléphone est surveillé 24h/24, pas seulement quand vous regardez."
+        },
+        {
+          "icon": "export",
+          "title": "Historique exportable",
+          "body": "Journal complet des accès, durée illimitée, exportable en CSV ou JSON. Filtres par capteur, période ou durée."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Sovara face à la concurrence.",
+      "subtitle": "Comparaison factuelle basée sur les spécifications publiées et des audits indépendants.",
+      "col_feature": "Fonctionnalité",
+      "col_sovara": "Sovara",
+      "col_android": "Android 12+ natif",
+      "col_accessdots": "Access Dots",
+      "col_privacyindicator": "Privacy Indicator",
+      "rows": [
+        { "feature": "Indicateur visuel en temps réel", "sovara": "yes", "android": "yes", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Alerte sonore", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Alerte vibration", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Notification push", "sovara": "yes", "android": "no", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Identifie l'app appelante", "sovara": "yes", "android": "no", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Fonctionne téléphone en veille", "sovara": "yes", "android": "yes", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Historique exportable (CSV/JSON)", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Liste blanche d'apps de confiance", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Fonctionne sans permission CAMERA", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "partial" },
+        { "feature": "0 traceur tiers (vérifié)", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "yes" },
+        { "feature": "Fonctionne sur Android < 12", "sovara": "no", "android": "no", "accessdots": "yes", "privacyindicator": "yes" }
+      ],
+      "note": "Sources : rapport εxodus Privacy pour Access Dots (juillet 2024). Documentation Android officielle (developer.android.com)."
+    },
+    "privacy": {
+      "title": "Nous ne collectons rien. Point.",
+      "points": [
+        "Aucune connexion internet utilisée par l'app",
+        "Pas de compte, pas d'email, pas d'identifiant requis",
+        "Aucun SDK tiers (pas de Firebase, Crashlytics, Analytics, ni pub)",
+        "L'APK ne contient aucune méthode de capture audio — vérifiable indépendamment",
+        "Politique de confidentialité disponible en 5 langues"
+      ],
+      "policy_link": "Lire notre politique de confidentialité complète →",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "about": {
+      "title": "Développé par LocalFirst Apps.",
+      "body": "LocalFirst Apps est un studio indépendant avec une conviction : vos données appartiennent à votre appareil. Sovara est notre premier produit. D'autres suivront, tous construits sur le même principe — des outils puissants, 100% hors ligne, sans contrepartie cachée."
+    },
+    "press": {
+      "title": "Presse & contact",
+      "body": "Pour les demandes presse, tests ou accès au test fermé, contactez-nous :",
+      "email": "press@globia.app",
+      "kit": "Kit presse disponible sur demande — kit média complet (logos, captures, fiche produit) disponible à la sortie publique.",
+      "policy_link": "Politique de confidentialité",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "footer": {
+      "copyright": "© 2026 LocalFirst Apps. Globia est une marque de LocalFirst Apps.",
+      "links": [
+        { "label": "Politique de confidentialité", "url": "https://laboapps.github.io/sovara-privacy-policy/" },
+        { "label": "Contact", "url": "mailto:press@globia.app" },
+        { "label": "GitHub", "url": "https://github.com/laboapps" }
+      ]
+    },
+    "sovara_page": {
+      "meta": {
+        "title": "Sovara — Comment ça marche · Surveillance micro & caméra Android",
+        "description": "Étape par étape : comment Sovara détecte, identifie et vous alerte quand une app accède à votre micro ou caméra. 100% local, 0 traceur."
+      },
+      "back_link": "← Retour à Globia",
+      "hero": {
+        "eyebrow": "Sovara · Gardien de la vie privée Android",
+        "title": "Comment fonctionne Sovara.",
+        "subtitle": "Détection en temps réel. Identification instantanée. Alertes même écran éteint.",
+        "cta_primary": "Bientôt sur Google Play · mai–juin 2026",
+        "demo_label": "Démo Sovara — bientôt",
+        "demo_alt": "Aperçu de l'interface Sovara — bientôt disponible"
+      },
+      "steps": {
+        "title": "Que se passe-t-il quand une app accède à votre micro ?",
+        "subtitle": "Quatre moments. De l'accès à l'alerte.",
+        "step1": { "label": "Détection", "title": "Une app active votre microphone.", "body": "Maps. WhatsApp. Un jeu. Même une app que vous n'avez pas ouverte. Android affiche un petit point. C'est tout." },
+        "step2": { "label": "Sovara le voit", "title": "Sovara le détecte instantanément.", "body": "Sovara interroge le système en permanence pour surveiller l'état du micro. Dès que l'accès commence, Sovara le sait. Latence : moins d'une seconde." },
+        "step3": { "label": "Identification", "title": "Sovara identifie le coupable.", "body": "L'app appelante ET l'app au premier plan sont identifiées. La plupart des concurrents ne montrent que ce qui est à l'écran. Sovara révèle qui a réellement demandé l'accès." },
+        "step4": { "label": "Alerte", "title": "Vous êtes alerté — à votre façon.", "body": "Son (8 options + personnalisé). Vibration (5 schémas). Notification push. Flash LED. Choisissez ce qui convient au moment." }
+      },
+      "screenshots": {
+        "title": "À quoi ressemble Sovara.",
+        "shot1_label": "Alerte en direct", "shot1_caption": "Alerte instantanée avec nom de l'app, type de capteur et horodatage.",
+        "shot2_label": "Historique", "shot2_caption": "Journal chronologique de tous les accès micro et caméra. Durée illimitée.",
+        "shot3_label": "Détails de l'app", "shot3_caption": "Détails complets : nom, package, capteur, durée, app au premier plan.",
+        "shot4_label": "Liste blanche", "shot4_caption": "Marquez les apps de confiance. Plus d'alertes pour votre appli téléphone."
+      },
+      "technical": {
+        "title": "Comment Sovara reste 100% local.",
+        "subtitle": "Trois faits techniques vérifiables.",
+        "truth1": { "title": "Pas de permission INTERNET", "body": "Le manifeste de Sovara ne déclare aucune permission INTERNET. Android l'impose. L'app ne peut physiquement pas faire de requête réseau — même pas vers un serveur Sovara (qui n'existe pas)." },
+        "truth2": { "title": "Aucune capture audio dans le code", "body": "Nous utilisons RECORD_AUDIO pour interroger l'état du micro, mais l'APK ne contient aucun appel à MediaRecorder.start(), AudioRecord.read() ou toute méthode de capture audio. Décompilable et vérifiable par tous." },
+        "truth3": { "title": "Aucun SDK tiers", "body": "Zéro Firebase, Crashlytics, Analytics, SDK publicitaire. La configuration de build est ouverte : vous pouvez auditer l'arbre de dépendances." }
+      },
+      "audience": {
+        "title": "Pour ceux qui prennent ça au sérieux.",
+        "card1": { "title": "Utilisateurs soucieux de leur vie privée", "body": "Vous lisez les permissions avant d'installer. Vous vous demandez ce que font les processus en arrière-plan." },
+        "card2": { "title": "Journalistes & professionnels", "body": "Vous gérez des conversations confidentielles et devez savoir que personne d'autre n'écoute." },
+        "card3": { "title": "Parents", "body": "Vous voulez savoir ce que font vraiment les apps de vos enfants en arrière-plan." },
+        "card4": { "title": "Power users", "body": "Vous voulez un historique exportable, une liste blanche et un contrôle total — pas juste un point." }
+      }
+    },
+    "press_page": {
+      "meta": {
+        "title": "Kit presse — Sovara par LocalFirst Apps",
+        "description": "Logos, captures, pitchs, fiche technique et contact presse pour Sovara — la protection micro & caméra Android par LocalFirst Apps."
+      },
+      "back_link": "← Retour à Globia",
+      "hero": {
+        "eyebrow": "Kit presse",
+        "h1": "Kit presse — Sovara par LocalFirst Apps",
+        "subtitle": "Tout ce dont un journaliste tech a besoin pour écrire sur Sovara en une seule page.",
+        "cta_zip": "Télécharger le kit presse complet (.zip)",
+        "updated": "Dernière mise à jour : mai 2026"
+      },
+      "pitch": {
+        "title": "Pitchs prêts à l'emploi",
+        "subtitle": "Trois versions à copier-coller directement dans votre article.",
+        "oneliner_label": "Une ligne (≈10 mots)",
+        "oneliner": "Sovara est une application Android qui vous alerte en temps réel quand une app accède à votre microphone ou votre caméra.",
+        "short_label": "Paragraphe court (≈50 mots)",
+        "short": "Sovara est une application Android du studio indépendant LocalFirst Apps qui surveille en temps réel les accès au microphone et à la caméra. Contrairement à l'indicateur natif d'Android, Sovara identifie l'application appelante, alerte par son, vibration et notification, conserve un historique exportable et fonctionne 100 % localement, sans aucun traceur tiers.",
+        "full_label": "Paragraphe complet (≈130 mots)",
+        "full_p1": "Le petit point vert affiché par Android vous indique qu'une application utilise votre micro ou votre caméra — mais pas laquelle, ni pourquoi. Sovara comble ce vide. Développé par le studio indépendant LocalFirst Apps, Sovara tourne silencieusement en arrière-plan et déclenche une alerte multicanal — son, vibration, notification push ou flash LED — dès qu'une application accède à votre microphone ou votre caméra. Il nomme l'application. Il journalise l'événement. Il vous permet de placer vos apps de confiance en liste blanche.",
+        "full_p2": "Contrairement aux applications concurrentes, Sovara ne demande aucune permission INTERNET, n'embarque aucun SDK tiers et ne collecte aucune donnée. L'affirmation est vérifiable : décompilez l'APK. Sovara est disponible sur Android 12+ au prix unique de 4,99 USD, sans abonnement. Lancement public : mai–juin 2026.",
+        "copy_label": "Copier"
+      },
+      "contact": {
+        "title": "Contact presse",
+        "email": "press@globia.app",
+        "response": "Réponse sous 24 h les jours ouvrés.",
+        "languages": "Langues parlées : anglais, français.",
+        "available": "Disponible pour les interviews, questions techniques et codes de révision app (quantité limitée).",
+        "review_note": "Codes de révision disponibles pour les journalistes — merci d'indiquer votre média et l'angle envisagé."
+      }
+    }
+  },
+  "de": {
+    "meta": {
+      "title": "Globia — Sovara, Echtzeit-Mikrofon- & Kameraüberwachung für Android",
+      "description": "Echtzeit-Benachrichtigungen, wenn Apps auf Ihr Mikrofon oder Ihre Kamera zugreifen (Android 12+). 100% lokal, 0 Tracker. Von LocalFirst Apps."
+    },
+    "header": {
+      "logo": "Globia",
+      "skip_to_content": "Zum Hauptinhalt springen",
+      "toggle_theme": "Hell-/Dunkelmodus umschalten",
+      "lang_label": "Sprache"
+    },
+    "hero": {
+      "eyebrow": "Von LocalFirst Apps · 100% lokal · 0 Tracker",
+      "headline": "Erfahren Sie, welche App Ihr Mikrofon nutzt.",
+      "headline_sub": "Und Ihre Kamera.",
+      "subheadline": "Echtzeit-Warnungen. Nur lokal. Verfügbar Mai–Juni 2026.",
+      "cta_primary": "Bald auf Google Play · Mai–Juni 2026",
+      "cta_secondary": "So funktioniert es ↓",
+      "screenshot_alt": "Sovara-App-Screenshot — demnächst verfügbar",
+      "screenshot_caption": "Sovara Screenshot — folgt"
+    },
+    "problem": {
+      "title": "Sie wissen nicht, was Ihr Telefon gerade abhört.",
+      "points": [
+        {
+          "icon": "mic",
+          "text": "Apps greifen ohne Vorwarnung auf Ihr Mikrofon zu."
+        },
+        {
+          "icon": "dot",
+          "text": "Android zeigt einen kleinen Punkt. Das war's."
+        },
+        {
+          "icon": "nohistory",
+          "text": "Kein Verlauf. Keine Warnungen. Keine Kontrolle."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Sovara sagt es Ihnen.",
+      "features": [
+        {
+          "icon": "bell",
+          "title": "Echtzeit-Warnungen",
+          "body": "Ton, Vibration, Push-Benachrichtigung oder LED-Blitz — nach Ihrer Wahl. 8 Alarmtöne und 5 Vibrationsmuster."
+        },
+        {
+          "icon": "eye",
+          "title": "Identifiziert die App",
+          "body": "Erkennt die zugreifende App und die App im Vordergrund. Nicht nur ein Punkt."
+        },
+        {
+          "icon": "moon",
+          "title": "Funktioniert im Standby",
+          "body": "Die Erkennung läuft auch bei ausgeschaltetem Bildschirm. Ihr Telefon ist rund um die Uhr geschützt."
+        },
+        {
+          "icon": "export",
+          "title": "Exportierbarer Verlauf",
+          "body": "Vollständiges Zugriffsprotokoll, unbegrenzte Dauer, als CSV oder JSON exportierbar. Filter nach Sensor, Zeitraum oder Dauer."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Sovara im Vergleich.",
+      "subtitle": "Sachlicher Vergleich auf Basis veröffentlichter Spezifikationen und unabhängiger Audits.",
+      "col_feature": "Funktion",
+      "col_sovara": "Sovara",
+      "col_android": "Android 12+ nativ",
+      "col_accessdots": "Access Dots",
+      "col_privacyindicator": "Privacy Indicator",
+      "rows": [
+        { "feature": "Echtzeit-Anzeige", "sovara": "yes", "android": "yes", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Akustische Warnung", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Vibrations-Warnung", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Push-Benachrichtigung", "sovara": "yes", "android": "no", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Identifiziert zugreifende App", "sovara": "yes", "android": "no", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Funktioniert im Standby", "sovara": "yes", "android": "yes", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Exportierbarer Verlauf (CSV/JSON)", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Whitelist vertrauenswürdiger Apps", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Ohne CAMERA-Berechtigung nutzbar", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "partial" },
+        { "feature": "0 Drittanbieter-Tracker (verifiziert)", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "yes" },
+        { "feature": "Funktioniert auf Android < 12", "sovara": "no", "android": "no", "accessdots": "yes", "privacyindicator": "yes" }
+      ],
+      "note": "Quellen: εxodus Privacy Bericht zu Access Dots (Juli 2024). Offizielle Android-Dokumentation (developer.android.com)."
+    },
+    "privacy": {
+      "title": "Wir sammeln nichts. Punkt.",
+      "points": [
+        "Die App nutzt keine Internetverbindung",
+        "Kein Konto, keine E-Mail, keine Anmeldung erforderlich",
+        "Keine Drittanbieter-SDKs (kein Firebase, kein Crashlytics, keine Analytics, keine Werbung)",
+        "Das APK enthält keine Audioaufnahme-Methoden — unabhängig überprüfbar",
+        "Datenschutzerklärung in 5 Sprachen verfügbar"
+      ],
+      "policy_link": "Vollständige Datenschutzerklärung lesen →",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "about": {
+      "title": "Entwickelt von LocalFirst Apps.",
+      "body": "LocalFirst Apps ist ein unabhängiges Studio mit einer Überzeugung: Ihre Daten gehören auf Ihr Gerät. Sovara ist unser erstes Produkt. Weitere werden folgen — alle nach demselben Prinzip gebaut: leistungsstarke Tools, die vollständig offline funktionieren, ohne versteckte Bedingungen."
+    },
+    "press": {
+      "title": "Presse & Kontakt",
+      "body": "Für Presseanfragen, Tests oder Zugang zum geschlossenen Test, schreiben Sie uns:",
+      "email": "press@globia.app",
+      "kit": "Pressemappe auf Anfrage erhältlich — vollständiges Medienpaket (Logos, Screenshots, Datenblatt) erscheint mit dem öffentlichen Launch.",
+      "policy_link": "Datenschutzerklärung",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "footer": {
+      "copyright": "© 2026 LocalFirst Apps. Globia ist eine Marke von LocalFirst Apps.",
+      "links": [
+        { "label": "Datenschutzerklärung", "url": "https://laboapps.github.io/sovara-privacy-policy/" },
+        { "label": "Kontakt", "url": "mailto:press@globia.app" },
+        { "label": "GitHub", "url": "https://github.com/laboapps" }
+      ]
+    },
+    "sovara_page": {
+      "meta": {
+        "title": "Sovara — So funktioniert es · Android-Mikrofon- & Kameraüberwachung",
+        "description": "Schritt für Schritt: Wie Sovara erkennt, identifiziert und warnt, wenn eine App auf Ihr Mikrofon oder Ihre Kamera zugreift. 100% lokal, 0 Tracker."
+      },
+      "back_link": "← Zurück zu Globia",
+      "hero": {
+        "eyebrow": "Sovara · Android-Datenschutzwächter",
+        "title": "So funktioniert Sovara.",
+        "subtitle": "Echtzeit-Erkennung. Sofortige Identifizierung. Warnungen auch bei ausgeschaltetem Bildschirm.",
+        "cta_primary": "Bald auf Google Play · Mai–Juni 2026",
+        "demo_label": "Sovara Live-Demo — kommt bald",
+        "demo_alt": "Sovara Benutzeroberflächen-Vorschau — demnächst"
+      },
+      "steps": {
+        "title": "Was passiert, wenn eine App auf Ihr Mikrofon zugreift?",
+        "subtitle": "Vier Momente. Vom Zugriff zur Warnung.",
+        "step1": { "label": "Erkennung", "title": "Eine App schaltet Ihr Mikrofon ein.", "body": "Maps. WhatsApp. Ein Spiel. Selbst eine App, die Sie nicht geöffnet haben. Android zeigt einen kleinen Punkt. Das war's." },
+        "step2": { "label": "Sovara erkennt es", "title": "Sovara erkennt es sofort.", "body": "Sovara überwacht das System kontinuierlich. Sobald ein Zugriff beginnt, registriert es Sovara. Latenz: unter 1 Sekunde." },
+        "step3": { "label": "Identifizierung", "title": "Sovara benennt den Verursacher.", "body": "Sowohl die zugreifende App als auch die App im Vordergrund werden identifiziert. Die meisten Konkurrenten zeigen nur, was auf dem Bildschirm ist. Sovara zeigt, wer wirklich den Zugriff angefordert hat." },
+        "step4": { "label": "Warnung", "title": "Sie werden benachrichtigt — nach Ihren Wünschen.", "body": "Ton (8 Optionen + eigener). Vibration (5 Muster). Push-Benachrichtigung. LED-Blitz. Wählen Sie, was zum Moment passt." }
+      },
+      "screenshots": {
+        "title": "So sieht Sovara aus.",
+        "shot1_label": "Live-Warnung", "shot1_caption": "Sofortige Warnung mit App-Name, Sensortyp und Zeitstempel.",
+        "shot2_label": "Verlaufsansicht", "shot2_caption": "Chronologisches Protokoll aller Mikrofon- und Kamerazugriffe. Unbegrenzte Dauer.",
+        "shot3_label": "App-Details", "shot3_caption": "Vollständige Ereignisdetails: App-Name, Paket, Sensor, Dauer, Vordergrund-App.",
+        "shot4_label": "Whitelist", "shot4_caption": "Apps als vertrauenswürdig markieren. Keine Warnungen mehr von Ihrer Telefon-App."
+      },
+      "technical": {
+        "title": "Wie Sovara 100% lokal bleibt.",
+        "subtitle": "Drei technische Fakten, die Sie überprüfen können.",
+        "truth1": { "title": "Keine INTERNET-Berechtigung", "body": "Sovaras Manifest deklariert keine INTERNET-Berechtigung. Android setzt dies durch. Die App kann physisch keine Netzwerkanfrage stellen — nicht einmal an einen Sovara-Server (der nicht existiert)." },
+        "truth2": { "title": "Keine Audioaufnahme im Code", "body": "Wir nutzen RECORD_AUDIO, um den Mikrofonstatus abzufragen. Das APK enthält jedoch keinen einzigen Aufruf von MediaRecorder.start(), AudioRecord.read() oder einer anderen Audioaufnahme-Methode. Für jeden dekompilierbar und verifizierbar." },
+        "truth3": { "title": "Kein Drittanbieter-SDK", "body": "Kein Firebase, kein Crashlytics, keine Analytics, kein Werbe-SDK. Die Build-Konfiguration ist offen: Sie können den Abhängigkeitsbaum selbst prüfen." }
+      },
+      "audience": {
+        "title": "Für Menschen, denen es wirklich wichtig ist.",
+        "card1": { "title": "Datenschutzbewusste Nutzer", "body": "Sie lesen App-Berechtigungen vor der Installation. Sie fragen sich, was Hintergrundprozesse tun." },
+        "card2": { "title": "Journalisten & Profis", "body": "Sie führen vertrauliche Gespräche und müssen sicher sein, dass niemand mithört." },
+        "card3": { "title": "Eltern", "body": "Sie möchten wissen, was die Apps Ihrer Kinder wirklich im Hintergrund tun." },
+        "card4": { "title": "Power-User", "body": "Sie wollen exportierbaren Verlauf, Whitelisting und vollständige Kontrolle — nicht nur einen Punkt." }
+      }
+    },
+    "press_page": {
+      "meta": {
+        "title": "Pressemappe — Sovara von LocalFirst Apps",
+        "description": "Logos, Screenshots, Pitches, Datenblatt und Pressekontakt für Sovara — der Android-Datenschutzwächter für Mikrofon & Kamera von LocalFirst Apps."
+      },
+      "back_link": "← Zurück zu Globia",
+      "hero": {
+        "eyebrow": "Pressemappe",
+        "h1": "Pressemappe — Sovara von LocalFirst Apps",
+        "subtitle": "Alles, was ein Tech-Journalist braucht, um über Sovara zu schreiben — auf einer Seite.",
+        "cta_zip": "Vollständige Pressemappe herunterladen (.zip)",
+        "updated": "Zuletzt aktualisiert: Mai 2026"
+      },
+      "pitch": {
+        "title": "Pitches zum direkten Verwenden",
+        "subtitle": "Drei fertige Versionen — einfach kopieren und in Ihren Artikel einfügen.",
+        "oneliner_label": "Ein Satz (≈10 Wörter)",
+        "oneliner": "Sovara ist ein Android-Datenschutzwächter, der Sie in Echtzeit warnt, wenn eine App auf Ihr Mikrofon oder Ihre Kamera zugreift.",
+        "short_label": "Kurzer Absatz (≈50 Wörter)",
+        "short": "Sovara ist eine Android-App des Indie-Studios LocalFirst Apps, die Mikrofon- und Kamerazugriffe in Echtzeit überwacht. Anders als Androids nativer Indikator identifiziert Sovara die zugreifende App, warnt per Ton, Vibration und Benachrichtigung, führt eine exportierbare Verlaufsliste und arbeitet vollständig lokal — ohne einen einzigen Drittanbieter-Tracker.",
+        "full_label": "Vollständiger Absatz (≈130 Wörter)",
+        "full_p1": "Androids grüner Punkt in der Ecke signalisiert, dass eine App Ihr Mikrofon oder Ihre Kamera nutzt — aber nicht welche und nicht warum. Sovara schließt diese Lücke. Entwickelt vom Indie-Studio LocalFirst Apps, läuft Sovara still im Hintergrund und sendet sofort einen mehrkanaligen Alarm — Ton, Vibration, Push-Benachrichtigung oder LED-Blitz — sobald irgendeine App auf Mikrofon oder Kamera zugreift. Es benennt die App. Es protokolliert das Ereignis. Es lässt Sie vertrauenswürdige Apps auf eine Whitelist setzen.",
+        "full_p2": "Im Gegensatz zu Konkurrenz-Apps beantragt Sovara keine INTERNET-Berechtigung, enthält keine Drittanbieter-SDKs und sammelt keinerlei Daten. Die Behauptung ist überprüfbar: Dekompilieren Sie das APK. Sovara ist für Android 12+ zum Einmalpreis von 4,99 USD ohne Abonnement verfügbar. Öffentlicher Launch: Mai–Juni 2026.",
+        "copy_label": "Kopieren"
+      },
+      "contact": {
+        "title": "Pressekontakt",
+        "email": "press@globia.app",
+        "response": "Antwort innerhalb von 24 Stunden an Werktagen.",
+        "languages": "Gesprochene Sprachen: Englisch, Französisch.",
+        "available": "Verfügbar für Interviews, technische Fragen und App-Testcodes (begrenzte Anzahl).",
+        "review_note": "Testcodes für Journalisten verfügbar — bitte Medium und geplanten Artikel-Winkel angeben."
+      }
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Globia — Sovara, vigilancia de micrófono y cámara Android en tiempo real",
+      "description": "Alertas en tiempo real cuando las apps acceden a tu micrófono o cámara en Android 12+. 100% local, 0 rastreadores. Por LocalFirst Apps."
+    },
+    "header": {
+      "logo": "Globia",
+      "skip_to_content": "Ir al contenido principal",
+      "toggle_theme": "Cambiar modo claro/oscuro",
+      "lang_label": "Idioma"
+    },
+    "hero": {
+      "eyebrow": "Por LocalFirst Apps · 100% local · 0 rastreadores",
+      "headline": "Sabe qué app está usando tu micrófono.",
+      "headline_sub": "Y tu cámara.",
+      "subheadline": "Alertas en tiempo real. Solo local. Disponible mayo–junio 2026.",
+      "cta_primary": "Próximamente en Google Play · mayo–junio 2026",
+      "cta_secondary": "Cómo funciona ↓",
+      "screenshot_alt": "Captura de pantalla de Sovara — próximamente",
+      "screenshot_caption": "Captura de Sovara — por venir"
+    },
+    "problem": {
+      "title": "No sabes qué está escuchando tu teléfono.",
+      "points": [
+        {
+          "icon": "mic",
+          "text": "Las apps acceden a tu micro sin avisarte."
+        },
+        {
+          "icon": "dot",
+          "text": "Android muestra un pequeño punto. Eso es todo."
+        },
+        {
+          "icon": "nohistory",
+          "text": "Sin historial. Sin alertas. Sin control."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Sovara te lo dice.",
+      "features": [
+        {
+          "icon": "bell",
+          "title": "Alertas en tiempo real",
+          "body": "Sonido, vibración, notificación push o destello LED — tú eliges. 8 tonos de alerta y 5 patrones de vibración."
+        },
+        {
+          "icon": "eye",
+          "title": "Identifica la app",
+          "body": "Identifica la app que accede y la app en primer plano en el momento del acceso. No solo un punto."
+        },
+        {
+          "icon": "moon",
+          "title": "Funciona en suspensión",
+          "body": "La detección continúa con la pantalla apagada. Tu teléfono está protegido las 24 horas, no solo cuando lo miras."
+        },
+        {
+          "icon": "export",
+          "title": "Historial exportable",
+          "body": "Registro completo de accesos, duración ilimitada, exportable a CSV o JSON. Filtros por sensor, período o duración."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Cómo se compara Sovara.",
+      "subtitle": "Comparación objetiva basada en especificaciones publicadas y auditorías independientes.",
+      "col_feature": "Función",
+      "col_sovara": "Sovara",
+      "col_android": "Android 12+ nativo",
+      "col_accessdots": "Access Dots",
+      "col_privacyindicator": "Privacy Indicator",
+      "rows": [
+        { "feature": "Indicador visual en tiempo real", "sovara": "yes", "android": "yes", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Alerta de sonido", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Alerta de vibración", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Notificación push", "sovara": "yes", "android": "no", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Identifica la app que accede", "sovara": "yes", "android": "no", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "Funciona con el teléfono en reposo", "sovara": "yes", "android": "yes", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "Historial exportable (CSV/JSON)", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Lista blanca de apps de confianza", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "Funciona sin permiso CAMERA", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "partial" },
+        { "feature": "0 rastreadores de terceros (verificado)", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "yes" },
+        { "feature": "Funciona en Android < 12", "sovara": "no", "android": "no", "accessdots": "yes", "privacyindicator": "yes" }
+      ],
+      "note": "Fuentes: informe εxodus Privacy para Access Dots (julio 2024). Documentación oficial de Android (developer.android.com)."
+    },
+    "privacy": {
+      "title": "No recopilamos nada. Punto.",
+      "points": [
+        "La app no usa ninguna conexión a internet",
+        "Sin cuenta, sin correo electrónico, sin inicio de sesión",
+        "Sin SDKs de terceros (sin Firebase, sin Crashlytics, sin Analytics, sin anuncios)",
+        "El APK no contiene métodos de captura de audio — verificable de forma independiente",
+        "Política de privacidad disponible en 5 idiomas"
+      ],
+      "policy_link": "Leer nuestra política de privacidad completa →",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "about": {
+      "title": "Desarrollado por LocalFirst Apps.",
+      "body": "LocalFirst Apps es un estudio independiente con una convicción: tus datos pertenecen a tu dispositivo. Sovara es nuestro primer producto. Vendrán más, todos construidos bajo el mismo principio — herramientas potentes que funcionan completamente sin conexión, sin compromisos ocultos."
+    },
+    "press": {
+      "title": "Prensa y contacto",
+      "body": "Para consultas de prensa, reseñas o acceso al test cerrado, contáctanos en:",
+      "email": "press@globia.app",
+      "kit": "Kit de prensa disponible bajo petición — kit multimedia completo (logos, capturas, ficha técnica) disponible con el lanzamiento público.",
+      "policy_link": "Política de privacidad",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "footer": {
+      "copyright": "© 2026 LocalFirst Apps. Globia es una marca de LocalFirst Apps.",
+      "links": [
+        { "label": "Política de privacidad", "url": "https://laboapps.github.io/sovara-privacy-policy/" },
+        { "label": "Contacto", "url": "mailto:press@globia.app" },
+        { "label": "GitHub", "url": "https://github.com/laboapps" }
+      ]
+    },
+    "sovara_page": {
+      "meta": {
+        "title": "Sovara — Cómo funciona · Vigilancia de micrófono y cámara Android",
+        "description": "Paso a paso: cómo Sovara detecta, identifica y te avisa cuando una app accede a tu micrófono o cámara. 100% local, 0 rastreadores."
+      },
+      "back_link": "← Volver a Globia",
+      "hero": {
+        "eyebrow": "Sovara · Guardián de privacidad Android",
+        "title": "Cómo funciona Sovara.",
+        "subtitle": "Detección en tiempo real. Identificación instantánea. Alertas que funcionan incluso con la pantalla apagada.",
+        "cta_primary": "Próximamente en Google Play · mayo–junio 2026",
+        "demo_label": "Demo en vivo de Sovara — próximamente",
+        "demo_alt": "Vista previa de la interfaz de Sovara — próximamente"
+      },
+      "steps": {
+        "title": "¿Qué ocurre cuando una app accede a tu micrófono?",
+        "subtitle": "Cuatro momentos. Del acceso a la alerta.",
+        "step1": { "label": "Detección", "title": "Una app activa tu micrófono.", "body": "Maps. WhatsApp. Un juego. Incluso una app que no abriste. Android muestra un pequeño punto. Eso es todo." },
+        "step2": { "label": "Sovara lo ve", "title": "Sovara lo detecta al instante.", "body": "Sovara consulta el sistema constantemente para verificar el estado del micrófono. En el momento en que comienza el acceso, lo sabe. Latencia: menos de 1 segundo." },
+        "step3": { "label": "Identificación", "title": "Sovara nombra al culpable.", "body": "Se identifican tanto la app que accede como la app en primer plano. La mayoría de los competidores solo muestran lo que está en pantalla. Sovara revela quién realmente solicitó el acceso." },
+        "step4": { "label": "Alerta", "title": "Recibes una notificación — a tu manera.", "body": "Sonido (8 opciones + personalizado). Vibración (5 patrones). Notificación push. Destello LED. Elige lo que mejor se adapte al momento." }
+      },
+      "screenshots": {
+        "title": "Así se ve Sovara.",
+        "shot1_label": "Alerta en directo", "shot1_caption": "Alerta instantánea con nombre de la app, tipo de sensor y marca de tiempo.",
+        "shot2_label": "Historial", "shot2_caption": "Registro cronológico de todos los accesos al micrófono y cámara. Duración ilimitada.",
+        "shot3_label": "Detalles de la app", "shot3_caption": "Detalles completos del evento: nombre, paquete, sensor, duración, app en primer plano.",
+        "shot4_label": "Lista blanca", "shot4_caption": "Marca apps como de confianza. Sin más alertas de tu app de llamadas."
+      },
+      "technical": {
+        "title": "Cómo permanece 100% local.",
+        "subtitle": "Tres hechos técnicos que puedes verificar.",
+        "truth1": { "title": "Sin permiso de INTERNET", "body": "El manifest de Sovara no declara ningún permiso de INTERNET. Android lo impone. La app físicamente no puede hacer ninguna solicitud de red — ni siquiera a un servidor de Sovara (porque no existe ningún servidor Sovara)." },
+        "truth2": { "title": "Sin captura de audio en el código", "body": "Usamos RECORD_AUDIO para consultar el estado del micrófono, pero el APK no contiene ninguna llamada a MediaRecorder.start(), AudioRecord.read() ni ningún método de captura de audio. Cualquiera puede decompilar y verificar." },
+        "truth3": { "title": "Sin SDK de terceros", "body": "Cero Firebase, Crashlytics, Analytics, SDK de anuncios. La configuración de compilación es abierta: puedes auditar el árbol de dependencias." }
+      },
+      "audience": {
+        "title": "Para quienes realmente se preocupan.",
+        "card1": { "title": "Usuarios conscientes de su privacidad", "body": "Lees los permisos antes de instalar. Te preguntas qué están haciendo los procesos en segundo plano." },
+        "card2": { "title": "Periodistas y profesionales", "body": "Manejas conversaciones confidenciales y necesitas saber que nadie más está escuchando." },
+        "card3": { "title": "Padres", "body": "Quieres saber qué están haciendo realmente las apps de tus hijos en segundo plano." },
+        "card4": { "title": "Power users", "body": "Quieres historial exportable, lista blanca y control total — no solo un punto." }
+      }
+    },
+    "press_page": {
+      "meta": {
+        "title": "Kit de prensa — Sovara por LocalFirst Apps",
+        "description": "Logos, capturas, pitchs, ficha técnica y contacto de prensa para Sovara — el guardián de privacidad Android para micro & cámara por LocalFirst Apps."
+      },
+      "back_link": "← Volver a Globia",
+      "hero": {
+        "eyebrow": "Kit de prensa",
+        "h1": "Kit de prensa — Sovara por LocalFirst Apps",
+        "subtitle": "Todo lo que un periodista tech necesita para escribir sobre Sovara en una sola página.",
+        "cta_zip": "Descargar kit de prensa completo (.zip)",
+        "updated": "Última actualización: mayo 2026"
+      },
+      "pitch": {
+        "title": "Pitchs listos para usar",
+        "subtitle": "Tres versiones para copiar y pegar directamente en tu artículo.",
+        "oneliner_label": "Una línea (≈10 palabras)",
+        "oneliner": "Sovara es un guardián de privacidad Android que te alerta en tiempo real cuando una app accede a tu micrófono o cámara.",
+        "short_label": "Párrafo corto (≈50 palabras)",
+        "short": "Sovara es una aplicación Android del estudio independiente LocalFirst Apps que monitoriza en tiempo real los accesos al micrófono y la cámara. A diferencia del indicador nativo de Android, Sovara identifica la app que accede, alerta mediante sonido, vibración y notificación, guarda un historial exportable y funciona 100 % localmente, sin ningún rastreador de terceros.",
+        "full_label": "Párrafo completo (≈130 palabras)",
+        "full_p1": "El pequeño punto verde de Android te indica que una app está usando tu micrófono o cámara, pero no cuál ni por qué. Sovara llena ese vacío. Desarrollado por el estudio independiente LocalFirst Apps, Sovara se ejecuta silenciosamente en segundo plano y lanza una alerta multicanal —sonido, vibración, notificación push o destello LED— en el instante en que cualquier app accede a tu micrófono o cámara. Identifica la app. Registra el evento. Te permite añadir apps de confianza a una lista blanca.",
+        "full_p2": "A diferencia de las apps competidoras, Sovara no solicita permiso INTERNET, no incluye SDKs de terceros y no recopila ningún dato. La afirmación es verificable: descompila el APK. Sovara está disponible en Android 12+ a un precio único de 4,99 USD, sin suscripción. Lanzamiento público: mayo–junio 2026.",
+        "copy_label": "Copiar"
+      },
+      "contact": {
+        "title": "Contacto de prensa",
+        "email": "press@globia.app",
+        "response": "Respuesta en menos de 24 horas en días laborables.",
+        "languages": "Idiomas hablados: inglés, francés.",
+        "available": "Disponible para entrevistas, preguntas técnicas y códigos de revisión de la app (cantidad limitada).",
+        "review_note": "Códigos de revisión disponibles para periodistas — indica tu medio y el ángulo previsto en tu correo."
+      }
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "Globia — Sovara، مراقبة الميكروفون والكاميرا لأندرويد في الوقت الفعلي",
+      "description": "تنبيهات فورية عند وصول التطبيقات إلى الميكروفون أو الكاميرا على أندرويد 12+. محلي 100%، بدون متعقبين. من LocalFirst Apps."
+    },
+    "header": {
+      "logo": "Globia",
+      "skip_to_content": "انتقل إلى المحتوى الرئيسي",
+      "toggle_theme": "تبديل الوضع الفاتح/الداكن",
+      "lang_label": "اللغة"
+    },
+    "hero": {
+      "eyebrow": "من LocalFirst Apps · محلي 100% · بدون متعقبين",
+      "headline": "اعرف أي تطبيق يستخدم ميكروفونك.",
+      "headline_sub": "وكاميرتك.",
+      "subheadline": "تنبيهات فورية. محلي فقط. متاح مايو–يونيو 2026.",
+      "cta_primary": "قريباً على Google Play · مايو–يونيو 2026",
+      "cta_secondary": "كيف يعمل ↓",
+      "screenshot_alt": "لقطة شاشة تطبيق Sovara — قريباً",
+      "screenshot_caption": "لقطة Sovara — قادمة"
+    },
+    "problem": {
+      "title": "لا تعرف ما الذي يستمع إليه هاتفك.",
+      "points": [
+        {
+          "icon": "mic",
+          "text": "التطبيقات تصل إلى ميكروفونك دون إخبارك."
+        },
+        {
+          "icon": "dot",
+          "text": "أندرويد يُظهر نقطة صغيرة. هذا كل شيء."
+        },
+        {
+          "icon": "nohistory",
+          "text": "لا سجل. لا تنبيهات. لا تحكم."
+        }
+      ]
+    },
+    "solution": {
+      "title": "Sovara يُخبرك.",
+      "features": [
+        {
+          "icon": "bell",
+          "title": "تنبيهات فورية",
+          "body": "صوت، اهتزاز، إشعار، أو وميض LED — اختر ما تريد. 8 نغمات تنبيه و5 أنماط اهتزاز."
+        },
+        {
+          "icon": "eye",
+          "title": "يعرف أي تطبيق",
+          "body": "يحدد التطبيق الذي يصل والتطبيق في المقدمة لحظة الوصول. ليس مجرد نقطة."
+        },
+        {
+          "icon": "moon",
+          "title": "يعمل في وضع السكون",
+          "body": "الكشف مستمر حتى مع إطفاء الشاشة. هاتفك محمي على مدار الساعة."
+        },
+        {
+          "icon": "export",
+          "title": "سجل قابل للتصدير",
+          "body": "سجل وصول كامل، مدة غير محدودة، قابل للتصدير بصيغة CSV أو JSON. تصفية حسب المستشعر، الفترة، أو المدة."
+        }
+      ]
+    },
+    "comparison": {
+      "title": "كيف تقارن Sovara بالمنافسين.",
+      "subtitle": "مقارنة واقعية بناءً على المواصفات المنشورة وعمليات التدقيق المستقلة.",
+      "col_feature": "الميزة",
+      "col_sovara": "Sovara",
+      "col_android": "أندرويد 12+ الأصلي",
+      "col_accessdots": "Access Dots",
+      "col_privacyindicator": "Privacy Indicator",
+      "rows": [
+        { "feature": "مؤشر مرئي في الوقت الفعلي", "sovara": "yes", "android": "yes", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "تنبيه صوتي", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "تنبيه بالاهتزاز", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "إشعار فوري", "sovara": "yes", "android": "no", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "يحدد التطبيق الواصل", "sovara": "yes", "android": "no", "accessdots": "yes", "privacyindicator": "yes" },
+        { "feature": "يعمل أثناء سكون الهاتف", "sovara": "yes", "android": "yes", "accessdots": "partial", "privacyindicator": "partial" },
+        { "feature": "سجل قابل للتصدير (CSV/JSON)", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "قائمة بيضاء للتطبيقات الموثوقة", "sovara": "yes", "android": "no", "accessdots": "no", "privacyindicator": "no" },
+        { "feature": "يعمل بدون صلاحية CAMERA", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "partial" },
+        { "feature": "0 متعقبين من طرف ثالث (موثق)", "sovara": "yes", "android": "yes", "accessdots": "no", "privacyindicator": "yes" },
+        { "feature": "يعمل على أندرويد < 12", "sovara": "no", "android": "no", "accessdots": "yes", "privacyindicator": "yes" }
+      ],
+      "note": "المصادر: تقرير εxodus Privacy لـ Access Dots (يوليو 2024). التوثيق الرسمي لأندرويد (developer.android.com)."
+    },
+    "privacy": {
+      "title": "لا نجمع شيئاً. نقطة.",
+      "points": [
+        "التطبيق لا يستخدم أي اتصال بالإنترنت",
+        "لا حساب، لا بريد إلكتروني، لا تسجيل دخول مطلوب",
+        "لا حزم SDK من طرف ثالث (لا Firebase، لا Crashlytics، لا Analytics، لا إعلانات)",
+        "الـ APK لا يحتوي على طرق التقاط الصوت — قابل للتحقق بشكل مستقل",
+        "سياسة الخصوصية متاحة بـ 5 لغات"
+      ],
+      "policy_link": "اقرأ سياسة الخصوصية الكاملة ←",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "about": {
+      "title": "من تطوير LocalFirst Apps.",
+      "body": "LocalFirst Apps استوديو مستقل بقناعة واحدة: بياناتك تخصّك وتبقى على جهازك. Sovara هو منتجنا الأول. ستأتي منتجات أخرى، كلها مبنية على المبدأ ذاته — أدوات قوية تعمل بالكامل بدون إنترنت، بدون شروط خفية."
+    },
+    "press": {
+      "title": "الصحافة والتواصل",
+      "body": "للاستفسارات الصحفية أو طلب الوصول للاختبار المغلق، راسلنا على:",
+      "email": "press@globia.app",
+      "kit": "حزمة الصحافة متاحة عند الطلب — الحزمة الإعلامية الكاملة (شعارات، لقطات شاشة، ورقة بيانات) ستتوفر عند الإطلاق العام.",
+      "policy_link": "سياسة الخصوصية",
+      "policy_url": "https://laboapps.github.io/sovara-privacy-policy/"
+    },
+    "footer": {
+      "copyright": "© 2026 LocalFirst Apps. Globia علامة تجارية لـ LocalFirst Apps.",
+      "links": [
+        { "label": "سياسة الخصوصية", "url": "https://laboapps.github.io/sovara-privacy-policy/" },
+        { "label": "التواصل", "url": "mailto:press@globia.app" },
+        { "label": "GitHub", "url": "https://github.com/laboapps" }
+      ]
+    },
+    "sovara_page": {
+      "meta": {
+        "title": "Sovara — كيف يعمل · مراقبة الميكروفون والكاميرا لأندرويد",
+        "description": "خطوة بخطوة: كيف يكتشف Sovara ويحدد ويُنبهك عند وصول أي تطبيق إلى ميكروفونك أو كاميرتك. محلي 100%، بدون متعقبين."
+      },
+      "back_link": "العودة إلى Globia →",
+      "hero": {
+        "eyebrow": "Sovara · حارس الخصوصية لأندرويد",
+        "title": "كيف يعمل Sovara.",
+        "subtitle": "كشف في الوقت الفعلي. تحديد فوري. تنبيهات تعمل حتى مع إطفاء الشاشة.",
+        "cta_primary": "قريباً على Google Play · مايو–يونيو 2026",
+        "demo_label": "عرض Sovara المباشر — قادم",
+        "demo_alt": "معاينة واجهة Sovara — قريباً"
+      },
+      "steps": {
+        "title": "ماذا يحدث عندما يصل تطبيق ما إلى ميكروفونك؟",
+        "subtitle": "أربع لحظات. من الوصول إلى التنبيه.",
+        "step1": { "label": "الكشف", "title": "تطبيق ما يُشغّل ميكروفونك.", "body": "خرائط. واتساب. لعبة. حتى تطبيق لم تفتحه. أندرويد يُظهر نقطة صغيرة. هذا كل شيء." },
+        "step2": { "label": "Sovara يراه", "title": "Sovara يرصده فوراً.", "body": "Sovara يستعلم النظام باستمرار للتحقق من حالة الميكروفون. لحظة بدء الوصول، يعرف Sovara. زمن الاستجابة: أقل من ثانية." },
+        "step3": { "label": "التحديد", "title": "Sovara يُسمّي المتسبب.", "body": "يُحدَّد كلٌّ من التطبيق الواصل والتطبيق في المقدمة. معظم المنافسين يُظهرون فقط ما على الشاشة. Sovara يكشف من طلب الوصول فعلاً." },
+        "step4": { "label": "التنبيه", "title": "تتلقى إشعاراً — بالطريقة التي تختارها.", "body": "صوت (8 خيارات + مخصص). اهتزاز (5 أنماط). إشعار فوري. وميض LED. اختر ما يناسب اللحظة." }
+      },
+      "screenshots": {
+        "title": "كيف يبدو Sovara.",
+        "shot1_label": "تنبيه مباشر", "shot1_caption": "تنبيه فوري باسم التطبيق ونوع المستشعر والطابع الزمني.",
+        "shot2_label": "عرض السجل", "shot2_caption": "سجل زمني لجميع عمليات الوصول إلى الميكروفون والكاميرا. مدة غير محدودة.",
+        "shot3_label": "تفاصيل التطبيق", "shot3_caption": "تفاصيل الحدث كاملة: اسم التطبيق، الحزمة، المستشعر، المدة، التطبيق الأمامي.",
+        "shot4_label": "القائمة البيضاء", "shot4_caption": "ضع علامة على التطبيقات الموثوقة. لا مزيد من التنبيهات من تطبيق الاتصال."
+      },
+      "technical": {
+        "title": "كيف يبقى Sovara محلياً 100%.",
+        "subtitle": "ثلاث حقائق تقنية يمكنك التحقق منها.",
+        "truth1": { "title": "لا صلاحية INTERNET", "body": "لا يُعلن ملف تعريف Sovara عن أي صلاحية INTERNET. أندرويد يُطبّق ذلك. التطبيق لا يستطيع فعلياً إجراء أي طلب شبكي — ولا حتى لخادم Sovara لأنه لا وجود لأي خادم." },
+        "truth2": { "title": "لا التقاط صوت في الكود", "body": "نستخدم RECORD_AUDIO للاستعلام عن حالة الميكروفون، لكن الـ APK لا يحتوي على أي استدعاء لـ MediaRecorder.start() أو AudioRecord.read() أو أي طريقة التقاط صوت. يمكن لأي أحد فك التجميع والتحقق." },
+        "truth3": { "title": "لا حزم SDK من طرف ثالث", "body": "لا Firebase، لا Crashlytics، لا Analytics، لا SDK إعلانات. إعداد البناء مفتوح: يمكنك مراجعة شجرة التبعيات بنفسك." }
+      },
+      "audience": {
+        "title": "لمن يهتم حقاً.",
+        "card1": { "title": "المهتمون بالخصوصية", "body": "تقرأ الصلاحيات قبل التثبيت. تتساءل ماذا تفعل العمليات في الخلفية." },
+        "card2": { "title": "الصحفيون والمهنيون", "body": "تُجري محادثات سرية وتحتاج إلى التأكد من أنه لا يستمع أحد آخر." },
+        "card3": { "title": "الآباء والأمهات", "body": "تريد معرفة ما تفعله تطبيقات أطفالك في الخلفية فعلاً." },
+        "card4": { "title": "المستخدمون المتقدمون", "body": "تريد سجلاً قابلاً للتصدير، وقائمة بيضاء، وتحكماً كاملاً — ليس مجرد نقطة." }
+      }
+    },
+    "press_page": {
+      "meta": {
+        "title": "حزمة الصحافة — Sovara من LocalFirst Apps",
+        "description": "شعارات، لقطات، نصوص صحفية، ورقة بيانات وجهة اتصال للصحافة لـ Sovara — حارس الخصوصية لأندرويد من LocalFirst Apps."
+      },
+      "back_link": "العودة إلى Globia →",
+      "hero": {
+        "eyebrow": "حزمة الصحافة",
+        "h1": "حزمة الصحافة — Sovara من LocalFirst Apps",
+        "subtitle": "كل ما يحتاجه صحفي التقنية لكتابة تقرير عن Sovara في صفحة واحدة.",
+        "cta_zip": "تحميل حزمة الصحافة الكاملة (.zip)",
+        "updated": "آخر تحديث: مايو 2026"
+      },
+      "pitch": {
+        "title": "نصوص صحفية جاهزة للنشر",
+        "subtitle": "ثلاث نسخ للنسخ واللصق مباشرةً في مقالك.",
+        "oneliner_label": "جملة واحدة (≈10 كلمات)",
+        "oneliner": "Sovara تطبيق أندرويد يُنبّهك فوراً حين تصل أي تطبيق إلى ميكروفونك أو كاميرتك.",
+        "short_label": "فقرة قصيرة (≈50 كلمة)",
+        "short": "Sovara تطبيق أندرويد من استوديو LocalFirst Apps المستقل، يراقب الوصول إلى الميكروفون والكاميرا في الوقت الفعلي. خلافاً لمؤشر أندرويد الافتراضي، يحدّد Sovara التطبيق المُشغِّل، وينبّهك بالصوت والاهتزاز والإشعار، ويحتفظ بسجل قابل للتصدير، ويعمل محلياً 100% دون أي متعقبين من طرف ثالث.",
+        "full_label": "فقرة كاملة (≈130 كلمة)",
+        "full_p1": "النقطة الخضراء في زاوية شاشة أندرويد تُخبرك أن تطبيقاً ما يستخدم ميكروفونك أو كاميرتك، لكنها لا تخبرك أيّه ولا لماذا. Sovara يسدّ هذه الفجوة. طوّره استوديو LocalFirst Apps المستقل، يعمل Sovara بصمت في الخلفية ويُطلق تنبيهاً متعدد القنوات — صوتاً أو اهتزازاً أو إشعاراً أو وميضاً — في اللحظة التي يصل فيها أي تطبيق إلى ميكروفونك أو كاميرتك. يُسمّي التطبيق. يُسجّل الحدث. يتيح لك إدراج التطبيقات الموثوقة في القائمة البيضاء.",
+        "full_p2": "خلافاً للتطبيقات المنافسة، لا يطلب Sovara صلاحية الإنترنت، ولا يتضمن أي حزم SDK من طرف ثالث، ولا يجمع أي بيانات. يمكن التحقق من ذلك: فكّ تجميع الـ APK. Sovara متاح لأندرويد 12+ بسعر 4.99 دولار دفعةً واحدة، بدون اشتراك. الإطلاق العام: مايو–يونيو 2026.",
+        "copy_label": "نسخ"
+      },
+      "contact": {
+        "title": "جهة الاتصال للصحافة",
+        "email": "press@globia.app",
+        "response": "ردٌّ خلال 24 ساعة في أيام العمل.",
+        "languages": "اللغات المتاحة: الإنجليزية، الفرنسية.",
+        "available": "متاح للمقابلات والأسئلة التقنية وأكواد مراجعة التطبيق (الكمية محدودة).",
+        "review_note": "أكواد المراجعة متاحة للصحفيين — يُرجى الإشارة إلى وسيلتك الإعلامية والزاوية المقترحة."
+      }
+    }
+  }
+}

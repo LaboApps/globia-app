@@ -1,0 +1,16 @@
+{
+  "name": "Globia — Sovara",
+  "short_name": "Globia",
+  "description": "Real-time microphone and camera access guard for Android. By LocalFirst Apps.",
+  "start_url": "/en/",
+  "display": "standalone",
+  "background_color": "#0a0e14",
+  "theme_color": "#0a0e14",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
