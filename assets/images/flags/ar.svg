@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16">
-  <!-- Arabie Saoudite : fond vert -->
-  <rect width="24" height="16" fill="#006c35"/>
-  <!-- Chahada (2 lignes simplifiées) -->
-  <rect x="2" y="2" width="20" height="2" rx="0.6" fill="#fff"/>
-  <rect x="2.5" y="5" width="19" height="2" rx="0.6" fill="#fff"/>
-  <!-- Sabre (lame vers la gauche, poignée à droite) -->
-  <polygon points="4,10.5 16.5,9.8 16.5,11.2" fill="#fff"/>
-  <rect x="16.5" y="8.8" width="0.7" height="3.4" rx="0.2" fill="#fff"/>
-  <rect x="17.2" y="9.7" width="3.5" height="1.6" rx="0.4" fill="#fff"/>
-  <circle cx="21.1" cy="10.5" r="1.2" fill="#fff"/>
+  <!-- Émirats Arabes Unis -->
+  <!-- Bande verte (haut) -->
+  <rect x="6" y="0" width="18" height="5" fill="#009A44"/>
+  <!-- Bande blanche (milieu) -->
+  <rect x="6" y="5" width="18" height="6" fill="#fff"/>
+  <!-- Bande noire (bas) -->
+  <rect x="6" y="11" width="18" height="5" fill="#000"/>
+  <!-- Bande rouge verticale (hampe) -->
+  <rect x="0" y="0" width="6" height="16" fill="#EF3340"/>
 </svg>
