@@ -46,7 +46,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/svg+xml" href="/assets/images/logos/favicon.svg">
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/logos/favicon.png">
@@ -93,49 +93,41 @@
     </div>
   </nav>
 
-  <!-- FILE HEADER -->
-  <div class="file-header" role="note">
-    <div class="container">
-      <span class="mono" style="font-size:0.65rem;letter-spacing:0.08em">Fiche 001 · Sovara · Mai 2026</span>
-      <span class="mono" style="font-size:0.65rem;letter-spacing:0.08em">Android 12+ · 5 langues · 4,99 $</span>
-    </div>
-  </div>
-
   <main id="main">
 
     <!-- HERO PRODUIT -->
     <section class="hero-product" aria-labelledby="sovara-title">
       <div class="container">
-        <div class="hero-product__grid">
 
-          <div>
-            <img
-              src="/assets/images/logos/sovara-mark.png"
-              alt="Logo officiel Sovara"
-              width="64" height="64"
-              loading="eager"
-              style="margin-bottom:1.25rem;border-radius:14px;"
-            >
-            <h1 id="sovara-title" class="hero-product__title" aria-label="Sovara">
-              <span class="sov">SOV</span><span class="ara">ARA</span>
-            </h1>
-          </div>
-
-          <div>
-            <p class="hero-product__tagline">
-              Alerte temps réel<br>
-              <b>micro · caméra</b><br>
-              avant ou arrière
-            </p>
-          </div>
-
+        <div class="hero-product__lockup">
+          <img
+            src="/assets/images/logos/sovara-mark.png"
+            alt="Logo officiel Sovara"
+            class="hero-product__logo"
+            width="80" height="80"
+            loading="eager"
+          >
+          <h1 id="sovara-title" class="hero-product__title" aria-label="Sovara">
+            <span class="sov">SOV</span><span class="ara">ARA</span>
+          </h1>
         </div>
 
-        <p class="hero-product__summary">
-          Ton micro est activé ? Ta caméra est activée ? Sovara t'alerte en temps réel. Te dit : <em>quand</em>, <em>combien de temps</em>, <em>caméra avant ou arrière</em>, et <em>quelle app</em>.
+        <p class="hero-product__sub">
+          Alerte en temps réel quand une app accède à ton micro ou ta caméra.<br>
+          Te dit quelle app — et si la caméra est avant ou arrière.
         </p>
 
-        <div class="cta-group">
+        <div class="hero-product__badges">
+          <span>ANDROID 12+</span>
+          <span class="sep">·</span>
+          <span>5 LANGUES</span>
+          <span class="sep">·</span>
+          <span>0 TRACKER</span>
+          <span class="sep">·</span>
+          <span>100 % HORS LIGNE</span>
+        </div>
+
+        <div class="hero-product__ctas">
           <button
             class="btn-primary"
             data-cta-playstore
@@ -147,41 +139,76 @@
           </button>
           <a href="#preuve-sovara" class="btn-secondary">Voir les preuves</a>
         </div>
-        <p class="cta-note">Achat unique · 4,99 $ · pas d'abonnement</p>
+        <p class="mono" style="color:var(--ink-faint);margin-top:12px;font-size:12px;">Achat unique · 4,99 $ · pas d'abonnement</p>
 
       </div>
     </section>
 
-    <!-- DIFFERENCIATEUR -->
-    <section class="differentiator" aria-labelledby="diff-title">
+    <!-- COMPARAISON -->
+    <section class="comparison" aria-labelledby="comp-title">
       <div class="container">
-        <div class="diff-intro">
-          <p class="diff-eyebrow">Différenciateur unique</p>
-          <h2 id="diff-title">Caméra avant <em>ou</em> caméra arrière ?</h2>
-          <p>Aucun concurrent ne distingue les deux. Quand une app accède à la caméra, Sovara te dit laquelle. Une app de fitness qui active la caméra avant pour scanner ton visage, c'est une chose. La même app qui active la caméra arrière sans raison, c'en est une autre.</p>
+        <h2 id="comp-title">Pourquoi Sovara ?</h2>
+        <p>Comparaison avec les alternatives disponibles sur Android.</p>
+        <div style="overflow-x:auto;">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Fonctionnalité</th>
+                <th class="col-sovara">Sovara</th>
+                <th>Access Dots</th>
+                <th>Privacy Indicator</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alertes combinées (son + vibration + notification)</td>
+                <td class="is-green">3 / 3</td>
+                <td>2 / 3</td>
+                <td>1 / 3</td>
+              </tr>
+              <tr>
+                <td>Distingue caméra avant / arrière</td>
+                <td class="is-green">✓</td>
+                <td>✗</td>
+                <td>✗</td>
+              </tr>
+              <tr>
+                <td>Identifie l'app responsable</td>
+                <td class="is-green">✓</td>
+                <td>✓</td>
+                <td>✗</td>
+              </tr>
+              <tr>
+                <td>Trackers (εxodus Privacy)</td>
+                <td class="is-green">0</td>
+                <td>1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Maintenance active</td>
+                <td class="is-green">Oui</td>
+                <td>Non (2021)</td>
+                <td>Oui</td>
+              </tr>
+              <tr>
+                <td>Prix</td>
+                <td>4,99 $</td>
+                <td>Gratuit</td>
+                <td>Gratuit (F-Droid)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        <div class="diff-grid">
-          <div class="diff-cell">
-            <p class="diff-cell__label">Caméra avant détectée</p>
-            <h3>Notification immédiate — mention « avant »</h3>
-            <p>Typique des apps de visioconférence, fitness, beauté. Normal en général, mais tu le sais maintenant.</p>
-          </div>
-          <div class="diff-cell">
-            <p class="diff-cell__label">Caméra arrière détectée</p>
-            <h3>Notification immédiate — mention « arrière »</h3>
-            <p>Plus rare, plus suspect quand l'app n'est pas censée filmer le monde extérieur.</p>
-          </div>
-        </div>
+        <p class="proof-note">→ Sources : rapports εxodus Privacy · Play Store · F-Droid. Reproductibles par toute personne.</p>
       </div>
     </section>
 
-    <!-- PREUVE & FICHE TECHNIQUE -->
+    <!-- PREUVE εxodus -->
     <section id="preuve-sovara" class="proof-section" aria-labelledby="preuve-title">
       <div class="container">
 
         <div class="proof-intro">
-          <h2 id="preuve-title">Preuve technique, <em>pas slogan.</em></h2>
+          <h2 id="preuve-title">Preuve technique, pas slogan.</h2>
           <p>Tout ce qui suit est vérifiable. Les rapports εxodus Privacy sont publics. La signature APK est sur <a href="/.well-known/security.txt">/security.txt</a>.</p>
         </div>
 
@@ -207,12 +234,16 @@
           </div>
         </div>
 
-        <p class="proof-note">
-          → Les rapports εxodus Privacy sont publics et reproductibles. Si tu trouves une erreur, écris-nous à <a href="mailto:contact@globia.app">contact@globia.app</a>.
-        </p>
+        <p class="proof-note">→ Les rapports εxodus Privacy sont publics et reproductibles. Si tu trouves une erreur, écris-nous à <a href="mailto:contact@globia.app">contact@globia.app</a>.</p>
 
-        <!-- FICHE TECHNIQUE -->
-        <h3 style="font-size:1.1rem;font-weight:500;margin-top:2.5rem;margin-bottom:1rem">Fiche technique</h3>
+      </div>
+    </section>
+
+    <!-- FICHE TECHNIQUE -->
+    <section class="tech-spec-section" aria-labelledby="spec-title">
+      <div class="container">
+        <h2 id="spec-title">Fiche technique.</h2>
+
         <div class="tech-spec" role="table" aria-label="Fiche technique Sovara">
           <div class="tech-spec__row" role="row">
             <div class="tech-spec__key" role="rowheader">Permissions Android</div>
@@ -227,12 +258,12 @@
             <div class="tech-spec__val is-green" role="cell">Aucune · 0 SDK</div>
           </div>
           <div class="tech-spec__row" role="row">
-            <div class="tech-spec__key" role="rowheader">Trackers détectés (εxodus)</div>
+            <div class="tech-spec__key" role="rowheader">Trackers (εxodus)</div>
             <div class="tech-spec__val is-green" role="cell">0</div>
           </div>
           <div class="tech-spec__row" role="row">
             <div class="tech-spec__key" role="rowheader">Connexions réseau</div>
-            <div class="tech-spec__val is-green" role="cell">Aucune · l'app fonctionne 100 % hors ligne</div>
+            <div class="tech-spec__val is-green" role="cell">Aucune · 100 % hors ligne</div>
           </div>
           <div class="tech-spec__row" role="row">
             <div class="tech-spec__key" role="rowheader">Android minimum</div>
@@ -252,17 +283,18 @@
           </div>
         </div>
 
-        <p class="proof-note" style="margin-top:1rem">→ Une erreur, une omission ? <a href="mailto:contact@globia.app">contact@globia.app</a></p>
+        <p class="proof-note" style="margin-top:16px;">→ Une erreur, une omission ? <a href="mailto:contact@globia.app">contact@globia.app</a></p>
 
       </div>
     </section>
 
     <!-- CAPTURES -->
-    <section id="shots" aria-labelledby="shots-title">
+    <section id="shots" class="shots-section" aria-labelledby="shots-title">
       <div class="container">
-        <div class="shots__header">
-          <h2 id="shots-title">Captures réelles</h2>
-          <p class="shots__meta">Interface réelle · Android 14 · Pixel 6</p>
+
+        <div class="shots-header">
+          <h2 id="shots-title">Captures réelles.</h2>
+          <p class="shots-meta">Interface réelle · Android 14 · Pixel 6</p>
         </div>
 
         <div class="shots-grid">
@@ -335,20 +367,15 @@
             </figure>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- STUDIO REMINDER -->
     <div class="studio-reminder" role="note" aria-label="À propos du studio Globia">
-      <div class="container">
-        <span class="studio-reminder__mark">Globia<span class="dot">.</span></span>
-        <div class="studio-reminder__text">
-          Une app de · Studio indépendant<br>
-          Sovara est la première app du studio.<br>
-          D'autres arrivent quand elles seront prêtes — pas avant.
-        </div>
-        <a href="/fr/" class="studio-reminder__link">↗ Voir le studio</a>
-      </div>
+      <strong>Globia.</strong>
+      <span>Studio indépendant · Sovara est notre première app. D'autres arrivent quand elles sont prêtes.</span>
+      <a href="/fr/">↗ Voir le studio</a>
     </div>
 
   </main>
@@ -402,13 +429,13 @@
   <dialog id="proof-dialog" aria-labelledby="dialog-label" aria-modal="true">
     <div class="dialog__header">
       <div>
-        <p class="dialog__label" id="dialog-label" style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:0.5rem"></p>
+        <p class="dialog__label" id="dialog-label"></p>
         <p class="dialog__counter" aria-live="polite"></p>
-        <p class="dialog__sub" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--ink-dim);margin-top:0.25rem"></p>
+        <p class="dialog__sub"></p>
       </div>
       <button class="dialog__close" aria-label="Fermer la fenêtre">✕</button>
     </div>
-    <p class="dialog__abandoned" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--warn);letter-spacing:0.04em;display:none">Application abandonnée depuis 2021</p>
+    <p class="dialog__abandoned" style="display:none">Application abandonnée depuis 2021</p>
     <div class="dialog__link">
       <a href="https://reports.exodus-privacy.eu.org/" target="_blank" rel="noopener noreferrer">
         Consulter le rapport εxodus Privacy complet ↗

@@ -49,7 +49,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/svg+xml" href="/assets/images/logos/favicon.svg">
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/logos/favicon.png">
@@ -94,14 +94,13 @@
     <!-- HERO PRESSE -->
     <section class="press-hero" aria-labelledby="press-title">
       <div class="container">
-        <p class="press-eyebrow">Kit presse · Disponible librement · Sans demande d'email</p>
-        <h1 id="press-title">Tout ce qu'il faut <em>pour écrire vite,</em> et juste.</h1>
-        <p class="press-hero__lead">
-          Faits vérifiables, citations courtes, visuels haute résolution, contact direct. Pas de formulaire, pas de NDA. Tu copies, tu publies. Si quelque chose te manque, écris-nous.
+        <h1 id="press-title">Kit presse.</h1>
+        <p class="press-hero__sub">
+          Faits vérifiables, pitchs prêts à copier, visuels haute résolution, contact direct. Pas de formulaire, pas de NDA. Tu copies, tu publies.
         </p>
         <p class="press-hero__meta">
-          Studio LocalFirst Apps · Domaine globia.app<br>
-          Contact contact@globia.app · Dernière mise à jour mai 2026
+          Studio LocalFirst Apps · globia.app<br>
+          contact@globia.app · Mise à jour mai 2026
         </p>
       </div>
     </section>
@@ -115,21 +114,16 @@
     </div>
 
     <!-- PITCH -->
-    <section id="pitch" aria-labelledby="pitch-title">
+    <section id="pitch" class="pitch-section" aria-labelledby="pitch-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="pitch-title">
-            <span class="section-num mono" aria-hidden="true">01</span>
-            Pitch prêt à copier
-          </h2>
-        </div>
+        <h2 id="pitch-title" class="section-title">Pitch prêt à copier.</h2>
 
         <div class="pitch-grid" role="list">
 
           <article class="pitch-card" role="listitem">
             <p class="pitch-card__duration">15 secondes</p>
             <p class="pitch-card__text">
-              Sovara, c'est l'app Android qui te dit en temps réel <em>quelle</em> app accède à ton micro ou à ta caméra — et si la caméra utilisée est <em>avant ou arrière</em>. Aucun concurrent ne fait ça.
+              Sovara, c'est l'app Android qui te dit en temps réel <span class="accent">quelle</span> app accède à ton micro ou à ta caméra — et si la caméra utilisée est <span class="accent">avant ou arrière</span>. Aucun concurrent ne fait ça.
             </p>
             <button class="copy-btn" type="button" aria-label="Copier le pitch 15 secondes">Copier</button>
           </article>
@@ -137,7 +131,7 @@
           <article class="pitch-card" role="listitem">
             <p class="pitch-card__duration">45 secondes</p>
             <p class="pitch-card__text">
-              Sovara est une app Android 12+ qui surveille en local les accès au micro et à la caméra de ton téléphone. À chaque accès, elle déclenche un trio d'alertes (son, vibration, notification), nomme l'app responsable, et — détail unique sur le marché — précise si la caméra activée est l'avant ou l'arrière. <em>Zéro tracker</em>, zéro abonnement, achat unique 4,99 $.
+              Sovara est une app Android 12+ qui surveille en local les accès au micro et à la caméra de ton téléphone. À chaque accès, elle déclenche un trio d'alertes (son, vibration, notification), nomme l'app responsable, et — détail unique sur le marché — précise si la caméra activée est l'avant ou l'arrière. <span class="accent">Zéro tracker</span>, zéro abonnement, achat unique 4,99 $.
             </p>
             <button class="copy-btn" type="button" aria-label="Copier le pitch 45 secondes">Copier</button>
           </article>
@@ -145,7 +139,7 @@
           <article class="pitch-card" role="listitem">
             <p class="pitch-card__duration">2 minutes</p>
             <p class="pitch-card__text">
-              Depuis Android 12, un point vert ou orange apparaît dans la barre d'état quand le micro ou la caméra est utilisé. Mais il ne dit pas <em>quelle</em> app est en cause, ni — pour la caméra — laquelle des deux. Sovara comble ce manque. L'app combine son, vibration et notification (les concurrents font 1 ou 2 sur 3), identifie l'app appelante <em>et</em> l'app au premier plan, distingue la caméra avant de l'arrière, et conserve un historique exportable. Le tout sans demander la permission CAMERA — Sovara utilise CameraManager.AvailabilityCallback. Vérifié sans tracker par εxodus Privacy. Achat unique, 4,99 $.
+              Depuis Android 12, un point vert ou orange apparaît dans la barre d'état quand le micro ou la caméra est utilisé. Mais il ne dit pas <span class="accent">quelle</span> app est en cause, ni — pour la caméra — laquelle des deux. Sovara comble ce manque. L'app combine son, vibration et notification (les concurrents font 1 ou 2 sur 3), identifie l'app appelante <span class="accent">et</span> l'app au premier plan, distingue la caméra avant de l'arrière, et conserve un historique exportable. Le tout sans demander la permission CAMERA — Sovara utilise CameraManager.AvailabilityCallback. Vérifié sans tracker par εxodus Privacy. Achat unique, 4,99 $.
             </p>
             <button class="copy-btn" type="button" aria-label="Copier le pitch 2 minutes">Copier</button>
           </article>
@@ -155,14 +149,9 @@
     </section>
 
     <!-- FICHE FACTUELLE -->
-    <section id="facts" aria-labelledby="facts-title">
+    <section id="facts" class="facts-section" aria-labelledby="facts-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="facts-title">
-            <span class="section-num mono" aria-hidden="true">02</span>
-            Fiche factuelle
-          </h2>
-        </div>
+        <h2 id="facts-title" class="section-title">Fiche factuelle.</h2>
 
         <div class="fact-sheet" role="table" aria-label="Fiche factuelle Sovara">
           <div class="fact-row" role="row">
@@ -204,7 +193,7 @@
           <div class="fact-row" role="row">
             <div class="fact-key" role="rowheader">Politique conf.</div>
             <div class="fact-val" role="cell">
-              <a href="https://laboapps.github.io/sovara-privacy-policy" target="_blank" rel="noopener noreferrer" style="color:var(--ink-dim);text-decoration:underline">laboapps.github.io/sovara-privacy-policy</a>
+              <a href="https://laboapps.github.io/sovara-privacy-policy" target="_blank" rel="noopener noreferrer">laboapps.github.io/sovara-privacy-policy</a>
             </div>
           </div>
           <div class="fact-row" role="row">
@@ -220,20 +209,15 @@
     </section>
 
     <!-- ASSETS -->
-    <section id="assets" aria-labelledby="assets-title">
+    <section id="assets" class="assets-section" aria-labelledby="assets-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="assets-title">
-            <span class="section-num mono" aria-hidden="true">03</span>
-            Visuels haute résolution
-          </h2>
-        </div>
+        <h2 id="assets-title" class="section-title">Visuels haute résolution.</h2>
 
         <div class="assets-grid" role="list">
 
           <article class="asset-card" role="listitem">
-            <div class="asset-thumb" style="padding:0;overflow:hidden;" aria-hidden="true">
-              <img src="/assets/images/logos/sovara-mark.png" alt="" width="56" height="56" style="width:56px;height:56px;object-fit:contain;border-radius:6px;">
+            <div class="asset-thumb" aria-hidden="true">
+              <img src="/assets/images/logos/sovara-mark.png" alt="" width="56" height="56">
             </div>
             <h3>Logo Sovara</h3>
             <p>SVG vectoriel + PNG 1024×1024. Fond transparent. Versions dark et light.</p>
@@ -280,16 +264,11 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" aria-labelledby="contact-title">
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
       <div class="container">
-        <div class="section-header">
-          <h2 id="contact-title">
-            <span class="section-num mono" aria-hidden="true">04</span>
-            Contact presse
-          </h2>
-        </div>
+        <h2 id="contact-title" class="section-title">Contact presse.</h2>
 
-        <div class="press-contact-grid">
+        <div class="contact-grid">
           <div class="contact-left">
             <h3>Une seule personne répond.</h3>
             <p>Pas de RP, pas d'agence, pas de formulaire de pré-qualification. Tu écris, on lit.</p>
@@ -301,7 +280,7 @@
           <div class="contact-right">
             <h4>Pour gagner du temps</h4>
             <ul class="contact-list" role="list">
-              <li>Demande d'embargo : possible · préviens-nous 48 h en avance</li>
+              <li>Embargo : possible, préviens-nous 48 h en avance</li>
               <li>Interview : français, anglais (visio ou texte)</li>
               <li>Build de test APK : sur demande</li>
               <li>Fact-check : envoie ton brouillon, on relit</li>
