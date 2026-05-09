@@ -85,7 +85,7 @@
         <p class="press-hero__sub">Verifiable facts, copy-ready pitches, high-resolution visuals, direct contact. No form, no NDA. Copy and publish.</p>
         <p class="press-hero__meta">
           Studio LocalFirst Apps · globia.app<br>
-          contact@globia.app · Updated May 2026
+          Updated May 2026
         </p>
       </div>
     </section>
@@ -202,10 +202,30 @@
         <div class="contact-grid">
           <div class="contact-left">
             <h3>One person responds.</h3>
-            <p>No PR agency, no pre-qualification form. You write, we read.</p>
-            <a href="mailto:contact@globia.app?subject=Press%20%E2%80%94%20Globia%20%2F%20Sovara" class="btn-email" aria-label="Send email to contact@globia.app">
-              contact@globia.app
-            </a>
+            <p>No PR agency, no pre-qualification form. Fill in the form and we'll get back to you.</p>
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="cf-name">Name *</label>
+                  <input class="form-input" type="text" id="cf-name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cf-email">Email *</label>
+                  <input class="form-input" type="email" id="cf-email" name="email" required placeholder="you@media.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-org">Media / Organisation</label>
+                <input class="form-input" type="text" id="cf-org" name="organisation" placeholder="Your media name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-msg">Message *</label>
+                <textarea class="form-textarea" id="cf-msg" name="message" required placeholder="Your message…" rows="4"></textarea>
+              </div>
+              <button class="btn-form-submit" type="submit" data-loading="Sending…">Send →</button>
+              <p class="form-feedback form-feedback--ok" hidden>Thank you! Your message has been sent. We'll reply within 48h.</p>
+              <p class="form-feedback form-feedback--err" hidden>An error occurred. Please try again.</p>
+            </form>
           </div>
           <div class="contact-right">
             <h4>To save time</h4>

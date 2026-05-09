@@ -85,7 +85,7 @@
         <p class="press-hero__sub">حقائق قابلة للتحقق، ملاخص جاهزة للنشر، صور عالية الدقة، تواصل مباشر. بدون نموذج، بدون اتفاقية سرية. انسخ وانشر.</p>
         <p class="press-hero__meta">
           استوديو LocalFirst Apps · globia.app<br>
-          contact@globia.app · تحديث مايو 2026
+          تحديث مايو 2026
         </p>
       </div>
     </section>
@@ -202,10 +202,30 @@
         <div class="contact-grid">
           <div class="contact-left">
             <h3>شخص واحد يُجيب.</h3>
-            <p>بدون وكالة علاقات عامة، بدون نموذج. تكتب، نقرأ.</p>
-            <a href="mailto:contact@globia.app?subject=Press%20%E2%80%94%20Globia%20%2F%20Sovara" class="btn-email" aria-label="إرسال بريد إلكتروني إلى contact@globia.app">
-              contact@globia.app
-            </a>
+            <p>بدون وكالة علاقات عامة، بدون نموذج تأهيل مسبق. املأ النموذج وسنرد عليك.</p>
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="cf-name">الاسم *</label>
+                  <input class="form-input" type="text" id="cf-name" name="name" required placeholder="اسمك">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cf-email">البريد الإلكتروني *</label>
+                  <input class="form-input" type="email" id="cf-email" name="email" required placeholder="you@media.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-org">الوسيلة الإعلامية / المؤسسة</label>
+                <input class="form-input" type="text" id="cf-org" name="organisation" placeholder="اسم وسيلتك الإعلامية">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-msg">الرسالة *</label>
+                <textarea class="form-textarea" id="cf-msg" name="message" required placeholder="رسالتك…" rows="4"></textarea>
+              </div>
+              <button class="btn-form-submit" type="submit" data-loading="جارٍ الإرسال…">إرسال ←</button>
+              <p class="form-feedback form-feedback--ok" hidden>شكراً! تم إرسال رسالتك. سنرد عليك خلال 48 ساعة.</p>
+              <p class="form-feedback form-feedback--err" hidden>حدث خطأ. يرجى المحاولة مرة أخرى.</p>
+            </form>
           </div>
           <div class="contact-right">
             <h4>لتوفير الوقت</h4>

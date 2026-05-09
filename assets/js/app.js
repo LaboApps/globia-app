@@ -3,6 +3,9 @@
 
   const SITE_LAST_UPDATE = 'mai 2026';
 
+  /* Formspree — remplacer par l'ID obtenu sur formspree.io (gratuit) */
+  var FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+
   /* ---- LAST UPDATE DATE ------------------------------------ */
   function initLastUpdate() {
     document.querySelectorAll('[data-last-update]').forEach(function (el) {
@@ -187,6 +190,49 @@
   }
 
 
+  /* ---- CONTACT FORM ---------------------------------------- */
+  function initContactForm() {
+    var form = document.querySelector('.contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('.btn-form-submit');
+      var okMsg = form.querySelector('.form-feedback--ok');
+      var errMsg = form.querySelector('.form-feedback--err');
+      var originalText = btn.textContent;
+      var loadingText = btn.getAttribute('data-loading') || '…';
+
+      btn.disabled = true;
+      btn.textContent = loadingText;
+      if (okMsg) okMsg.hidden = true;
+      if (errMsg) errMsg.hidden = true;
+
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (data.ok) {
+          form.reset();
+          btn.hidden = true;
+          if (okMsg) okMsg.hidden = false;
+        } else {
+          btn.disabled = false;
+          btn.textContent = originalText;
+          if (errMsg) errMsg.hidden = false;
+        }
+      })
+      .catch(function () {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        if (errMsg) errMsg.hidden = false;
+      });
+    });
+  }
+
   /* ---- REDUCED MOTION -------------------------------------- */
   function initReducedMotion() {
     var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -222,6 +268,7 @@
     initSmoothScroll();
     initCopyButtons();
     initPlayStoreCTA();
+    initContactForm();
     initReducedMotion();
     initHamburger();
   }

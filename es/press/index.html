@@ -85,7 +85,7 @@
         <p class="press-hero__sub">Hechos verificables, pitches listos para copiar, visuales en alta resolución, contacto directo. Sin formulario, sin NDA. Copia y publica.</p>
         <p class="press-hero__meta">
           Estudio LocalFirst Apps · globia.app<br>
-          contact@globia.app · Actualizado mayo 2026
+          Actualizado mayo 2026
         </p>
       </div>
     </section>
@@ -202,10 +202,30 @@
         <div class="contact-grid">
           <div class="contact-left">
             <h3>Una sola persona responde.</h3>
-            <p>Sin agencia de PR, sin formulario. Escribes, leemos.</p>
-            <a href="mailto:contact@globia.app?subject=Prensa%20%E2%80%94%20Globia%20%2F%20Sovara" class="btn-email" aria-label="Enviar email a contact@globia.app">
-              contact@globia.app
-            </a>
+            <p>Sin agencia de PR, sin formulario de precualificación. Rellena el formulario y te respondemos.</p>
+            <form class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="cf-name">Nombre *</label>
+                  <input class="form-input" type="text" id="cf-name" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="cf-email">Email *</label>
+                  <input class="form-input" type="email" id="cf-email" name="email" required placeholder="tu@medio.es">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-org">Medio / Organización</label>
+                <input class="form-input" type="text" id="cf-org" name="organisation" placeholder="Nombre de tu medio">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="cf-msg">Mensaje *</label>
+                <textarea class="form-textarea" id="cf-msg" name="message" required placeholder="Tu mensaje…" rows="4"></textarea>
+              </div>
+              <button class="btn-form-submit" type="submit" data-loading="Enviando…">Enviar →</button>
+              <p class="form-feedback form-feedback--ok" hidden>¡Gracias! Tu mensaje ha sido enviado. Te responderemos en 48h.</p>
+              <p class="form-feedback form-feedback--err" hidden>Se ha producido un error. Por favor, inténtalo de nuevo.</p>
+            </form>
           </div>
           <div class="contact-right">
             <h4>Para ahorrar tiempo</h4>
