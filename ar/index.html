@@ -3,27 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://globia.app/fr/">
-  <title>Coming soon · Globia</title>
+  <title>Globia — استوديو تطبيقات الجوال · الأمان والخصوصية</title>
+  <meta name="description" content="Globia استوديو مستقل متخصص في تطبيقات الجوال المبنية على الأمان وحماية الخصوصية. 0 متعقب، 0 اشتراكات.">
+
+  <link rel="canonical" href="https://globia.app/ar/">
+  <link rel="alternate" hreflang="fr" href="https://globia.app/fr/">
+  <link rel="alternate" hreflang="en" href="https://globia.app/en/">
+  <link rel="alternate" hreflang="de" href="https://globia.app/de/">
+  <link rel="alternate" hreflang="es" href="https://globia.app/es/">
+  <link rel="alternate" hreflang="ar" href="https://globia.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://globia.app/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globia.app/ar/">
+  <meta property="og:title" content="Globia — استوديو تطبيقات الجوال · الأمان والخصوصية">
+  <meta property="og:description" content="Globia استوديو مستقل لتطبيقات الجوال المبنية على الأمان والخصوصية. 0 متعقب، 0 اشتراكات.">
+  <meta property="og:image" content="https://globia.app/assets/images/og/og-globia.svg">
+  <meta property="og:locale" content="ar_SA">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://globia.app/assets/images/og/og-globia.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.ico" sizes="32x32 48x48">
   <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link">انتقل إلى المحتوى</a>
+
   <header class="topbar" role="banner">
     <div class="topbar__inner">
-      <a href="/fr/" class="topbar__brand" aria-label="Globia, home">
+      <a href="/ar/" class="topbar__brand" aria-label="Globia، الصفحة الرئيسية">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-dark.svg" alt="Globia" width="140" height="38" class="brand-full">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/mark-cyan.svg" alt="Globia" width="32" height="32" class="brand-mark">
       </a>
-      <nav class="topbar__nav" aria-label="Main navigation">
-        <a href="/fr/">Français</a>
+      <button class="topbar__hamburger" aria-label="فتح قائمة التنقل" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="topbar__nav" aria-label="التنقل الرئيسي">
+        <a href="#apps">التطبيقات</a>
+        <a href="#proof">الدليل</a>
+        <a href="#manifesto">البيان</a>
+        <a href="#studio">الاستوديو</a>
+        <a href="/ar/press/">الصحافة</a>
         <div class="lang-switcher">
           <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="/assets/images/flags/ar.svg" width="20" height="14" alt="">
@@ -41,23 +71,202 @@
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <div class="coming-soon">
-      <div class="coming-soon__content">
-        <h1>Coming soon</h1>
-        <p>This page is being translated. Switch back to French in the meantime, or check back later.</p>
-        <a href="/fr/" class="btn-secondary">← Retour au site en français</a>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">استوديو مستقل · أمان الجوال · الخصوصية</p>
+        <h1 id="hero-title">
+          تطبيقات الجوال.<br>
+          <span class="accent">الأمان أولاً.</span>
+        </h1>
+        <p class="hero__lede">Globia استوديو متخصص في تطبيقات الجوال المبنية على الأمان وحماية الخصوصية. كثير منها يعمل بدون إنترنت. ولا أحد منها يجمع بياناتك.</p>
+        <div class="hero__ctas">
+          <a href="#apps" class="btn-primary">اكتشف تطبيقاتنا</a>
+          <a href="#manifesto" class="btn-secondary">التزاماتنا</a>
+        </div>
+        <p class="trust-marker">0 متعقب · 0 اشتراك · 1 تطبيق منشور · 5 لغات</p>
       </div>
-    </div>
+    </section>
+
+    <section id="apps" class="apps-section" aria-labelledby="apps-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="apps-title">تطبيقاتنا</h2>
+          <p class="note">تطبيق واحد متاح. آخر قيد التطوير.</p>
+        </header>
+        <div class="apps-grid-2">
+          <a href="/ar/sovara/" class="app-card" aria-label="Sovara — عرض صفحة المنتج">
+            <div class="app-card-head">
+              <img src="/assets/apps/sovara/logo.png" class="app-card-logo" width="44" height="44" alt="شعار Sovara" loading="lazy">
+              <span class="app-card-status status-live">● متاح</span>
+            </div>
+            <h3 class="app-card-title"><span class="sov">SOV</span><span class="ara">ARA</span></h3>
+            <p class="app-card-meta">ANDROID 12+ · 5 لغات</p>
+            <p class="app-card-desc">تنبيه فوري عندما يصل أي تطبيق إلى الميكروفون أو الكاميرا. يميّز بين الكاميرا الأمامية والخلفية.</p>
+            <div class="app-card-shot">
+              <img src="/assets/apps/sovara/cartes/ar.png" alt="معاينة Sovara" width="600" height="338" loading="lazy">
+            </div>
+            <div class="app-card-foot">
+              <span class="app-card-price">4.99 $ · شراء مرة واحدة</span>
+              <span class="app-card-arrow">←</span>
+            </div>
+          </a>
+          <div class="app-card" aria-label="التطبيق القادم — قيد التطوير">
+            <div class="app-card-head">
+              <div class="app-mark app-mark-dashed" aria-hidden="true"></div>
+              <span class="app-card-status status-soon">قيد التطوير</span>
+            </div>
+            <div>
+              <h3 class="app-card-title" style="color:var(--ink-faint)">التطبيق القادم</h3>
+              <p class="app-card-meta">مخطط 2027</p>
+            </div>
+            <p class="app-card-desc">تطبيق جديد قيد الإعداد. نفس المبادئ: لا اشتراك، لا متعقبات، محلي كلما أمكن.</p>
+            <div class="app-card-shot-placeholder" aria-hidden="true">المعاينة قادمة قريباً</div>
+            <div class="app-card-foot">
+              <span class="app-card-price" style="color:var(--ink-faint)">التفاصيل قادمة</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="proof-home" aria-labelledby="proof-title">
+      <div class="container">
+        <h2 id="proof-title">أثبت ولا تدّعِ.</h2>
+        <p class="lede-section">تعد Globia بعدم وجود متعقبات في كل تطبيق. هكذا يبدو ذلك على أرض الواقع للتطبيق الأول — موثّق عبر تقارير εxodus Privacy العامة.</p>
+        <div class="proof-stats" role="list">
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">متعقبات مكتشفة</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">موثّق عند آخر تقديم في Play Store</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">أذونات غير مبررة</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">إذن وحيد مطلوب: RECORD_AUDIO</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">اتصالات شبكية</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">التطبيق يعمل 100% بدون إنترنت</span>
+          </div>
+        </div>
+        <p class="proof-note">المصدر: <a href="https://reports.exodus-privacy.eu.org/" target="_blank" rel="noopener noreferrer">تقارير εxodus Privacy</a> — عامة وقابلة للتحقق.</p>
+      </div>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <h2 id="principles-title" class="section-title">ثلاثة التزامات.</h2>
+        <div class="principles__grid" role="list">
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">▣</span>
+            <h3>محلي افتراضياً</h3>
+            <p>عندما يمكن لتطبيق ما العمل بدون خادم، يعمل بدون خادم. لا حساب، لا سحابة، لا خادم خلفي يستمع.</p>
+          </article>
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">✓</span>
+            <h3>صفر متعقبات</h3>
+            <p>لا متعقبات، لا إعلانات، لا SDKs من جهات خارجية. قابل للتحقق عبر εxodus Privacy. لا نجمع شيئاً — ولا حتى إحصائيات الاستخدام.</p>
+          </article>
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">◆</span>
+            <h3>شراء مرة واحدة</h3>
+            <p>تدفع مرة واحدة. التطبيق لك. لا اشتراك، لا freemium. تحديثات مضمّنة طالما تدعم المنصة التطبيق.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto" class="manifeste" aria-labelledby="manifesto-title">
+      <div class="container">
+        <h2 id="manifesto-title" class="section-title">أربعة التزامات، لا شعارات.</h2>
+        <p style="font-size:15px;color:var(--ink-dim);max-width:560px;line-height:1.6;">القواعد التي يتبعها كل تطبيق في الاستوديو.</p>
+        <div class="manifeste__list" role="list">
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">01 / محلي</div>
+            <div>
+              <h3>محلي افتراضياً، كلما أمكن ذلك.</h3>
+              <p>عندما يمكن لتطبيق ما العمل بدون خادم، يعمل بدون خادم. لا حساب، لا سحابة، لا خادم خلفي. بعض التطبيقات تحتاج الإنترنت — وعندها نقول ذلك بوضوح ونحدّ منه.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">02 / صفر متعقبات</div>
+            <div>
+              <h3>لا متعقبات. لا إعلانات. لا SDKs.</h3>
+              <p>قابل للتحقق عبر εxodus Privacy. نحن لا نعرف كم شخصاً فتح التطبيق اليوم — وهذا يناسبنا تماماً.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">03 / سعر واحد</div>
+            <div>
+              <h3>تدفع مرة واحدة. التطبيق لك.</h3>
+              <p>لا اشتراك. لا freemium يثير الذنب. لا شاشة upsell متنكرة كميزة. تحديثات مضمّنة طالما تدعم المنصة التطبيق.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">04 / شفاف</div>
+            <div>
+              <h3>ما يفعله. ما لا يفعله.</h3>
+              <p>كل تطبيق يُشحن مع شرح بلغة بسيطة لكل إذن وكل سلوك. إذا بدا شيء غريباً، فقد وثّقناه.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio" class="studio-section" aria-labelledby="studio-title">
+      <div class="container">
+        <h2 id="studio-title" class="section-title">الاستوديو.</h2>
+        <p>Globia استوديو مستقل متخصص في تطبيقات الجوال المبنية على الأمان والخصوصية. الاستوديو لا يجمع تمويلاً، ولا يعمل بالاشتراكات، وليس لديه فريق نمو. عندما يكون التطبيق مجانياً، فهو مجاني. عندما يكون مدفوعاً، فهو شراء لمرة واحدة. دائماً.</p>
+        <p class="studio-meta">تأسس 2026 · مستقل · عدد الموظفين 1 · بدون تمويل</p>
+        <div style="margin-top:24px;">
+          <a href="mailto:contact@globia.app" class="btn-email">contact@globia.app</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-mono-white.svg" alt="Globia" width="160" height="44" class="foot-brand">
+          <p class="footer-tagline">استوديو لتطبيقات الجوال. مبني على جهاز هادئ، لهواتف هادئة.</p>
+        </div>
+        <div class="footer-col">
+          <h4>التطبيقات</h4>
+          <ul><li><a href="/ar/sovara/">Sovara</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>الاستوديو</h4>
+          <ul>
+            <li><a href="/ar/#manifesto">البيان</a></li>
+            <li><a href="/ar/#studio">حول</a></li>
+            <li><a href="/ar/press/">الصحافة</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>اللغات</h4>
+          <ul>
+            <li><a href="/en/" data-lang-switch="en">English</a></li>
+            <li><a href="/fr/" data-lang-switch="fr">Français</a></li>
+            <li><a href="/de/" data-lang-switch="de">Deutsch</a></li>
+            <li><a href="/es/" data-lang-switch="es">Español</a></li>
+            <li><a href="/ar/" aria-current="page" data-lang-switch="ar">العربية</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <span>© 2026 LOCALFIRST APPS</span>
         <span>ZERO COOKIE · ZERO TRACKER · ZERO ANALYTICS</span>
       </div>
     </div>
   </footer>
+
   <script src="/assets/js/app.js"></script>
 </body>
 </html>

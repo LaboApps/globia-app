@@ -1,29 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://globia.app/fr/">
-  <title>Coming soon · Globia</title>
+  <title>Globia — Mobile App Studio · Security &amp; Privacy</title>
+  <meta name="description" content="Globia is an independent studio building security- and privacy-focused mobile apps. 0 trackers, 0 subscriptions.">
+
+  <link rel="canonical" href="https://globia.app/en/">
+  <link rel="alternate" hreflang="fr" href="https://globia.app/fr/">
+  <link rel="alternate" hreflang="en" href="https://globia.app/en/">
+  <link rel="alternate" hreflang="de" href="https://globia.app/de/">
+  <link rel="alternate" hreflang="es" href="https://globia.app/es/">
+  <link rel="alternate" hreflang="ar" href="https://globia.app/ar/">
+  <link rel="alternate" hreflang="x-default" href="https://globia.app/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globia.app/en/">
+  <meta property="og:title" content="Globia — Mobile App Studio · Security &amp; Privacy">
+  <meta property="og:description" content="Globia is an independent studio building security- and privacy-focused mobile apps. 0 trackers, 0 subscriptions.">
+  <meta property="og:image" content="https://globia.app/assets/images/og/og-globia.svg">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://globia.app/assets/images/og/og-globia.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Globia",
+    "alternateName": "LocalFirst Apps",
+    "url": "https://globia.app/en/",
+    "description": "Independent studio building security- and privacy-focused mobile apps.",
+    "foundingDate": "2026",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@globia.app",
+      "contactType": "customer support"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.ico" sizes="32x32 48x48">
   <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
+
   <header class="topbar" role="banner">
     <div class="topbar__inner">
-      <a href="/fr/" class="topbar__brand" aria-label="Globia, home">
+      <a href="/en/" class="topbar__brand" aria-label="Globia, home">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-dark.svg" alt="Globia" width="140" height="38" class="brand-full">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/mark-cyan.svg" alt="Globia" width="32" height="32" class="brand-mark">
       </a>
-      <nav class="topbar__nav" aria-label="Main navigation">
-        <a href="/fr/">Français</a>
+      <button class="topbar__hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="topbar__nav" aria-label="Main navigation">
+        <a href="#apps">Apps</a>
+        <a href="#proof">Proof</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#studio">Studio</a>
+        <a href="/en/press/">Press</a>
         <div class="lang-switcher">
           <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="/assets/images/flags/en.svg" width="20" height="14" alt="">
@@ -41,23 +88,211 @@
       </nav>
     </div>
   </header>
+
   <main id="main">
-    <div class="coming-soon">
-      <div class="coming-soon__content">
-        <h1>Coming soon</h1>
-        <p>This page is being translated. Switch back to French in the meantime, or check back later.</p>
-        <a href="/fr/" class="btn-secondary">← Retour au site en français</a>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">INDEPENDENT STUDIO · MOBILE SECURITY · PRIVACY</p>
+        <h1 id="hero-title">
+          Mobile apps.<br>
+          <span class="accent">Security first.</span>
+        </h1>
+        <p class="hero__lede">
+          Globia is a studio specializing in security- and privacy-focused mobile apps. Many work without internet. None collect your data.
+        </p>
+        <div class="hero__ctas">
+          <a href="#apps" class="btn-primary">See our apps</a>
+          <a href="#manifesto" class="btn-secondary">Our commitments</a>
+        </div>
+        <p class="trust-marker">0 trackers · 0 subscriptions · 1 app published · 5 languages</p>
       </div>
-    </div>
+    </section>
+
+    <section id="apps" class="apps-section" aria-labelledby="apps-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="apps-title">Our apps</h2>
+          <p class="note">One app available. Another in development.</p>
+        </header>
+
+        <div class="apps-grid-2">
+
+          <a href="/en/sovara/" class="app-card" aria-label="Sovara — view product page">
+            <div class="app-card-head">
+              <img src="/assets/apps/sovara/logo.png" class="app-card-logo" width="44" height="44" alt="Sovara logo" loading="lazy">
+              <span class="app-card-status status-live">● Available</span>
+            </div>
+            <h3 class="app-card-title"><span class="sov">SOV</span><span class="ara">ARA</span></h3>
+            <p class="app-card-meta">ANDROID 12+ · 5 LANGUAGES</p>
+            <p class="app-card-desc">Real-time alert when an app accesses your mic or camera. Distinguishes front and rear camera.</p>
+            <div class="app-card-shot">
+              <img src="/assets/apps/sovara/cartes/en.png" alt="Sovara preview" width="600" height="338" loading="lazy">
+            </div>
+            <div class="app-card-foot">
+              <span class="app-card-price">$4.99 · one-time purchase</span>
+              <span class="app-card-arrow">→</span>
+            </div>
+          </a>
+
+          <div class="app-card" aria-label="Next app — in development">
+            <div class="app-card-head">
+              <div class="app-mark app-mark-dashed" aria-hidden="true"></div>
+              <span class="app-card-status status-soon">In development</span>
+            </div>
+            <div>
+              <h3 class="app-card-title" style="color:var(--ink-faint)">Next app</h3>
+              <p class="app-card-meta">PLANNED 2027</p>
+            </div>
+            <p class="app-card-desc">A new app is in preparation. Same principles: no subscription, no trackers, local when possible.</p>
+            <div class="app-card-shot-placeholder" aria-hidden="true">PREVIEW COMING SOON</div>
+            <div class="app-card-foot">
+              <span class="app-card-price" style="color:var(--ink-faint)">Details coming soon</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="proof-home" aria-labelledby="proof-title">
+      <div class="container">
+        <h2 id="proof-title">Show, don't tell.</h2>
+        <p class="lede-section">Globia promises zero trackers on every app. Here's what that looks like in practice for our first live app — verified via public εxodus Privacy reports.</p>
+
+        <div class="proof-stats" role="list">
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Trackers detected</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">Verified at last Play Store submission</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Unjustified permissions</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">One single permission requested: RECORD_AUDIO</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Network connections</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">App works 100% offline</span>
+          </div>
+        </div>
+
+        <p class="proof-note">Source: <a href="https://reports.exodus-privacy.eu.org/" target="_blank" rel="noopener noreferrer">εxodus Privacy reports</a> — public and reproducible.</p>
+      </div>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <h2 id="principles-title" class="section-title">Three commitments.</h2>
+        <div class="principles__grid" role="list">
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">▣</span>
+            <h3>Local by default</h3>
+            <p>When an app can run without a server, it runs without one. No account, no cloud, no back-end listening in.</p>
+          </article>
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">✓</span>
+            <h3>Zero trackers</h3>
+            <p>No trackers, no ads, no third-party SDKs. Verifiable via εxodus Privacy. We collect nothing — not even usage stats.</p>
+          </article>
+          <article class="principle-card" role="listitem">
+            <span class="principle-card__icon" aria-hidden="true">◆</span>
+            <h3>One-time purchase</h3>
+            <p>You pay once. The app is yours. No subscription, no freemium. Updates included as long as the platform supports the app.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto" class="manifeste" aria-labelledby="manifesto-title">
+      <div class="container">
+        <h2 id="manifesto-title" class="section-title">Four commitments, not slogans.</h2>
+        <p style="font-size:15px;color:var(--ink-dim);max-width:560px;line-height:1.6;">The rules every studio app follows.</p>
+
+        <div class="manifeste__list" role="list">
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">01 / LOCAL</div>
+            <div>
+              <h3>Local by default, when possible.</h3>
+              <p>When an app can run without a server, it runs without one. No account, no cloud, no back-end listening. Some apps need the internet for their core function — when that's the case, we say so clearly and minimize.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">02 / ZERO TRACKERS</div>
+            <div>
+              <h3>No trackers. No ads. No SDKs.</h3>
+              <p>Verifiable via εxodus Privacy. We don't know how many people opened the app today, and that's fine with us.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">03 / ONE PRICE</div>
+            <div>
+              <h3>You pay once. The app is yours.</h3>
+              <p>No subscription. No guilt-tripping freemium. No upsell screen disguised as a feature. Updates included as long as the platform supports the app.</p>
+            </div>
+          </article>
+          <article class="pillar" role="listitem">
+            <div class="pillar__num">04 / TRANSPARENT</div>
+            <div>
+              <h3>What it does. What it doesn't.</h3>
+              <p>Every app ships with a plain-language explanation of each permission and behavior. If something seems surprising, we've documented it.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio" class="studio-section" aria-labelledby="studio-title">
+      <div class="container">
+        <h2 id="studio-title" class="section-title">The studio.</h2>
+        <p>Globia is an independent studio specializing in security- and privacy-focused mobile apps. The studio doesn't raise funds, doesn't run on subscriptions, and has no growth team. When an app is free, it's free. When it's paid, it's a one-time purchase. Always.</p>
+        <p class="studio-meta">Founded 2026 · Independent · Headcount 1 · Funding none</p>
+        <div style="margin-top:24px;">
+          <a href="mailto:contact@globia.app" class="btn-email">contact@globia.app</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-mono-white.svg" alt="Globia" width="160" height="44" class="foot-brand">
+          <p class="footer-tagline">A studio for mobile apps. Built on a quiet machine, for quiet phones.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Apps</h4>
+          <ul><li><a href="/en/sovara/">Sovara</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="/en/#manifesto">Manifesto</a></li>
+            <li><a href="/en/#studio">About</a></li>
+            <li><a href="/en/press/">Press kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Languages</h4>
+          <ul>
+            <li><a href="/en/" aria-current="page" data-lang-switch="en">English</a></li>
+            <li><a href="/fr/" data-lang-switch="fr">Français</a></li>
+            <li><a href="/de/" data-lang-switch="de">Deutsch</a></li>
+            <li><a href="/es/" data-lang-switch="es">Español</a></li>
+            <li><a href="/ar/" data-lang-switch="ar" dir="rtl" lang="ar">العربية</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <span>© 2026 LOCALFIRST APPS</span>
         <span>ZERO COOKIE · ZERO TRACKER · ZERO ANALYTICS</span>
       </div>
     </div>
   </footer>
+
   <script src="/assets/js/app.js"></script>
 </body>
 </html>

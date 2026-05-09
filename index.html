@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <title>Globia — Redirection</title>
-  <meta http-equiv="refresh" content="0;url=/fr/">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://globia.app/en/">
+  <title>Globia</title>
+  <meta http-equiv="refresh" content="0;url=/en/">
   <script>
     (function () {
-      var lang = (navigator.language || navigator.userLanguage || 'fr').toLowerCase();
-      if (lang.startsWith('fr')) {
-        window.location.replace('/fr/');
-      } else {
-        window.location.replace('/fr/');
-      }
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().slice(0, 2);
+      var supported = { fr: 1, en: 1, de: 1, es: 1, ar: 1 };
+      var target = supported[lang] ? lang : 'en';
+      window.location.replace('/' + target + '/');
     }());
   </script>
 </head>
 <body>
   <noscript>
-    <meta http-equiv="refresh" content="0;url=/fr/">
+    <p>Please follow one of these links: <a href="/fr/">Français</a> · <a href="/en/">English</a> · <a href="/de/">Deutsch</a> · <a href="/es/">Español</a> · <a href="/ar/">العربية</a></p>
   </noscript>
-  <p>Redirection vers <a href="/fr/">globia.app/fr/</a>…</p>
 </body>
 </html>

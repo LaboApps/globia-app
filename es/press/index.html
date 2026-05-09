@@ -1,29 +1,56 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="canonical" href="https://globia.app/fr/press/">
-  <title>Coming soon · Globia</title>
+  <title>Kit de prensa Globia — Sovara · Hechos, Visuales, Contacto</title>
+  <meta name="description" content="Kit de prensa completo para Globia y Sovara. Hechos verificables, pitches listos para copiar, visuales en alta resolución, contacto directo. Sin formulario.">
+
+  <link rel="canonical" href="https://globia.app/es/press/">
+  <link rel="alternate" hreflang="fr" href="https://globia.app/fr/press/">
+  <link rel="alternate" hreflang="en" href="https://globia.app/en/press/">
+  <link rel="alternate" hreflang="de" href="https://globia.app/de/press/">
+  <link rel="alternate" hreflang="es" href="https://globia.app/es/press/">
+  <link rel="alternate" hreflang="ar" href="https://globia.app/ar/press/">
+  <link rel="alternate" hreflang="x-default" href="https://globia.app/en/press/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globia.app/es/press/">
+  <meta property="og:title" content="Kit de prensa Globia — Sovara">
+  <meta property="og:description" content="Hechos verificables, pitches listos para copiar, visuales en alta resolución, contacto directo. Sin formulario.">
+  <meta property="og:image" content="https://globia.app/assets/images/og/og-globia.svg">
+  <meta property="og:locale" content="es_ES">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://globia.app/assets/images/og/og-globia.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="alternate icon" href="/favicon.ico" sizes="32x32 48x48">
   <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
+  <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link">Ir al contenido</a>
+
   <header class="topbar" role="banner">
     <div class="topbar__inner">
-      <a href="/fr/" class="topbar__brand" aria-label="Globia, home">
+      <a href="/es/" class="topbar__brand" aria-label="Globia, inicio">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-dark.svg" alt="Globia" width="140" height="38" class="brand-full">
         <img src="/assets/images/globia-logo-pack/globia-logo/svg/mark-cyan.svg" alt="Globia" width="32" height="32" class="brand-mark">
       </a>
-      <nav class="topbar__nav" aria-label="Main navigation">
-        <a href="/fr/">Français</a>
+      <button class="topbar__hamburger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="main-nav" class="topbar__nav" aria-label="Navegación principal">
+        <a href="/es/#apps">Apps</a>
+        <a href="/es/#manifiesto">Manifiesto</a>
+        <a href="/es/sovara/">Sovara</a>
+        <a href="/es/press/" aria-current="page">Prensa</a>
         <div class="lang-switcher">
           <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="/assets/images/flags/es.svg" width="20" height="14" alt="">
@@ -31,33 +58,207 @@
             <span class="lang-arrow" aria-hidden="true">▾</span>
           </button>
           <ul class="lang-menu" role="listbox" hidden>
-            <li><a href="/fr/" lang="fr"><img src="/assets/images/flags/fr.svg" width="20" height="14" alt=""> Français</a></li>
-            <li><a href="/en/" lang="en"><img src="/assets/images/flags/en.svg" width="20" height="14" alt=""> English</a></li>
-            <li><a href="/de/" lang="de"><img src="/assets/images/flags/de.svg" width="20" height="14" alt=""> Deutsch</a></li>
-            <li><a href="/es/" lang="es"><img src="/assets/images/flags/es.svg" width="20" height="14" alt=""> Español</a></li>
-            <li><a href="/ar/" lang="ar"><img src="/assets/images/flags/ar.svg" width="20" height="14" alt=""> العربية</a></li>
+            <li><a href="/fr/press/" lang="fr"><img src="/assets/images/flags/fr.svg" width="20" height="14" alt=""> Français</a></li>
+            <li><a href="/en/press/" lang="en"><img src="/assets/images/flags/en.svg" width="20" height="14" alt=""> English</a></li>
+            <li><a href="/de/press/" lang="de"><img src="/assets/images/flags/de.svg" width="20" height="14" alt=""> Deutsch</a></li>
+            <li><a href="/es/press/" lang="es"><img src="/assets/images/flags/es.svg" width="20" height="14" alt=""> Español</a></li>
+            <li><a href="/ar/press/" lang="ar"><img src="/assets/images/flags/ar.svg" width="20" height="14" alt=""> العربية</a></li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
+
+  <nav class="crumb" aria-label="Ruta de navegación">
+    <div class="container">
+      <a href="/es/">Globia</a>
+      <span class="sep" aria-hidden="true">/</span>
+      <span aria-current="page">Prensa</span>
+    </div>
+  </nav>
+
   <main id="main">
-    <div class="coming-soon">
-      <div class="coming-soon__content">
-        <h1>Coming soon</h1>
-        <p>This page is being translated. Switch back to French in the meantime, or check back later.</p>
-        <a href="/fr/press/" class="btn-secondary">← Kit presse en français</a>
+
+    <section class="press-hero" aria-labelledby="press-title">
+      <div class="container">
+        <h1 id="press-title">Kit de prensa.</h1>
+        <p class="press-hero__sub">Hechos verificables, pitches listos para copiar, visuales en alta resolución, contacto directo. Sin formulario, sin NDA. Copia y publica.</p>
+        <p class="press-hero__meta">
+          Estudio LocalFirst Apps · globia.app<br>
+          contact@globia.app · Actualizado mayo 2026
+        </p>
+      </div>
+    </section>
+
+    <div class="tabs-bar" role="navigation" aria-label="Secciones del kit de prensa">
+      <div class="container">
+        <button class="tab-btn" aria-label="El estudio (próximamente)" aria-disabled="true" style="cursor:not-allowed;opacity:0.5">[A] El estudio</button>
+        <button class="tab-btn" aria-current="page">[01] Sovara</button>
       </div>
     </div>
+
+    <section id="pitch" class="pitch-section" aria-labelledby="pitch-title">
+      <div class="container">
+        <h2 id="pitch-title" class="section-title">Pitch listo para copiar.</h2>
+        <div class="pitch-grid" role="list">
+
+          <article class="pitch-card" role="listitem">
+            <p class="pitch-card__duration">15 segundos</p>
+            <p class="pitch-card__text">
+              Sovara es la app Android que te dice en tiempo real <span class="accent">qué</span> app accede a tu micrófono o cámara — y si la cámara en uso es <span class="accent">frontal o trasera</span>. Compra única, cero rastreadores.
+            </p>
+            <button class="copy-btn" type="button" aria-label="Copiar pitch de 15 segundos">Copiar</button>
+          </article>
+
+          <article class="pitch-card" role="listitem">
+            <p class="pitch-card__duration">45 segundos</p>
+            <p class="pitch-card__text">
+              Sovara es una app Android 12+ que monitorea localmente el acceso al micrófono y la cámara de tu teléfono. En cada acceso, activa tres alertas simultáneas (sonido, vibración, notificación), nombra la app responsable y — detalle único en el mercado — especifica si la cámara activada es la frontal o la trasera. <span class="accent">Cero rastreadores</span>, sin suscripción, compra única 4,99 $.
+            </p>
+            <button class="copy-btn" type="button" aria-label="Copiar pitch de 45 segundos">Copiar</button>
+          </article>
+
+          <article class="pitch-card" role="listitem">
+            <p class="pitch-card__duration">2 minutos</p>
+            <p class="pitch-card__text">
+              Desde Android 12, aparece un punto verde o naranja en la barra de estado cuando el micrófono o la cámara están en uso. Pero no dice <span class="accent">qué</span> app es responsable, ni — para la cámara — cuál de las dos. Sovara llena ese vacío. La app combina sonido, vibración y notificación simultáneamente, identifica la app que llama <span class="accent">y</span> la app en primer plano, distingue la cámara frontal de la trasera y mantiene un historial exportable. Todo sin pedir el permiso CAMERA — Sovara usa CameraManager.AvailabilityCallback. Cero rastreadores verificados por εxodus Privacy. Compra única, 4,99 $.
+            </p>
+            <button class="copy-btn" type="button" aria-label="Copiar pitch de 2 minutos">Copiar</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="facts" class="facts-section" aria-labelledby="facts-title">
+      <div class="container">
+        <h2 id="facts-title" class="section-title">Ficha de datos.</h2>
+        <div class="fact-sheet" role="table" aria-label="Ficha de datos de Sovara">
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Nombre de la app</div><div class="fact-val" role="cell">Sovara</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Editor</div><div class="fact-val" role="cell">LocalFirst Apps (marca: Globia)</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Plataforma</div><div class="fact-val" role="cell">Android 12+ (API 31)</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Fecha de lanzamiento</div><div class="fact-val" role="cell">Mayo-junio 2026 (Google Play)</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Precio</div><div class="fact-val" role="cell">4,99 $ — compra única, sin suscripción</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Idiomas</div><div class="fact-val" role="cell">Inglés, Francés, Alemán, Español, Árabe</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Permisos</div><div class="fact-val" role="cell">Solo RECORD_AUDIO</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Rastreadores (εxodus)</div><div class="fact-val is-green" role="cell">0</div></div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Conexiones de red</div><div class="fact-val is-green" role="cell">Ninguna</div></div>
+          <div class="fact-row" role="row">
+            <div class="fact-key" role="rowheader">Política de privacidad</div>
+            <div class="fact-val" role="cell"><a href="https://laboapps.github.io/sovara-privacy-policy" target="_blank" rel="noopener noreferrer">laboapps.github.io/sovara-privacy-policy</a></div>
+          </div>
+          <div class="fact-row" role="row"><div class="fact-key" role="rowheader">Diferenciador único</div><div class="fact-val" role="cell">Distingue cámara frontal y trasera — triple alerta: sonido + vibración + notificación</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="assets" class="assets-section" aria-labelledby="assets-title">
+      <div class="container">
+        <h2 id="assets-title" class="section-title">Visuales en alta resolución.</h2>
+        <div class="assets-grid" role="list">
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true"><img src="/assets/apps/sovara/logo.png" alt="" width="56" height="56"></div>
+            <h3>Logo de Sovara</h3>
+            <p>SVG vectorial + PNG 1024×1024. Fondo transparente. Versiones oscura y clara.</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true">JPG<br>PNG</div>
+            <h3>Capturas de pantalla</h3>
+            <p>30 capturas de Play Store, 5 idiomas × 6 vistas. Formato 1080×2280 o 1080×1920 (árabe).</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true">PNG</div>
+            <h3>Feature graphics</h3>
+            <p>5 visuales 1024×500 para la ficha de Play Store, uno por idioma.</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true">SVG<br>PNG</div>
+            <h3>Logo de Globia studio</h3>
+            <p>SVG vectorial + PNG. Versiones oscura/clara. Logo paraguas del estudio.</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true">PDF<br>PNG</div>
+            <h3>Informe εxodus</h3>
+            <p>Informe de análisis de rastreadores de Sovara exportado desde εxodus Privacy. 0 rastreadores, 0 permisos injustificados.</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+          <article class="asset-card" role="listitem">
+            <div class="asset-thumb" aria-hidden="true">ZIP</div>
+            <h3>Kit completo</h3>
+            <p>Todo en un zip: logos, capturas, feature graphics, ficha de datos en Markdown.</p>
+            <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Descarga próximamente">↓ Próximamente</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contacto de prensa.</h2>
+        <div class="contact-grid">
+          <div class="contact-left">
+            <h3>Una sola persona responde.</h3>
+            <p>Sin agencia de PR, sin formulario. Escribes, leemos.</p>
+            <a href="mailto:contact@globia.app?subject=Prensa%20%E2%80%94%20Globia%20%2F%20Sovara" class="btn-email" aria-label="Enviar email a contact@globia.app">
+              contact@globia.app
+            </a>
+          </div>
+          <div class="contact-right">
+            <h4>Para ahorrar tiempo</h4>
+            <ul class="contact-list" role="list">
+              <li>Embargo: posible, avísanos 48h antes</li>
+              <li>Entrevista: español, inglés, francés (vídeo o texto)</li>
+              <li>APK de prueba: bajo petición</li>
+              <li>Verificación de hechos: envía tu borrador, lo revisamos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-mono-white.svg" alt="Globia" width="160" height="44" class="foot-brand">
+          <p class="footer-tagline">Un estudio para apps móviles. Hecho en una máquina tranquila, para teléfonos tranquilos.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Apps</h4>
+          <ul><li><a href="/es/sovara/">Sovara</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Estudio</h4>
+          <ul>
+            <li><a href="/es/#manifiesto">Manifiesto</a></li>
+            <li><a href="/es/#estudio">Acerca de</a></li>
+            <li><a href="/es/press/" aria-current="page">Prensa</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Idiomas</h4>
+          <ul>
+            <li><a href="/en/press/" data-lang-switch="en">English</a></li>
+            <li><a href="/fr/press/" data-lang-switch="fr">Français</a></li>
+            <li><a href="/de/press/" data-lang-switch="de">Deutsch</a></li>
+            <li><a href="/es/press/" aria-current="page" data-lang-switch="es">Español</a></li>
+            <li><a href="/ar/press/" data-lang-switch="ar" dir="rtl" lang="ar">العربية</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
         <span>© 2026 LOCALFIRST APPS</span>
         <span>ZERO COOKIE · ZERO TRACKER · ZERO ANALYTICS</span>
       </div>
     </div>
   </footer>
+
   <script src="/assets/js/app.js"></script>
 </body>
 </html>

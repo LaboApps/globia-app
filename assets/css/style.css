@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
 }
 
-section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--border); }
+section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 /* ---- TOPBAR --------------------------------------------- */
 .topbar {
@@ -354,7 +354,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 
 /* ---- HOME HERO ----------------------------------------- */
 .hero {
-  padding-block: clamp(40px, 5vw, 56px);
+  padding-block: 40px;
   border-top: none;
 }
 
@@ -382,7 +382,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
   color: var(--ink-dim);
   max-width: 580px;
   line-height: 1.55;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .hero__ctas {
@@ -404,7 +404,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 }
 
 /* ---- PRINCIPLE CARDS ----------------------------------- */
-.principles { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.principles { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .principles__grid {
   display: grid;
@@ -414,7 +414,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
   overflow: hidden;
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
 .principle-card {
@@ -445,7 +445,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 }
 
 /* ---- APP LIST (Disponible maintenant) ------------------ */
-.app-list { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.app-list { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .section-title {
   font-size: 32px;
@@ -508,13 +508,13 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 }
 
 /* ---- PROCHAINES APPS ----------------------------------- */
-.next-apps { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.next-apps { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 .next-apps h3 { font-size: 20px; font-weight: 500; margin-bottom: 12px; }
 .next-apps p { font-size: 15px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; }
 
 /* ---- MANIFESTE ----------------------------------------- */
-.manifeste { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
-.manifeste__list { margin-top: 32px; }
+.manifeste { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
+.manifeste__list { margin-top: 20px; }
 
 .pillar {
   display: grid;
@@ -544,7 +544,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .pillar p { font-size: 14px; color: var(--ink-dim); line-height: 1.6; }
 
 /* ---- STUDIO SECTION ------------------------------------ */
-.studio-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.studio-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .studio-section p {
   font-size: 16px;
@@ -562,8 +562,63 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
   letter-spacing: 0.04em;
 }
 
+/* ---- INSTALL SECTION ----------------------------------- */
+.install-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
+.install-section h2 { font-size: 28px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 20px; }
+
+.install-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.step {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--cyan) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cyan) 30%, transparent);
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.step-body p { font-size: 14px; color: var(--ink-dim); line-height: 1.5; }
+
+.install-note {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.install-note::before { content: '→'; color: var(--green); }
+
+@media (max-width: 768px) {
+  .install-steps { grid-template-columns: 1fr; }
+}
+
 /* ---- PRODUCT HERO (Sovara) ----------------------------- */
-.hero-product { padding-block: clamp(40px, 6vw, 64px); }
+.hero-product { padding-block: clamp(40px, 5vw, 56px); }
 
 .hero-product__lockup {
   display: flex;
@@ -619,10 +674,10 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 }
 
 /* ---- COMPARISON TABLE ---------------------------------- */
-.comparison { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.comparison { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .comparison h2 { font-size: 32px; font-weight: 500; margin-bottom: 12px; }
-.comparison > p { font-size: 15px; color: var(--ink-dim); margin-bottom: 24px; max-width: 560px; line-height: 1.6; }
+.comparison > p { font-size: 15px; color: var(--ink-dim); margin-bottom: 16px; max-width: 560px; line-height: 1.6; }
 
 .comparison-table {
   width: 100%;
@@ -655,10 +710,10 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .comparison-table tr:last-child td { border-bottom: none; }
 
 /* ---- PROOF TABLE --------------------------------------- */
-.proof-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.proof-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .proof-intro h2 { font-size: 32px; font-weight: 500; margin-bottom: 12px; }
-.proof-intro p { font-size: 15px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; margin-bottom: 24px; }
+.proof-intro p { font-size: 15px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; margin-bottom: 16px; }
 .proof-intro a { color: var(--ink-dim); text-decoration: underline; text-underline-offset: 3px; }
 .proof-intro a:hover { color: var(--cyan); }
 
@@ -730,7 +785,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .proof-note a:hover { color: var(--cyan); }
 
 /* ---- TECH SPEC ----------------------------------------- */
-.tech-spec-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.tech-spec-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 .tech-spec-section h2 { font-size: 32px; font-weight: 500; margin-bottom: 24px; }
 
 .tech-spec {
@@ -764,7 +819,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .tech-spec__val a:hover { color: var(--cyan); }
 
 /* ---- SHOTS --------------------------------------------- */
-.shots-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.shots-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .shots-header {
   display: flex;
@@ -815,7 +870,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .studio-reminder a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 
 /* ---- PRESS PAGE ---------------------------------------- */
-.press-hero { padding-block: clamp(40px, 6vw, 64px); }
+.press-hero { padding-block: clamp(40px, 5vw, 56px); }
 .press-hero h1 { font-size: 48px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px; }
 .press-hero__sub { font-size: 17px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; margin-bottom: 20px; }
 .press-hero__meta { font-family: var(--font-mono); font-size: 13px; color: var(--ink-faint); line-height: 2; letter-spacing: 0.03em; }
@@ -840,7 +895,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .tab-btn:hover { color: var(--ink-dim); }
 .tab-btn[aria-current="page"] { color: var(--cyan); border-bottom-color: var(--cyan); }
 
-.pitch-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.pitch-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .pitch-grid {
   display: grid;
@@ -890,7 +945,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 }
 .copy-btn:hover { color: var(--cyan); border-color: var(--cyan); }
 
-.facts-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.facts-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .fact-sheet {
   border: 1px solid var(--border);
@@ -908,7 +963,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .fact-val a { color: var(--ink-dim); text-decoration: underline; text-underline-offset: 3px; }
 .fact-val a:hover { color: var(--cyan); }
 
-.assets-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.assets-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 
 .assets-grid {
   display: grid;
@@ -966,7 +1021,7 @@ section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--bor
 .asset-dl:hover { color: var(--cyan); border-color: var(--cyan); }
 .asset-dl.coming-soon { opacity: 0.5; cursor: not-allowed; }
 
-.contact-section { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.contact-section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .contact-left h3 { font-size: 20px; font-weight: 500; margin-bottom: 8px; }
 .contact-left p { font-size: 14px; color: var(--ink-dim); line-height: 1.6; margin-bottom: 20px; }
@@ -1067,7 +1122,7 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
 .site-footer {
   background: var(--bg-deep);
   border-top: 1px solid var(--border);
-  padding-block: clamp(32px, 5vw, 56px);
+  padding-block: clamp(24px, 4vw, 40px);
 }
 
 .footer-grid {
@@ -1104,7 +1159,7 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
 
 /* ---- APP CARDS (home — Nos applications) --------------- */
 .apps-section {
-  padding-block: clamp(40px, 5vw, 64px);
+  padding-block: clamp(40px, 5vw, 56px);
   border-top: 1px solid var(--border);
 }
 
@@ -1112,7 +1167,7 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   gap: 12px;
 }
@@ -1138,10 +1193,10 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
-  padding: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
   color: inherit;
   transition: border-color var(--transition), background var(--transition);
@@ -1272,9 +1327,9 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
 }
 
 /* ---- PROOF HOME (stats εxodus) ------------------------- */
-.proof-home { padding-block: clamp(40px, 5vw, 64px); border-top: 1px solid var(--border); }
+.proof-home { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--border); }
 .proof-home h2 { font-size: 32px; font-weight: 500; margin-bottom: 12px; }
-.lede-section { font-size: 15px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; margin-bottom: 24px; }
+.lede-section { font-size: 15px; color: var(--ink-dim); max-width: 560px; line-height: 1.6; margin-bottom: 16px; }
 
 .proof-stats {
   display: grid;
