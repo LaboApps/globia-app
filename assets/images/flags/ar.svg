@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16">
-  <!-- Tunisie : fond rouge -->
-  <rect width="24" height="16" fill="#E70013"/>
-  <!-- Cercle blanc -->
-  <circle cx="12" cy="8" r="4.5" fill="#fff"/>
-  <!-- Croissant : cercle rouge décalé -->
-  <circle cx="13.2" cy="8" r="3.4" fill="#E70013"/>
-  <!-- Étoile à 5 branches blanche -->
-  <polygon points="12,3.8 12.47,5.25 13.99,5.25 12.76,6.13 13.23,7.58 12,6.7 10.77,7.58 11.24,6.13 10.01,5.25 11.53,5.25" fill="#fff"/>
+  <!-- Arabie Saoudite : fond vert -->
+  <rect width="24" height="16" fill="#006c35"/>
+  <!-- Chahada (2 lignes simplifiées) -->
+  <rect x="2" y="2" width="20" height="2" rx="0.6" fill="#fff"/>
+  <rect x="2.5" y="5" width="19" height="2" rx="0.6" fill="#fff"/>
+  <!-- Sabre (lame vers la gauche, poignée à droite) -->
+  <polygon points="4,10.5 16.5,9.8 16.5,11.2" fill="#fff"/>
+  <rect x="16.5" y="8.8" width="0.7" height="3.4" rx="0.2" fill="#fff"/>
+  <rect x="17.2" y="9.7" width="3.5" height="1.6" rx="0.4" fill="#fff"/>
+  <circle cx="21.1" cy="10.5" r="1.2" fill="#fff"/>
 </svg>
