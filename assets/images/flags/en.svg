@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16">
+  <!-- Blue background -->
+  <rect width="24" height="16" fill="#012169"/>
+  <!-- St. Andrew's cross — white diagonals (broad) -->
+  <polygon points="0,0 4.5,0 24,12 24,16 19.5,16 0,4" fill="#fff"/>
+  <polygon points="19.5,0 24,0 24,4 4.5,16 0,16 0,12" fill="#fff"/>
+  <!-- St. Patrick's cross — red diagonals (offset, narrower) -->
+  <polygon points="0,0 2,0 24,13.5 24,16 22,16 0,2.5" fill="#C8102E"/>
+  <polygon points="22,0 24,0 24,2.5 2,16 0,16 0,13.5" fill="#C8102E"/>
+  <!-- St. George's cross — white fimbriation -->
+  <rect x="9.5" y="0" width="5" height="16" fill="#fff"/>
+  <rect x="0" y="5.5" width="24" height="5" fill="#fff"/>
+  <!-- St. George's cross — red -->
+  <rect x="10.5" y="0" width="3" height="16" fill="#C8102E"/>
+  <rect x="0" y="6.5" width="24" height="3" fill="#C8102E"/>
+</svg>

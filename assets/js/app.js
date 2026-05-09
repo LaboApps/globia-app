@@ -10,7 +10,7 @@
     });
   }
 
-  /* ---- LANGUAGE SWITCH ------------------------------------- */
+  /* ---- LANGUAGE SWITCH (footer data-lang-switch links) ---- */
   function initLangSwitch() {
     document.querySelectorAll('[data-lang-switch]').forEach(function (link) {
       link.addEventListener('click', function (e) {
@@ -19,8 +19,47 @@
         var path = window.location.pathname;
         var segments = path.split('/').filter(Boolean);
         var subpath = segments.slice(1).join('/');
-        var newUrl = '/' + newLang + '/' + (subpath ? subpath + '/' : '');
-        window.location.href = newUrl;
+        window.location.href = '/' + newLang + '/' + (subpath ? subpath + '/' : '');
+      });
+    });
+  }
+
+  /* ---- LANG SWITCHER DROPDOWN (header) -------------------- */
+  function initLangSwitcher() {
+    var button = document.querySelector('.lang-button');
+    var menu = document.querySelector('.lang-menu');
+    if (!button || !menu) return;
+
+    function close() {
+      button.setAttribute('aria-expanded', 'false');
+      menu.hidden = true;
+    }
+    function open() {
+      button.setAttribute('aria-expanded', 'true');
+      menu.hidden = false;
+    }
+
+    button.addEventListener('click', function (e) {
+      e.stopPropagation();
+      if (menu.hidden) { open(); } else { close(); }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!menu.contains(e.target) && e.target !== button) { close(); }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { close(); }
+    });
+
+    menu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var newLang = link.getAttribute('lang');
+        var path = window.location.pathname;
+        var segments = path.split('/').filter(Boolean);
+        var subpath = segments.slice(1).join('/');
+        window.location.href = '/' + newLang + '/' + (subpath ? subpath + '/' : '');
       });
     });
   }
@@ -179,10 +218,11 @@
   document.addEventListener('DOMContentLoaded', function () {
     initLastUpdate();
     initLangSwitch();
+    initLangSwitcher();
     initSmoothScroll();
     initCopyButtons();
     initPlayStoreCTA();
-initReducedMotion();
+    initReducedMotion();
     initHamburger();
   });
 }());

@@ -32,7 +32,10 @@
       "Bash(git -C \"C:/projets/Globia\" remote -v)",
       "Bash(git -C \"C:/projets/Globia\" remote set-url origin https://github.com/librachid/globia-app.git)",
       "Bash(git -C \"C:/projets/Globia\" remote set-url origin https://github.com/LaboApps/globia-app.git)",
-      "Bash(nslookup *)"
+      "Bash(nslookup *)",
+      "Bash(git *)",
+      "Bash(dir \"assets\\\\images\\\\screens\\\\sovara\" /b)",
+      "Bash(python -c ' *)"
     ]
   }
 }

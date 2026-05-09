@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/svg+xml" href="/assets/images/globia-logo-pack/globia-logo/svg/mark-favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico" sizes="32x32 48x48">
   <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -24,7 +24,20 @@
       </a>
       <nav class="topbar__nav" aria-label="Main navigation">
         <a href="/fr/">Français</a>
-        <button class="lang-btn" aria-label="Current language: English">English</button>
+        <div class="lang-switcher">
+          <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <img src="/assets/images/flags/en.svg" width="20" height="14" alt="">
+            <span>EN</span>
+            <span class="lang-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="lang-menu" role="listbox" hidden>
+            <li><a href="/fr/" lang="fr"><img src="/assets/images/flags/fr.svg" width="20" height="14" alt=""> Français</a></li>
+            <li><a href="/en/" lang="en"><img src="/assets/images/flags/en.svg" width="20" height="14" alt=""> English</a></li>
+            <li><a href="/de/" lang="de"><img src="/assets/images/flags/de.svg" width="20" height="14" alt=""> Deutsch</a></li>
+            <li><a href="/es/" lang="es"><img src="/assets/images/flags/es.svg" width="20" height="14" alt=""> Español</a></li>
+            <li><a href="/ar/" lang="ar"><img src="/assets/images/flags/ar.svg" width="20" height="14" alt=""> العربية</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
