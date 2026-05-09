@@ -46,6 +46,7 @@
   --font-body:    'IBM Plex Sans', system-ui, sans-serif;
   --font-mono:    'JetBrains Mono', 'Courier New', monospace;
   --font-ar:      'Cairo', 'IBM Plex Sans', system-ui, sans-serif;
+  --font-sovara:  'DM Sans', 'Inter', system-ui, sans-serif;
 
   --radius: 2px;
   --transition: 0.15s ease;
@@ -432,7 +433,7 @@ section { padding-block: clamp(56px, 8vw, 96px); border-bottom: 1px solid var(--
   overflow: hidden;
   flex-shrink: 0;
 }
-.app-mark img { width: 44px; height: 44px; object-fit: cover; }
+.app-mark img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; }
 .app-mark--placeholder {
   background: var(--bg-elev);
   border: 1px dashed var(--border-strong);
@@ -467,6 +468,10 @@ section { padding-block: clamp(56px, 8vw, 96px); border-bottom: 1px solid var(--
   font-size: 1.375rem;
   font-weight: 600;
   color: var(--ink);
+}
+.app-card--live h3 {
+  font-family: var(--font-sovara);
+  font-weight: 900;
 }
 
 .app-platform {
@@ -766,8 +771,10 @@ section { padding-block: clamp(56px, 8vw, 96px); border-bottom: 1px solid var(--
 }
 
 .hero-product__title {
+  font-family: var(--font-sovara);
   font-size: clamp(72px, 14vw, 180px);
-  font-weight: 400;
+  font-weight: 900;
+  letter-spacing: -0.03em;
   line-height: 0.9;
   margin-bottom: 0.5rem;
 }
@@ -976,6 +983,57 @@ section { padding-block: clamp(56px, 8vw, 96px); border-bottom: 1px solid var(--
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* ---- MULTILINGUAL SHOTS ---------------------------------- */
+.shots-multilang {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.shots-multilang__title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 1rem;
+}
+
+.shots-multilang-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+}
+
+.shots-multilang-grid figure {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.shots-multilang-grid .shot-thumb {
+  aspect-ratio: 9/19;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+
+.shots-multilang-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shots-multilang-grid figcaption {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
 }
 
 /* ---- STUDIO REMINDER ------------------------------------- */

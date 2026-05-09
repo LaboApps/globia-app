@@ -27,7 +27,12 @@
       "Bash(cp assets/images/press/sovara-icon-light.svg assets/images/logos/sovara-icon-light.svg)",
       "Bash(rm -rf en/ fr/ de/ es/ ar/)",
       "Bash(cat)",
-      "Bash(bash /tmp/gen_placeholder.sh)"
+      "Bash(bash /tmp/gen_placeholder.sh)",
+      "Bash(git -C \"C:/projets/Globia\" remote set-url origin https://github.com/LocalApps/globia-app.git)",
+      "Bash(git -C \"C:/projets/Globia\" remote -v)",
+      "Bash(git -C \"C:/projets/Globia\" remote set-url origin https://github.com/librachid/globia-app.git)",
+      "Bash(git -C \"C:/projets/Globia\" remote set-url origin https://github.com/LaboApps/globia-app.git)",
+      "Bash(nslookup *)"
     ]
   }
 }
