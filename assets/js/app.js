@@ -45,7 +45,7 @@
     });
 
     document.addEventListener('click', function (e) {
-      if (!menu.contains(e.target) && e.target !== button) { close(); }
+      if (!menu.contains(e.target) && e.target !== button && !button.contains(e.target)) { close(); }
     });
 
     document.addEventListener('keydown', function (e) {
