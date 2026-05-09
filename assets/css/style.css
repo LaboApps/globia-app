@@ -1056,6 +1056,165 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   color: var(--ink-faint);
 }
 
+/* ---- APP CARDS (home — Nos applications) --------------- */
+.apps-section {
+  padding-block: clamp(40px, 5vw, 64px);
+  border-top: 1px solid var(--border);
+}
+.apps-section h2 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+
+.apps-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.app-card {
+  display: block;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+.app-card:hover,
+.app-card:focus-visible {
+  border-color: var(--cyan);
+  background: color-mix(in srgb, var(--bg-elev) 96%, var(--cyan) 4%);
+}
+.app-card:hover .app-card-arrow,
+.app-card:focus-visible .app-card-arrow {
+  color: var(--cyan);
+  transform: translateX(3px);
+}
+
+.app-card-grid {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.app-card-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-card);
+  display: block;
+  object-fit: contain;
+}
+
+.app-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.app-card-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1;
+}
+.app-card-title .sov { color: var(--green); }
+.app-card-title .ara { color: var(--cyan); }
+
+.app-card-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green);
+  padding: 4px 10px;
+  background: color-mix(in srgb, var(--green) 12%, transparent);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.app-card-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.app-card-desc {
+  font-size: 15px;
+  color: var(--ink-dim);
+  line-height: 1.5;
+  margin: 0;
+  max-width: 600px;
+}
+
+.app-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.app-card-shot img {
+  width: 120px;
+  height: auto;
+  max-height: 240px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  display: block;
+  object-fit: cover;
+}
+
+.app-card-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  text-align: right;
+}
+
+.app-card-price {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+.app-card-arrow {
+  font-size: 14px;
+  color: var(--ink-dim);
+  font-weight: 500;
+  transition: color var(--transition), transform var(--transition);
+  display: inline-block;
+}
+
+.apps-coming {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  color: var(--ink-dim);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
 /* ---- RESPONSIVE ---------------------------------------- */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1101,6 +1260,14 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   .app-row { flex-wrap: wrap; }
   .app-row__cta { width: 100%; }
   .trust-marker { gap: 16px; padding-inline: var(--gutter); }
+  .app-card { padding: 20px; }
+  .app-card-grid { grid-template-columns: 56px 1fr; gap: 16px; }
+  .app-card-logo img { width: 56px; height: 56px; }
+  .app-card-title { font-size: 22px; }
+  .app-card-footer { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .app-card-shot img { width: 100%; max-width: 240px; max-height: none; }
+  .app-card-cta { align-items: flex-start; text-align: left; }
+  .apps-section h2 { font-size: 24px; }
 }
 
 @media (max-width: 480px) {
