@@ -215,7 +215,7 @@
   }
 
   /* ---- INIT ------------------------------------------------ */
-  document.addEventListener('DOMContentLoaded', function () {
+  function init() {
     initLastUpdate();
     initLangSwitch();
     initLangSwitcher();
@@ -224,5 +224,11 @@
     initPlayStoreCTA();
     initReducedMotion();
     initHamburger();
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 }());
