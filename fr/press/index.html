@@ -51,8 +51,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/images/logos/favicon.svg">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/logos/favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/globia-logo-pack/globia-logo/svg/mark-favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -62,8 +63,9 @@
   <!-- TOPBAR -->
   <header class="topbar" role="banner">
     <div class="topbar__inner">
-      <a href="/fr/" class="topbar__brand" aria-label="Globia — retour à l'accueil">
-        Globia<span class="dot" aria-hidden="true"></span>
+      <a href="/fr/" class="topbar__brand" aria-label="Globia, accueil">
+        <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-dark.svg" alt="Globia" width="140" height="38" class="brand-full">
+        <img src="/assets/images/globia-logo-pack/globia-logo/svg/mark-cyan.svg" alt="Globia" width="32" height="32" class="brand-mark">
       </a>
       <button class="topbar__hamburger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="main-nav">
         <span aria-hidden="true"></span>
@@ -123,7 +125,7 @@
           <article class="pitch-card" role="listitem">
             <p class="pitch-card__duration">15 secondes</p>
             <p class="pitch-card__text">
-              Sovara, c'est l'app Android qui te dit en temps réel <span class="accent">quelle</span> app accède à ton micro ou à ta caméra — et si la caméra utilisée est <span class="accent">avant ou arrière</span>. Aucun concurrent ne fait ça.
+              Sovara, c'est l'app Android qui te dit en temps réel <span class="accent">quelle</span> app accède à ton micro ou à ta caméra — et si la caméra utilisée est <span class="accent">avant ou arrière</span>. Achat unique, zéro tracker.
             </p>
             <button class="copy-btn" type="button" aria-label="Copier le pitch 15 secondes">Copier</button>
           </article>
@@ -139,7 +141,7 @@
           <article class="pitch-card" role="listitem">
             <p class="pitch-card__duration">2 minutes</p>
             <p class="pitch-card__text">
-              Depuis Android 12, un point vert ou orange apparaît dans la barre d'état quand le micro ou la caméra est utilisé. Mais il ne dit pas <span class="accent">quelle</span> app est en cause, ni — pour la caméra — laquelle des deux. Sovara comble ce manque. L'app combine son, vibration et notification (les concurrents font 1 ou 2 sur 3), identifie l'app appelante <span class="accent">et</span> l'app au premier plan, distingue la caméra avant de l'arrière, et conserve un historique exportable. Le tout sans demander la permission CAMERA — Sovara utilise CameraManager.AvailabilityCallback. Vérifié sans tracker par εxodus Privacy. Achat unique, 4,99 $.
+              Depuis Android 12, un point vert ou orange apparaît dans la barre d'état quand le micro ou la caméra est utilisé. Mais il ne dit pas <span class="accent">quelle</span> app est en cause, ni — pour la caméra — laquelle des deux. Sovara comble ce manque. L'app combine son, vibration et notification simultanément, identifie l'app appelante <span class="accent">et</span> l'app au premier plan, distingue la caméra avant de l'arrière, et conserve un historique exportable. Le tout sans demander la permission CAMERA — Sovara utilise CameraManager.AvailabilityCallback. Vérifié sans tracker par εxodus Privacy. Achat unique, 4,99 $.
             </p>
             <button class="copy-btn" type="button" aria-label="Copier le pitch 2 minutes">Copier</button>
           </article>
@@ -198,11 +200,7 @@
           </div>
           <div class="fact-row" role="row">
             <div class="fact-key" role="rowheader">Différenciateur unique</div>
-            <div class="fact-val" role="cell">Distingue caméra avant et arrière (aucun concurrent)</div>
-          </div>
-          <div class="fact-row" role="row">
-            <div class="fact-key" role="rowheader">Concurrence directe</div>
-            <div class="fact-val" role="cell">Access Dots (1 tracker, abandonné 2021), Privacy Indicator (gratuit, F-Droid)</div>
+            <div class="fact-val" role="cell">Distingue caméra avant et arrière — triple alerte son + vibration + notification</div>
           </div>
         </div>
       </div>
@@ -247,8 +245,8 @@
 
           <article class="asset-card" role="listitem">
             <div class="asset-thumb" aria-hidden="true">PDF<br>PNG</div>
-            <h3>Comparatif εxodus</h3>
-            <p>Rapport de comparaison des trackers Sovara vs Access Dots, exporté depuis εxodus Privacy.</p>
+            <h3>Rapport εxodus</h3>
+            <p>Rapport d'analyse des trackers Sovara exporté depuis εxodus Privacy. 0 tracker, 0 permission injustifiée.</p>
             <a href="#" class="asset-dl coming-soon" aria-disabled="true" aria-label="Téléchargement à venir">↓ À venir</a>
           </article>
 
@@ -297,7 +295,7 @@
       <div class="footer-grid">
 
         <div class="footer-col">
-          <p class="footer-col__brand">Globia<span class="dot">.</span></p>
+          <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-mono-white.svg" alt="Globia" width="160" height="44" class="foot-brand">
           <p class="footer-tagline">Un petit studio pour des apps locales. Fait sur une machine tranquille, pour des téléphones tranquilles.</p>
         </div>
 

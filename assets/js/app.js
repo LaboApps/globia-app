@@ -147,69 +147,6 @@
     });
   }
 
-  /* ---- PROOF MODAL ---------------------------------------- */
-  function initProofModal() {
-    var dialog = document.getElementById('proof-dialog');
-    if (!dialog) return;
-
-    var dialogCounter = dialog.querySelector('.dialog__counter');
-    var dialogLabel = dialog.querySelector('.dialog__label');
-    var dialogSub = dialog.querySelector('.dialog__sub');
-    var dialogLink = dialog.querySelector('.dialog__link');
-    var dialogAbandoned = dialog.querySelector('.dialog__abandoned');
-    var closeBtn = dialog.querySelector('.dialog__close');
-
-    document.querySelectorAll('.proof-cell').forEach(function (cell) {
-      cell.addEventListener('click', function () { openProofModal(cell); });
-      cell.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openProofModal(cell);
-        }
-      });
-    });
-
-    function openProofModal(cell) {
-      var isSovara = cell.classList.contains('sovara');
-
-      if (dialogCounter) {
-        dialogCounter.textContent = isSovara ? '0' : '1';
-        dialogCounter.style.color = isSovara ? 'var(--green)' : 'var(--red)';
-      }
-      if (dialogLabel) {
-        dialogLabel.textContent = isSovara
-          ? '✓ Sovara — trackers détectés'
-          : '✗ Access Dots — trackers détectés';
-      }
-      if (dialogSub) {
-        dialogSub.textContent = isSovara
-          ? '0 tracker · 0 permission injustifiée · vérifié εxodus Privacy'
-          : '1 tracker détecté · AppMetrica (Yandex)';
-      }
-      if (dialogAbandoned) {
-        dialogAbandoned.style.display = isSovara ? 'none' : 'block';
-      }
-      dialog.showModal();
-    }
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', function () { dialog.close(); });
-    }
-
-    dialog.addEventListener('click', function (e) {
-      var rect = dialog.getBoundingClientRect();
-      if (
-        e.clientX < rect.left || e.clientX > rect.right ||
-        e.clientY < rect.top || e.clientY > rect.bottom
-      ) {
-        dialog.close();
-      }
-    });
-
-    dialog.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') dialog.close();
-    });
-  }
 
   /* ---- REDUCED MOTION -------------------------------------- */
   function initReducedMotion() {
@@ -245,8 +182,7 @@
     initSmoothScroll();
     initCopyButtons();
     initPlayStoreCTA();
-    initProofModal();
-    initReducedMotion();
+initReducedMotion();
     initHamburger();
   });
 }());

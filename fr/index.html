@@ -41,8 +41,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/images/logos/favicon.svg">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/logos/favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/globia-logo-pack/globia-logo/svg/mark-favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/images/globia-logo-pack/globia-logo/png/app-icon-dark/app-icon-dark-192.png">
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -51,8 +52,9 @@
 
   <header class="topbar" role="banner">
     <div class="topbar__inner">
-      <a href="/fr/" class="topbar__brand" aria-label="Globia — retour à l'accueil">
-        Globia<span class="dot" aria-hidden="true"></span>
+      <a href="/fr/" class="topbar__brand" aria-label="Globia, accueil">
+        <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-dark.svg" alt="Globia" width="140" height="38" class="brand-full">
+        <img src="/assets/images/globia-logo-pack/globia-logo/svg/mark-cyan.svg" alt="Globia" width="32" height="32" class="brand-mark">
       </a>
       <button class="topbar__hamburger" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="main-nav">
         <span aria-hidden="true"></span>
@@ -61,6 +63,7 @@
       </button>
       <nav id="main-nav" class="topbar__nav" aria-label="Navigation principale">
         <a href="#apps">Apps</a>
+        <a href="#preuve">Preuve</a>
         <a href="#manifeste">Manifeste</a>
         <a href="#studio">Studio</a>
         <a href="/fr/press/">Presse</a>
@@ -74,82 +77,110 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <h1 id="hero-title">Applications mobiles.<br>Sécurité d'abord.</h1>
+        <p class="eyebrow">STUDIO INDÉPENDANT · SÉCURITÉ MOBILE · VIE PRIVÉE</p>
+        <h1 id="hero-title">
+          Applications mobiles.<br>
+          <span class="accent">Sécurité d'abord.</span>
+        </h1>
         <p class="hero__lede">
-          Globia est un studio spécialisé dans le développement d'applications mobiles axées sécurité et vie privée. Local par défaut, sans tracker, sans abonnement.
+          Globia est un studio spécialisé dans le développement d'applications mobiles axées sécurité et vie privée. Beaucoup fonctionnent sans internet. Aucune ne collecte tes données.
         </p>
         <div class="hero__ctas">
-          <a href="#apps" class="btn-primary">Voir Sovara</a>
-          <a href="#manifeste" class="btn-secondary">Notre manifeste</a>
+          <a href="#apps" class="btn-primary">Voir nos applications</a>
+          <a href="#manifeste" class="btn-secondary">Nos engagements</a>
         </div>
+        <p class="trust-marker">0 tracker · 0 abonnement · 1 app publiée · 5 langues</p>
       </div>
     </section>
-
-    <!-- TRUST MARKER -->
-    <div class="trust-marker" aria-label="Chiffres clés du studio">
-      <span>0 TRACKER</span>
-      <span>0 ABONNEMENT</span>
-      <span>1 APP PUBLIÉE</span>
-      <span>5 LANGUES</span>
-      <span>ACHAT UNIQUE</span>
-    </div>
 
     <!-- NOS APPLICATIONS -->
     <section id="apps" class="apps-section" aria-labelledby="apps-title">
       <div class="container">
-        <h2 id="apps-title">Nos applications.</h2>
+        <header class="section-head">
+          <h2 id="apps-title">Nos applications</h2>
+          <p class="note">Une app disponible. Une autre en cours de développement.</p>
+        </header>
 
-        <div class="apps-grid">
+        <div class="apps-grid-2">
 
+          <!-- Sovara -->
           <a href="/fr/sovara/" class="app-card" aria-label="Sovara — voir la page produit">
-            <div class="app-card-grid">
-
-              <div class="app-card-logo">
-                <img
-                  src="/assets/images/logos/sovara-mark.png"
-                  alt="Logo Sovara"
-                  width="80" height="80"
-                  loading="lazy"
-                >
-              </div>
-
-              <div class="app-card-body">
-                <div class="app-card-head">
-                  <h3 class="app-card-title">
-                    <span class="sov">SOV</span><span class="ara">ARA</span>
-                  </h3>
-                  <span class="app-card-status">● Disponible</span>
-                </div>
-
-                <p class="app-card-meta">ANDROID 12+ · 5 LANGUES · ZÉRO TRACKER</p>
-
-                <p class="app-card-desc">
-                  Alerte temps réel quand une application accède à ton micro ou à ta caméra. Distingue caméra avant et arrière — différenciateur unique sur Android.
-                </p>
-
-                <div class="app-card-footer">
-                  <div class="app-card-shot">
-                    <img
-                      src="/assets/images/screens/sovara/fr/01.jpg"
-                      alt="Capture Sovara — alerte micro"
-                      width="120" height="240"
-                      loading="lazy"
-                    >
-                  </div>
-                  <div class="app-card-cta">
-                    <span class="app-card-price">4,99 $ · achat unique</span>
-                    <span class="app-card-arrow">Voir la page →</span>
-                  </div>
-                </div>
-              </div>
-
+            <div class="app-card-head">
+              <div class="app-mark" style="background:linear-gradient(135deg,#3FB950,#39C5CF);" aria-hidden="true"></div>
+              <span class="app-card-status status-live">● Disponible</span>
+            </div>
+            <div>
+              <h3 class="app-card-title">Sovara</h3>
+              <p class="app-card-meta">ANDROID 12+ · 5 LANGUES</p>
+            </div>
+            <p class="app-card-desc">
+              Alerte temps réel quand une application accède à ton micro ou à ta caméra. Distingue caméra avant et arrière.
+            </p>
+            <div class="app-card-shot">
+              <img
+                src="/assets/images/screens/sovara/FR/sovara_screen_1_fr.png"
+                alt="Capture Sovara — alerte micro"
+                width="400" height="800"
+                loading="lazy"
+              >
+            </div>
+            <div class="app-card-foot">
+              <span class="app-card-price">4,99 $ · achat unique</span>
+              <span class="app-card-arrow">→</span>
             </div>
           </a>
 
+          <!-- Prochaine app -->
+          <div class="app-card" aria-label="Prochaine application — en développement">
+            <div class="app-card-head">
+              <div class="app-mark app-mark-dashed" aria-hidden="true"></div>
+              <span class="app-card-status status-soon">En développement</span>
+            </div>
+            <div>
+              <h3 class="app-card-title" style="color:var(--ink-faint)">Prochaine app</h3>
+              <p class="app-card-meta">PRÉVUE 2027</p>
+            </div>
+            <p class="app-card-desc">
+              Une nouvelle application est en préparation. Mêmes principes : pas d'abonnement, pas de tracker, local quand c'est possible.
+            </p>
+            <div class="app-card-shot-placeholder" aria-hidden="true">APERÇU À VENIR</div>
+            <div class="app-card-foot">
+              <span class="app-card-price" style="color:var(--ink-faint)">Détails à venir</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PREUVE -->
+    <section id="preuve" class="proof-home" aria-labelledby="preuve-title">
+      <div class="container">
+        <h2 id="preuve-title">Montrer, pas raconter.</h2>
+        <p class="lede-section">
+          Globia promet zéro tracker sur chacune de ses apps. Voici ce que ça donne en pratique pour la première app live — vérifié via les rapports publics εxodus Privacy.
+        </p>
+
+        <div class="proof-stats" role="list">
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Trackers détectés</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">Vérifié à la dernière soumission Play Store</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Permissions injustifiées</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">Une seule permission demandée : RECORD_AUDIO</span>
+          </div>
+          <div class="proof-stat" role="listitem">
+            <span class="proof-label">Connexions réseau</span>
+            <span class="proof-count">0</span>
+            <span class="proof-meta">L'app fonctionne 100 % hors ligne</span>
+          </div>
         </div>
 
-        <p class="apps-coming">
-          Deux applications supplémentaires sont en développement, prévues pour 2027. Mêmes principes : pas d'abonnement, vérification εxodus, transparence sur chaque permission.
+        <p class="proof-note">
+          Source : <a href="https://reports.exodus-privacy.eu.org/" target="_blank" rel="noopener noreferrer">rapports εxodus Privacy</a> — publics et reproductibles.
         </p>
       </div>
     </section>
@@ -247,7 +278,7 @@
       <div class="footer-grid">
 
         <div class="footer-col">
-          <p class="footer-col__brand">Globia<span class="dot">.</span></p>
+          <img src="/assets/images/globia-logo-pack/globia-logo/svg/lockup-mono-white.svg" alt="Globia" width="160" height="44" class="foot-brand">
           <p class="footer-tagline">Un petit studio pour des apps locales. Fait sur une machine tranquille, pour des téléphones tranquilles.</p>
         </div>
 

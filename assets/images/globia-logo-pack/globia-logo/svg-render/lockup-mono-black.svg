@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 110" fill="none">
+  <g transform="translate(5 5)">
+    <path d="M50 10 L88 32 L80 82 L50 92 L20 82 L12 32 Z" stroke="#0D1117" stroke-width="6" fill="none" stroke-linejoin="round"/>
+    <path d="M62 38 L40 38 L40 62 L62 62 L62 52 L52 52" stroke="#0D1117" stroke-width="6" fill="none" stroke-linecap="square"/>
+  </g>
+  <text x="125" y="76" font-family="DejaVu Sans" font-weight="bold" font-size="56" fill="#0D1117">GLOBIA</text>
+</svg>
