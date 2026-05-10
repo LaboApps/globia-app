@@ -49,28 +49,6 @@
   --transition:    0.15s ease;
 }
 
-[data-theme="light"] {
-  /* Sable chaud — clairement éloigné du blanc */
-  --bg:           #E9E5DC;
-  --bg-elev:      #F0EDE5;
-  --bg-deep:      #DDD9CF;
-
-  /* Bordures */
-  --border:       #CDCAB9;
-  --border-strong:#AEAB9C;
-
-  /* Encre brun chaud */
-  --ink:          #232019;
-  --ink-dim:      #4C4840;
-  --ink-faint:    #6C6760;
-
-  /* Accents calibrés sur fond sable */
-  --cyan:         #0B747B;
-  --green:        #28703A;
-  --warn:         #896008;
-  --red:          #A82D2A;
-}
-
 /* ---- RESET ----------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1510,38 +1488,3 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   .hero-product__title { font-size: 36px; }
 }
 
-/* ---- THEME TOGGLE -------------------------------------- */
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 10px;
-  border: 1px solid var(--border-strong);
-  border-radius: 4px;
-  background: transparent;
-  color: var(--ink-dim);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  cursor: pointer;
-  transition: border-color 0.15s ease, color 0.15s ease;
-  margin-right: 8px;
-}
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
-  border-color: var(--cyan);
-  color: var(--ink);
-}
-.theme-toggle-icon {
-  font-size: 14px;
-  line-height: 1;
-}
-
-[data-theme="light"] .app-card-shot {
-  border: 1px solid var(--border-strong);
-}
-[data-theme="light"] .app-card-shot img {
-  border-radius: 4px;
-}
-[data-theme="light"] .lang-menu {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-}

@@ -2,21 +2,6 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <script>
-    (function(){
-      try {
-        var t = localStorage.getItem('globia-theme');
-        if (!t) {
-          t = window.matchMedia &&
-              window.matchMedia('(prefers-color-scheme: light)').matches
-              ? 'light' : 'dark';
-        }
-        if (t === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      } catch(e) {}
-    })();
-  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kit presse Globia — Sovara · Faits, visuels, contact</title>
@@ -93,10 +78,6 @@
         <a href="/fr/#manifeste">Manifeste</a>
         <a href="/fr/sovara/">Sovara</a>
         <a href="/fr/press/" aria-current="page">Presse</a>
-        <button class="theme-toggle" type="button" aria-label="Basculer entre mode sombre et mode clair" aria-pressed="false" hidden>
-          <span class="theme-toggle-icon" aria-hidden="true">&#9679;</span>
-          <span class="theme-toggle-label">Sombre</span>
-        </button>
         <div class="lang-switcher">
           <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="/assets/images/flags/fr.svg" width="20" height="14" alt="">

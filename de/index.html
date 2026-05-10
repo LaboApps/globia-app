@@ -2,21 +2,6 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <script>
-    (function(){
-      try {
-        var t = localStorage.getItem('globia-theme');
-        if (!t) {
-          t = window.matchMedia &&
-              window.matchMedia('(prefers-color-scheme: light)').matches
-              ? 'light' : 'dark';
-        }
-        if (t === 'light') {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
-      } catch(e) {}
-    })();
-  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Globia — Mobile-App-Studio · Sicherheit &amp; Datenschutz</title>
@@ -70,10 +55,6 @@
         <a href="#manifest">Manifest</a>
         <a href="#studio">Studio</a>
         <a href="/de/press/">Presse</a>
-        <button class="theme-toggle" type="button" aria-label="Zwischen Dunkel- und Hellmodus wechseln" aria-pressed="false" hidden>
-          <span class="theme-toggle-icon" aria-hidden="true">&#9679;</span>
-          <span class="theme-toggle-label">Dunkel</span>
-        </button>
         <div class="lang-switcher">
           <button class="lang-button" type="button" aria-haspopup="listbox" aria-expanded="false">
             <img src="/assets/images/flags/de.svg" width="20" height="14" alt="">
