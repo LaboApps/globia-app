@@ -49,6 +49,21 @@
   --transition:    0.15s ease;
 }
 
+[data-theme="light"] {
+  --bg: #FBFBFA;
+  --bg-elev: #FFFFFF;
+  --bg-deep: #F4F4F2;
+  --border: #E4E4E0;
+  --border-strong: #C9C9C2;
+  --ink: #1A1A1A;
+  --ink-dim: #4A4A4A;
+  --ink-faint: #888888;
+  --cyan: #0AA0A8;
+  --green: #2A8C3D;
+  --warn: #B17A0F;
+  --red: #C4302B;
+}
+
 /* ---- RESET ----------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
