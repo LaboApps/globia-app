@@ -50,25 +50,25 @@
 }
 
 [data-theme="light"] {
-  /* Fond crème chaud — moins agressif que blanc pur */
-  --bg: #F7F6F2;
-  --bg-elev: #FCFBF7;
-  --bg-deep: #EFEDE6;
+  /* Sable chaud — clairement éloigné du blanc */
+  --bg:           #E9E5DC;
+  --bg-elev:      #F0EDE5;
+  --bg-deep:      #DDD9CF;
 
-  /* Bordures douces */
-  --border: #E2DFD6;
-  --border-strong: #C8C3B5;
+  /* Bordures */
+  --border:       #CDCAB9;
+  --border-strong:#AEAB9C;
 
-  /* Encre noir doux — repos oculaire prolongé */
-  --ink: #2D2A26;
-  --ink-dim: #5C574F;
-  --ink-faint: #8A857B;
+  /* Encre brun chaud */
+  --ink:          #232019;
+  --ink-dim:      #4C4840;
+  --ink-faint:    #6C6760;
 
-  /* Accents désaturés pour ne pas piquer */
-  --cyan: #0E8B92;
-  --green: #2D7F3F;
-  --warn: #A06A0F;
-  --red: #B5302B;
+  /* Accents calibrés sur fond sable */
+  --cyan:         #0B747B;
+  --green:        #28703A;
+  --warn:         #896008;
+  --red:          #A82D2A;
 }
 
 /* ---- RESET ----------------------------------------------- */
@@ -1541,4 +1541,7 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
 }
 [data-theme="light"] .app-card-shot img {
   border-radius: 4px;
+}
+[data-theme="light"] .lang-menu {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }

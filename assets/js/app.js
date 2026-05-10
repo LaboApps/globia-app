@@ -325,6 +325,15 @@
     if (label) { label.textContent = theme === 'light' ? LABELS[lang].light : LABELS[lang].dark; }
     if (icon)  { icon.textContent  = theme === 'light' ? '○' : '●'; }
     toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+
+    var lockup = document.querySelector('.brand-lockup');
+    var mark   = document.querySelector('.brand-mark');
+    if (lockup) lockup.src = theme === 'light'
+      ? '/assets/images/globia-logo/svg/lockup-light.svg'
+      : '/assets/images/globia-logo/svg/lockup-dark.svg';
+    if (mark) mark.src = theme === 'light'
+      ? '/assets/images/globia-logo/svg/mark-black.svg'
+      : '/assets/images/globia-logo/svg/mark-cyan.svg';
   }
 
   toggle.removeAttribute('hidden');
