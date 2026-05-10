@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Globia",
   "short_name": "Globia",
   "description": "Studio d'apps 100 % locales",
@@ -8,7 +8,7 @@
   "theme_color": "#39C5CF",
   "icons": [
     {
-      "src": "/assets/images/globia-logo-pack/globia-logo/svg/mark-favicon.svg",
+      "src": "/assets/images/globia-logo/svg/mark-favicon.svg",
       "type": "image/svg+xml",
       "sizes": "any"
     }

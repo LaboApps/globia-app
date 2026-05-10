@@ -182,7 +182,7 @@ section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--bor
   flex-shrink: 0;
 }
 
-.brand-full { display: block; height: 30px; width: auto; }
+.brand-lockup { display: block; height: 30px; width: auto; }
 .brand-mark { display: none; width: 32px; height: 32px; }
 .foot-brand { display: block; height: 34px; width: auto; margin-bottom: 12px; opacity: 0.85; }
 
@@ -1030,6 +1030,17 @@ section { padding-block: clamp(40px, 5vw, 56px); border-top: 1px solid var(--bor
 .contact-list li { display: grid; grid-template-columns: auto 1fr; gap: 10px; font-size: 14px; color: var(--ink-dim); line-height: 1.5; }
 .contact-list li::before { content: '—'; color: var(--ink-faint); font-family: var(--font-mono); }
 
+.press-no-contact {
+  padding: 20px 24px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--ink-dim);
+  font-size: 14px;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
 /* ---- CONTACT FORM ----------------------------------------- */
 .contact-form { display: flex; flex-direction: column; gap: 12px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -1440,8 +1451,6 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   }
   .hero h1 { font-size: 28px; }
   .hero__lede { font-size: 15px; }
-  .brand-full { display: none; }
-  .brand-mark { display: block; }
   .apps-grid-2 { grid-template-columns: 1fr; }
   .proof-stats { grid-template-columns: 1fr; }
   .app-card { padding: 20px; }
@@ -1467,6 +1476,11 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   .pillar { grid-template-columns: 80px 1fr; }
   .app-row { flex-wrap: wrap; }
   .app-row__cta { width: 100%; }
+}
+
+@media (max-width: 720px) {
+  .brand-lockup { display: none; }
+  .brand-mark { display: block; }
 }
 
 @media (max-width: 480px) {
