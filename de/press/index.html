@@ -2,6 +2,22 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('globia-theme');
+        if (!t) {
+          t = window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light' : 'dark';
+        }
+        if (t === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Globia Pressemappe — Sovara · Fakten, Visuals, Kontakt</title>
   <meta name="description" content="Vollständige Pressemappe für Globia und Sovara. Verifizierbare Fakten, druckfertige Pitches, hochauflösende Visuals, direkter Kontakt. Kein Formular.">

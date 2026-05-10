@@ -2,6 +2,22 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('globia-theme');
+        if (!t) {
+          t = window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light' : 'dark';
+        }
+        if (t === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مجموعة الصحافة Globia — Sovara · حقائق، مرئيات، تواصل</title>
   <meta name="description" content="مجموعة صحافة كاملة لـ Globia وSovara. حقائق قابلة للتحقق، ملاخص جاهزة للنشر، صور عالية الدقة، تواصل مباشر. بدون نموذج.">

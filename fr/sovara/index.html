@@ -2,6 +2,22 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('globia-theme');
+        if (!t) {
+          t = window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light' : 'dark';
+        }
+        if (t === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sovara — Alerte micro &amp; caméra pour Android · Globia</title>
   <meta name="description" content="Sovara alerte en temps réel quand une app accède à ton micro ou ta caméra sur Android. Distingue caméra avant et arrière. 0 tracker. Achat unique.">

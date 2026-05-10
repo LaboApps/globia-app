@@ -50,18 +50,25 @@
 }
 
 [data-theme="light"] {
-  --bg: #FBFBFA;
-  --bg-elev: #FFFFFF;
-  --bg-deep: #F4F4F2;
-  --border: #E4E4E0;
-  --border-strong: #C9C9C2;
-  --ink: #1A1A1A;
-  --ink-dim: #4A4A4A;
-  --ink-faint: #888888;
-  --cyan: #0AA0A8;
-  --green: #2A8C3D;
-  --warn: #B17A0F;
-  --red: #C4302B;
+  /* Fond crème chaud — moins agressif que blanc pur */
+  --bg: #F7F6F2;
+  --bg-elev: #FCFBF7;
+  --bg-deep: #EFEDE6;
+
+  /* Bordures douces */
+  --border: #E2DFD6;
+  --border-strong: #C8C3B5;
+
+  /* Encre noir doux — repos oculaire prolongé */
+  --ink: #2D2A26;
+  --ink-dim: #5C574F;
+  --ink-faint: #8A857B;
+
+  /* Accents désaturés pour ne pas piquer */
+  --cyan: #0E8B92;
+  --green: #2D7F3F;
+  --warn: #A06A0F;
+  --red: #B5302B;
 }
 
 /* ---- RESET ----------------------------------------------- */
@@ -1527,4 +1534,11 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
 .theme-toggle-icon {
   font-size: 14px;
   line-height: 1;
+}
+
+[data-theme="light"] .app-card-shot {
+  border: 1px solid var(--border-strong);
+}
+[data-theme="light"] .app-card-shot img {
+  border-radius: 4px;
 }

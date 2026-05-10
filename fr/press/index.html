@@ -2,6 +2,22 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <script>
+    (function(){
+      try {
+        var t = localStorage.getItem('globia-theme');
+        if (!t) {
+          t = window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light' : 'dark';
+        }
+        if (t === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch(e) {}
+    })();
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kit presse Globia — Sovara · Faits, visuels, contact</title>
   <meta name="description" content="Kit presse complet pour Globia et Sovara. Faits vérifiables, pitchs prêts à copier, visuels haute résolution, contact direct. Sans formulaire.">
