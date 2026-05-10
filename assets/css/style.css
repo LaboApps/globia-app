@@ -1502,3 +1502,29 @@ dialog::backdrop { background: rgba(1,4,9,.8); }
   .shots-multilang-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-product__title { font-size: 36px; }
 }
+
+/* ---- THEME TOGGLE -------------------------------------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--ink-dim);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  margin-right: 8px;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--cyan);
+  color: var(--ink);
+}
+.theme-toggle-icon {
+  font-size: 14px;
+  line-height: 1;
+}
