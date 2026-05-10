@@ -233,6 +233,72 @@
     });
   }
 
+  /* ---- THEME TOGGLE ---------------------------------------- */
+  var THEME_KEY = 'globia-theme';
+  var LABELS = {
+    fr: { dark: 'Sombre', light: 'Clair' },
+    en: { dark: 'Dark',   light: 'Light' },
+    de: { dark: 'Dunkel', light: 'Hell' },
+    es: { dark: 'Oscuro', light: 'Claro' },
+    ar: { dark: 'داكن', light: 'فاتح' }
+  };
+
+  function getThemeLang() {
+    var lang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
+    return LABELS[lang] ? lang : 'en';
+  }
+
+  function applyTheme(theme) {
+    var root = document.documentElement;
+    var toggle = document.querySelector('.theme-toggle');
+    var label = toggle ? toggle.querySelector('.theme-toggle-label') : null;
+    var brandImg = document.querySelector('.brand-lockup');
+    var brandMark = document.querySelector('.brand-mark');
+
+    if (theme === 'light') {
+      root.setAttribute('data-theme', 'light');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+    }
+    if (label) {
+      var lang = getThemeLang();
+      label.textContent = theme === 'light' ? LABELS[lang].light : LABELS[lang].dark;
+    }
+    if (brandImg) {
+      brandImg.src = theme === 'light'
+        ? '/assets/images/globia-logo/svg/lockup-light.svg'
+        : '/assets/images/globia-logo/svg/lockup-dark.svg';
+    }
+    if (brandMark) {
+      brandMark.src = theme === 'light'
+        ? '/assets/images/globia-logo/svg/mark-black.svg'
+        : '/assets/images/globia-logo/svg/mark-cyan.svg';
+    }
+  }
+
+  function initTheme() {
+    var stored = null;
+    try { stored = localStorage.getItem(THEME_KEY); } catch(e) {}
+    var systemTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches)
+      ? 'light' : 'dark';
+    var initial = stored || systemTheme;
+    applyTheme(initial);
+
+    var toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        var next = current === 'light' ? 'dark' : 'light';
+        applyTheme(next);
+        try { localStorage.setItem(THEME_KEY, next); } catch(e) {}
+      });
+    }
+  }
+
   /* ---- REDUCED MOTION -------------------------------------- */
   function initReducedMotion() {
     var mq = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -269,6 +335,7 @@
     initCopyButtons();
     initPlayStoreCTA();
     initContactForm();
+    initTheme();
     initReducedMotion();
     initHamburger();
   }
